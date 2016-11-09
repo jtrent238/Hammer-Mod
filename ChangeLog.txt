@@ -1,0 +1,9 @@
+Hammer Mod ChangeLog
+
+1.0.0.0
+- Added Wood Hammer
+- Added Stone Hammer
+- Added Iron Hammer
+- Added Gold Hammer
+- Added Diamond Hammer
+- Added Copper Hammer
