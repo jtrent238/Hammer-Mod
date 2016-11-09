@@ -1,0 +1,33 @@
+//jtrent238's Hammer Mod Lang File
+//en_US
+
+//Items
+item.ItemWoodHammer.name=Wood Hammer
+item.ItemStoneHammer.name=Stone Hammer
+item.ItemIronHammer.name=Iron Hammer
+item.ItemGoldHammer.name=Gold Hammer
+item.ItemDiamondHammer.name=Diamond Hammer
+item.ItemCopperHammer.name=Copper Hammer
+
+
+	/Weapons & Tools
+	/Armor
+	/Spawn Eggs
+
+//Blocks
+
+//Entitys
+
+//Mod Devs And Helpers
+
+//Container
+//Generators
+//Achievements
+//Enchantments
+//Potions
+//ToolTips
+
+//Creative Tabs
+itemGroup.HammerMod=jtrent238's Hammer Mod
+
+//Misc
