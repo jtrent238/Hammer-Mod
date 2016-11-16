@@ -1,12 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 
-public class ItemCopperHammer extends ItemBaseHammer{
+public class ItemPigHammer extends ItemBaseHammer{
 
 
-	public ItemCopperHammer(ToolMaterial material) {
+	public ItemPigHammer(ToolMaterial material) {
 		super(material);
 	}
 

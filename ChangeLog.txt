@@ -1,4 +1,20 @@
-Hammer Mod ChangeLog
+jtrent238's HammerMod ChangeLog
+
+1.0.1.0
+- Added Bronze Hammer
+- Added Creeper Hammer
+- Added Pig Hammer
+- Added Dirt Hammer
+- Added Glass Hammer
+- Added Sand Hammer
+- Added Crafting Recipe for Copper Hammer
+- Fixed Wood Hammer
+- Fixed Stone Hammer
+- Fixed Iron Hammer
+- Fixed Gold Hammer
+- Fixed Diamond Hammer
+- Fixed Copper Hammer
+
 
 1.0.0.0
 - Added Wood Hammer

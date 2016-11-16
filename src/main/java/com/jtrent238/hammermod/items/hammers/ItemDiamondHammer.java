@@ -7,15 +7,13 @@ import net.minecraft.item.Item.ToolMaterial;
 
 public class ItemDiamondHammer  extends ItemBaseHammer{
 
-	private static ToolMaterial toolMaterial;
-	private float damageVsEntity;
 
-	public ItemDiamondHammer(float p_i45333_1_, Item.ToolMaterial p_i45333_2_, int i){
-		this.toolMaterial = ToolMaterial.EMERALD;
-		this.setMaxDamage(p_i45333_2_.getMaxUses());
-		this.efficiencyOnProperMaterial = p_i45333_2_.getEfficiencyOnProperMaterial();
-        this.damageVsEntity = p_i45333_1_ + p_i45333_2_.getDamageVsEntity();
+	public ItemDiamondHammer(ToolMaterial material) {
+		super(material);
 	}
 
 
+
+
+	
 }

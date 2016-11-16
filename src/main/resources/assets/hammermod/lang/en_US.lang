@@ -8,6 +8,12 @@ item.ItemIronHammer.name=Iron Hammer
 item.ItemGoldHammer.name=Gold Hammer
 item.ItemDiamondHammer.name=Diamond Hammer
 item.ItemCopperHammer.name=Copper Hammer
+item.ItemBronzeHammer.name=Bronze Hammer
+item.ItemCreeperHammer.name=Creeper Hammer
+item.ItemPigHammer.name=Pig Hammer
+item.ItemDirtHammer.name=Dirt Hammer
+item.ItemGlassHammer.name=Glass Hammer
+item.ItemSandHammer.name=Sand Hammer
 
 
 	/Weapons & Tools
