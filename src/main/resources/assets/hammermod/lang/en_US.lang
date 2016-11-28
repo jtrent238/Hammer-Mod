@@ -14,6 +14,14 @@ item.ItemPigHammer.name=Pig Hammer
 item.ItemDirtHammer.name=Dirt Hammer
 item.ItemGlassHammer.name=Glass Hammer
 item.ItemSandHammer.name=Sand Hammer
+item.ItemCactusHammer.name=Cactus Hammer
+item.ItemGravelHammer.name=Gravel Hammer
+item.ItemItemSilverHammer.name=Silver Hammer
+item.ItemWoolHammer_white.name=White Wool Hammer
+item.ItemTungstenHammer.name=Tungsten Hammer
+item.ItemRubyHammer.name=Ruby Hammer
+item.ItemEmeraldHammer.name=Emerald Hammer
+item.ItemTinHammer.name=Tin Hammer
 
 
 	/Weapons & Tools

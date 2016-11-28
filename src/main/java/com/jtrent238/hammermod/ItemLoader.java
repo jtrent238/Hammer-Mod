@@ -31,6 +31,10 @@ public class ItemLoader {
 	public static Item ItemDirtHammer;
 	public static Item ItemGlassHammer;
 	public static Item ItemSandHammer;
+	public static Item ItemCactusHammer;
+	public static Item ItemGravelHammer;
+	public static Item ItemWoolHammer_white;
+	public static Item ItemEmeraldHammer;
 	
 	
 	/*
@@ -42,9 +46,14 @@ public class ItemLoader {
 	
 	/*
 	 * Hammers Using Ores from other mods
+	 * **NOTE: REQUIRES Other mods to craft these hammers**
 	 */
 	public static Item ItemCopperHammer;
 	public static Item ItemBronzeHammer;
+	public static ItemTungstenHammer;
+	public static ItemRubyHammer;
+	public static ItemTinHammer;
+	public static Item SilverHammer;
 	
 	/**
 	 * Load Items.
@@ -63,6 +72,10 @@ public class ItemLoader {
 		ItemDirtHammer = new ItemDirtHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemDirtHammer").setTextureName("hammermod:ItemDirtHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemGlassHammer = new ItemGlassHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemGlassHammer").setTextureName("hammermod:ItemGlassHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemSandHammer = new ItemSandHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemSandHammer").setTextureName("hammermod:ItemSandHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCactusHammer = new ItemCactusHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemCactusHammer").setTextureName("hammermod:ItemCactusHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemGravelHammer = new ItemGravelHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemGravelHammer").setTextureName("hammermod:ItemGravelHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemWoolHammer_white = new ItemWoolHammer_white(ToolMaterial.WOOD).setUnlocalizedName("ItemWoolHammer_white").setTextureName("hammermod:ItemWoolHammer_white").setCreativeTab(HammerMod.HammerMod);
+		ItemItemEmeraldHammer = new ItemItemEmeraldHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemItemEmeraldHammer").setTextureName("hammermod:ItemItemEmeraldHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		/*
 		 * Mob Hammers
@@ -72,9 +85,14 @@ public class ItemLoader {
 		
 		/*
 		 * Hammers Using Ores from other mods
+		 * **NOTE: REQUIRES Other mods to craft these hammers**
 		 */
 		ItemCopperHammer = new ItemCopperHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCopperHammer").setTextureName("hammermod:ItemCopperHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemBronzeHammer = new ItemBronzeHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemBronzeHammer").setTextureName("hammermod:ItemBronzeHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSilverHammer = new ItemSilverHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemSilverHammer").setTextureName("hammermod:ItemSilverHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemTungstenHammer = new ItemTungstenHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemTungstenHammer").setTextureName("hammermod:ItemTungstenHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemRubyHammer = new ItemRubyHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemRubyHammer").setTextureName("hammermod:ItemRubyHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemTinHammer = new ItemTinHammer(ToolMaterial.WOOD).setUnlocalizedName("ItemTinHammer").setTextureName("hammermod:ItemTinHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		
 		registerItems();
@@ -96,6 +114,10 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemDirtHammer, ItemDirtHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemGlassHammer, ItemGlassHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSandHammer, ItemSandHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCactusHammer, ItemCactusHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemGravelHammer, ItemGravelHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemWoolHammer_white, ItemWoolHammer_white.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemEmeraldHammer, ItemEmeraldHammer.getUnlocalizedName().substring(5));
 		
 		/*
 		 * Mob Hammers
@@ -105,9 +127,14 @@ public class ItemLoader {
 		
 		/*
 		 * Hammers Using Ores from other mods
+		 * **NOTE: REQUIRES Other mods to craft these hammers**
 		 */
 		GameRegistry.registerItem(ItemCopperHammer, ItemCopperHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemBronzeHammer, ItemBronzeHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemItemSilverHammer, ItemItemSilverHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTungstenHammer, ItemTungstenHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemRubyHammer, ItemRubyHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTinHammer, ItemTinHammer.getUnlocalizedName().substring(5));
 		
 	}
 }

@@ -1,5 +1,16 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.1.1
+- Added Cactus Hammer
+- Added Gravel Hammer
+- Added Silver Hammer
+- Added Wool Hammer (White)
+- Added Tungsten Hammer
+- Added Ruby Hammer
+- Added Emerald Hammer
+- Added Tin Hammer
+- Changed Wood Hammer Texture
+
 1.0.1.0
 - Added Bronze Hammer
 - Added Creeper Hammer
