@@ -9,6 +9,9 @@ jtrent238's HammerMod ChangeLog
 - Added Ruby Hammer
 - Added Emerald Hammer
 - Added Tin Hammer
+- Added Creeper Hammer Explosion [Right Click]
+- Added Stat For Creeper Hammer Explosions
+- Added Creeper Hammer Achievement
 - Changed Wood Hammer Texture
 
 1.0.1.0

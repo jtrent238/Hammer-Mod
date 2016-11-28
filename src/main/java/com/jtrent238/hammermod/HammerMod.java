@@ -38,7 +38,7 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.1.0";
+	public static final String MODVERSION = "1.0.1.1";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -73,8 +73,8 @@ public void init(FMLInitializationEvent event)
 	Recipes.registerRecpies();
 	//EntityLoader.LoadEntitys();
 	//OreDict.addores();
-	//Achievements.loadAchievements();
-	//Stats.RegisterStats();
+	Achievements.loadAchievements();
+	Stats.RegisterStats();
 
 	
 }

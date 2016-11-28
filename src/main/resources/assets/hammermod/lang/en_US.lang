@@ -36,10 +36,17 @@ item.ItemTinHammer.name=Tin Hammer
 
 //Container
 //Generators
+
 //Achievements
+achievement.boom=Pssst! BOOM!
+achievement.boom.desc=Explode a Creeper Hammer
+
 //Enchantments
 //Potions
 //ToolTips
+
+//Stats
+stat.chexplosions=Creeper Hammer Explosions
 
 //Creative Tabs
 itemGroup.HammerMod=jtrent238's Hammer Mod
