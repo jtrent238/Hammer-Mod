@@ -1,17 +1,27 @@
 package com.jtrent238.hammermod;
 
+import com.jtrent238.hammermod.items.hammers.ItemAmethystHammer;
 import com.jtrent238.hammermod.items.hammers.ItemBronzeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCactusHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCitrineHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCopperHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCreeperHammer;
 import com.jtrent238.hammermod.items.hammers.ItemDiamondHammer;
 import com.jtrent238.hammermod.items.hammers.ItemDirtHammer;
 import com.jtrent238.hammermod.items.hammers.ItemGlassHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGlowstoneHammer;
 import com.jtrent238.hammermod.items.hammers.ItemGoldHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGraphiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGrassHammer;
 import com.jtrent238.hammermod.items.hammers.ItemGravelHammer;
 import com.jtrent238.hammermod.items.hammers.ItemIronHammer;
-import com.jtrent238.hammermod.items.hammers.ItemItemEmeraldHammer;
+import com.jtrent238.hammermod.items.hammers.ItemJadeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemLapizHammer;
+import com.jtrent238.hammermod.items.hammers.ItemObsidianHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPierreHammer;
+import com.jtrent238.hammermod.items.hammers.ItemEmeraldHammer;
 import com.jtrent238.hammermod.items.hammers.ItemPigHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRedstoneHammer;
 import com.jtrent238.hammermod.items.hammers.ItemRubyHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSandHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSilverHammer;
@@ -70,7 +80,7 @@ public class ItemLoader {
 	public static Item ItemJadeHammer;
 	public static Item ItemAmethystHammer;
 	public static Item ItemGraphiteHammer;
-	public static Item ItemCitrineHammer
+	public static Item ItemCitrineHammer;
 	public static Item ItemPierreHammer;
 	
 	
