@@ -16,12 +16,22 @@ item.ItemGlassHammer.name=Glass Hammer
 item.ItemSandHammer.name=Sand Hammer
 item.ItemCactusHammer.name=Cactus Hammer
 item.ItemGravelHammer.name=Gravel Hammer
-item.ItemItemSilverHammer.name=Silver Hammer
+item.ItemSilverHammer.name=Silver Hammer
 item.ItemWoolHammer_white.name=White Wool Hammer
 item.ItemTungstenHammer.name=Tungsten Hammer
 item.ItemRubyHammer.name=Ruby Hammer
 item.ItemEmeraldHammer.name=Emerald Hammer
 item.ItemTinHammer.name=Tin Hammer
+item.ItemGrassHammer.name=Grass Hammer
+item.ItemObsidianHammer.name=Obsidian Hammer
+item.ItemGlowstoneHammer.name=Glowstone Hammer
+item.ItemRedstoneHammer.name=Redstone Hammer
+item.ItemLapizHammer.name=Lapis Hammer
+item.ItemJadeHammer.name=Jade Hammer
+item.ItemAmethystHammer.name=Amethyst Hammer
+item.ItemGraphite.name=Graphite Hammer
+item.ItemCitrineHammer.name=Citrine Hammer
+item.ItemPierreHammer.name=Pierre Hammer
 
 
 	/Weapons & Tools

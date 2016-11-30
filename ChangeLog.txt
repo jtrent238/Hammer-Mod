@@ -1,5 +1,18 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.1.2
+- Added Grass Hammer
+- Added Obsidian Hammer
+- Added Glowstone Hammer
+- Added Redstone Hammer
+- Added Lapis Hammer
+- Added Jade Hammer
+- Added Amethyst Hammer
+- Added Graphite Hammer
+- Added Citrine Hammer
+- Added Pierre Hammer
+
+
 1.0.1.1
 - Added Cactus Hammer
 - Added Gravel Hammer
