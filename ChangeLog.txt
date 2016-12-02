@@ -1,5 +1,17 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.1.3
+- Added Netherack Hammer
+- Added Soul sand Hammer
+- Added Coal Hammer
+- Added Charcoal Hammer
+- Added End stone Hammer
+- Added Bone Hammer
+- Added Sapphire Hammer
+- Added Onyx Hammer
+- Added Nikolite Hammer
+- Added Silica Hammer
+
 1.0.1.2
 - Added Grass Hammer
 - Added Obsidian Hammer

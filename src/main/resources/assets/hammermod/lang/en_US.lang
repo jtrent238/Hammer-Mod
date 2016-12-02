@@ -32,6 +32,16 @@ item.ItemAmethystHammer.name=Amethyst Hammer
 item.ItemGraphite.name=Graphite Hammer
 item.ItemCitrineHammer.name=Citrine Hammer
 item.ItemPierreHammer.name=Pierre Hammer
+item.ItemNetherackHammer.name=Netherack Hammer
+item.ItemSoulSandHammer.name=Soul sand Hammer
+item.ItemCoalHammer.name=Coal Hammer
+item.ItemCharcoalHammer.name=Charcoal Hammer
+item.ItemEndstoneHammer.name=End stone Hammer
+item.ItemBoneHammer.name=Bone Hammer
+item.ItemSapphireHammer.name=Sapphire Hammer
+item.ItemOnyxHammer.name=Onyx Hammer
+item.ItemNikoliteHammer.name=Nikolite Hammer
+item.ItemSilicaHammer.name=Silica Hammer
 
 
 	/Weapons & Tools

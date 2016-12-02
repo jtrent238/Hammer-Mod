@@ -57,6 +57,13 @@ public class ItemLoader {
 	public static Item ItemGlowstoneHammer;
 	public static Item ItemRedstoneHammer;
 	public static Item ItemLapizHammer;
+	public static Item ItemNetherackHammer;
+	public static Item ItemSoulSandHammer;
+	public static Item ItemCoalHammer;
+	public static Item ItemCharcoalHammer;
+	public static Item ItemEndstoneHammer;
+	public static Item ItemBoneHammer;
+	
 	
 	
 	
@@ -82,6 +89,10 @@ public class ItemLoader {
 	public static Item ItemGraphiteHammer;
 	public static Item ItemCitrineHammer;
 	public static Item ItemPierreHammer;
+	public static Item ItemSapphireHammer;
+	public static Item ItemOnyxHammer;
+	public static Item ItemNikoliteHammer;
+	public static Item ItemSilicaHammer;
 	
 	
 	/**
@@ -110,6 +121,12 @@ public class ItemLoader {
 		ItemGlowstoneHammer = new ItemGlowstoneHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemGlowstoneHammer").setTextureName("hammermod:ItemGlowstoneHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemRedstoneHammer = new ItemRedstoneHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemRedstoneHammer").setTextureName("hammermod:ItemRedstoneHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemLapizHammer = new ItemLapizHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemLapizHammer").setTextureName("hammermod:ItemLapizHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemNetherackHammer = new ItemNetherackHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemNetherackHammer").setTextureName("hammermod:ItemNetherackHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSoulSandHammer = new ItemSoulSandHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSoulSandHammer").setTextureName("hammermod:ItemSoulSandHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCoalHammer = new ItemCoalHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCoalHammer").setTextureName("hammermod:ItemCoalHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCharcoalHammer = new ItemCharcoalHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCharcoalHammer").setTextureName("hammermod:ItemCharcoalHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemEndstoneHammer = new ItemEndstoneHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemEndstoneHammer").setTextureName("hammermod:ItemEndstoneHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemBoneHammer = new ItemBoneHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemBoneHammer").setTextureName("hammermod:ItemBoneHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		/*
 		 * Mob Hammers
@@ -132,6 +149,10 @@ public class ItemLoader {
 		ItemGraphiteHammer = new ItemGraphiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemGraphiteHammer").setTextureName("hammermod:ItemGraphiteHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemCitrineHammer = new ItemCitrineHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCitrineHammer").setTextureName("hammermod:ItemCitrineHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemPierreHammer = new ItemPierreHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPierreHammer").setTextureName("hammermod:ItemPierreHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSapphireHammer = new ItemSapphireHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSapphireHammer").setTextureName("hammermod:ItemSapphireHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemOnyxHammer = new ItemOnyxHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemOnyxHammer").setTextureName("hammermod:ItemOnyxHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemNikoliteHammer = new ItemNikoliteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemNikoliteHammer").setTextureName("hammermod:ItemNikoliteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSilicaHammer = new ItemSilicaHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSilicaHammer").setTextureName("hammermod:ItemSilicaHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		
 		registerItems();
@@ -162,6 +183,12 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemGlowstoneHammer, ItemGlowstoneHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemRedstoneHammer, ItemRedstoneHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemLapizHammer, ItemLapizHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNetherackHammer, ItemNetherackHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSoulSandHammer, ItemSoulSandHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCoalHammer, ItemCoalHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCharcoalHammer, ItemCharcoalHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemEndstoneHammer, ItemEndstoneHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemBoneHammer, ItemBoneHammer.getUnlocalizedName().substring(5));
 		
 		/*
 		 * Mob Hammers
@@ -184,6 +211,10 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemGraphiteHammer, ItemGraphiteHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemCitrineHammer, ItemCitrineHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemPierreHammer, ItemPierreHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSapphireHammer, ItemSapphireHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemOnyxHammer, ItemOnyxHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemNikoliteHammer, ItemNikoliteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSilicaHammer, ItemSilicaHammer.getUnlocalizedName().substring(5));
 		
 	}
 }
