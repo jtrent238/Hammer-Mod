@@ -11,6 +11,7 @@ jtrent238's HammerMod ChangeLog
 - Added Onyx Hammer
 - Added Nikolite Hammer
 - Added Silica Hammer
+- Fixed Lapis Hammer not having a texture
 
 1.0.1.2
 - Added Grass Hammer

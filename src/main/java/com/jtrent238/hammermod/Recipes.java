@@ -42,11 +42,11 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemGlowstoneHammer), "XXX", "XSX", "BSB", 'X', Blocks.glowstone, 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemRedstoneHammer), "XXX", "XSX", "BSB", 'X', Items.redstone, 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemLapizHammer), "XXX", "XSX", "BSB", 'X', Items.dye , 'S' , Items.stick);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemNetherackHammer), "XXX", "XSX", "BSB", 'X', Blocks.netherack , 'S' , Items.stick);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSoulSandHammer), "XXX", "XSX", "BSB", 'X', Blocks.soulsand , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemNetherackHammer), "XXX", "XSX", "BSB", 'X', Blocks.netherrack , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSoulSandHammer), "XXX", "XSX", "BSB", 'X', Blocks.soul_sand , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCoalHammer), "XXX", "XSX", "BSB", 'X', Items.coal , 'S' , Items.stick);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCharcoalHammer), "XXX", "XSX", "BSB", 'X', Items.charcoal , 'S' , Items.stick);
-		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEndstoneHammer), "XXX", "XSX", "BSB", 'X', Blocks.endstone , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCharcoalHammer), "XXX", "XSX", "BSB", 'X', Items.coal , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEndstoneHammer), "XXX", "XSX", "BSB", 'X', Blocks.end_stone , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBoneHammer), "XXX", "XSX", "BSB", 'X', Items.bone , 'S' , Items.stick);
 		
 	}
