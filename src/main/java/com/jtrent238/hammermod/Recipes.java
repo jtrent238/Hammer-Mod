@@ -48,6 +48,14 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCharcoalHammer), "XXX", "XSX", "BSB", 'X', Items.coal , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemEndstoneHammer), "XXX", "XSX", "BSB", 'X', Blocks.end_stone , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBoneHammer), "XXX", "XSX", "BSB", 'X', Items.bone , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSpongeHammer), "XXX", "XSX", "BSB", 'X', Blocks.sponge , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBrickHammer), "XXX", "XSX", "BSB", 'X', Blocks.brick , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSugarHammer), "XXX", "XSX", "BSB", 'X', Items.sugar , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSlimeHammer), "XXX", "XSX", "BSB", 'X', Items.slime_ball , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemMelonHammer), "XXX", "XSX", "BSB", 'X', Items.melon , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPumpkinHammer), "XXX", "XSX", "BSB", 'X', Blocks.Pumpkin , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPotatoHammer), "XXX", "XSX", "BSB", 'X', Items.potato , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCarrotHammer), "XXX", "XSX", "BSB", 'X', Items.carrot , 'S' , Items.stick);
 		
 	}
 	
@@ -85,6 +93,8 @@ public class Recipes {
     	GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemOnyxHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotOnyx"}, 'S', Items.stick));
     	GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemNikoliteHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotNikolite"}, 'S', Items.stick));
     	GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemSilicaHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotSilica"}, 'S', Items.stick));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemPatHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotPat"}, 'S', Items.stick));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemJenHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotJen"}, 'S', Items.stick));
     }
 	
 	

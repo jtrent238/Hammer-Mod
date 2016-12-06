@@ -42,7 +42,16 @@ item.ItemSapphireHammer.name=Sapphire Hammer
 item.ItemOnyxHammer.name=Onyx Hammer
 item.ItemNikoliteHammer.name=Nikolite Hammer
 item.ItemSilicaHammer.name=Silica Hammer
-
+item.ItemSpongeHammer.name=Sponge Hammer
+item.ItemBrickHammer.name=Brick Hammer
+item.ItemSugarHammer.name=Sugar Hammer
+item.ItemSlimeHammer.name=Slime Hammer
+item.ItemMelonHammer.name=Melon Hammer
+item.ItemPumpkinHammer.name=Pumpkin Hammer
+item.ItemPotatoHammer.name=Potato Hammer
+item.ItemCarrotHammer.name=Carrot Hammer
+item.ItemPatHammer.name=FuriousDestroyer Hammer
+item.ItemJenHammer.name=SuperGirlyGamer Hammer
 
 	/Weapons & Tools
 	/Armor

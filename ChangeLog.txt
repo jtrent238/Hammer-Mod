@@ -1,5 +1,18 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.1.4
+- Added Sponge Hammer
+- Added Brick Hammer
+- Added Sugar Hammer
+- Added FuriousDestroyer Hammer
+- Added SuperGirlyGamer Hammer
+- Added Slime Hammer
+- Added Melon Hammer
+- Added Pumpkin Hammer
+- Added Potato Hammer
+- Added Carrot Hammer
+
+
 1.0.1.3
 - Added Netherack Hammer
 - Added Soul sand Hammer
