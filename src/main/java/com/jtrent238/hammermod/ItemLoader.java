@@ -2,8 +2,10 @@ package com.jtrent238.hammermod;
 
 import com.jtrent238.hammermod.items.hammers.ItemAmethystHammer;
 import com.jtrent238.hammermod.items.hammers.ItemBoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBrickHammer;
 import com.jtrent238.hammermod.items.hammers.ItemBronzeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCactusHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCarrotHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCharcoalHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCitrineHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCoalHammer;
@@ -19,23 +21,31 @@ import com.jtrent238.hammermod.items.hammers.ItemGrassHammer;
 import com.jtrent238.hammermod.items.hammers.ItemGravelHammer;
 import com.jtrent238.hammermod.items.hammers.ItemIronHammer;
 import com.jtrent238.hammermod.items.hammers.ItemJadeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemJenHammer;
 import com.jtrent238.hammermod.items.hammers.ItemLapizHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMelonHammer;
 import com.jtrent238.hammermod.items.hammers.ItemNetherackHammer;
 import com.jtrent238.hammermod.items.hammers.ItemNikoliteHammer;
 import com.jtrent238.hammermod.items.hammers.ItemObsidianHammer;
 import com.jtrent238.hammermod.items.hammers.ItemOnyxHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPatHammer;
 import com.jtrent238.hammermod.items.hammers.ItemPierreHammer;
 import com.jtrent238.hammermod.items.hammers.ItemEmeraldHammer;
 import com.jtrent238.hammermod.items.hammers.ItemEndstoneHammer;
 import com.jtrent238.hammermod.items.hammers.ItemPigHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPotatoHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPumpkinHammer;
 import com.jtrent238.hammermod.items.hammers.ItemRedstoneHammer;
 import com.jtrent238.hammermod.items.hammers.ItemRubyHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSandHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSapphireHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSilicaHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSilverHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSlimeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSoulSandHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSpongeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemStoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSugarHammer;
 import com.jtrent238.hammermod.items.hammers.ItemTinHammer;
 import com.jtrent238.hammermod.items.hammers.ItemTungstenHammer;
 import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
@@ -73,7 +83,7 @@ public class ItemLoader {
 	public static Item ItemCharcoalHammer;
 	public static Item ItemEndstoneHammer;
 	public static Item ItemBoneHammer;
-	public static Item ItemSpongeHammer
+	public static Item ItemSpongeHammer;
 	public static Item ItemBrickHammer;
 	public static Item ItemSugarHammer;
 	public static Item ItemSlimeHammer;
@@ -220,6 +230,14 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemCharcoalHammer, ItemCharcoalHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemEndstoneHammer, ItemEndstoneHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemBoneHammer, ItemBoneHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSpongeHammer, ItemSpongeHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemBrickHammer, ItemBrickHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSugarHammer, ItemSugarHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSlimeHammer, ItemSlimeHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemMelonHammer, ItemMelonHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemPumpkinHammer, ItemPumpkinHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemPotatoHammer, ItemPotatoHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCarrotHammer, ItemCarrotHammer.getUnlocalizedName().substring(5));
 		
 		/*
 		 * Mob Hammers
@@ -246,6 +264,8 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemOnyxHammer, ItemOnyxHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemNikoliteHammer, ItemNikoliteHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSilicaHammer, ItemSilicaHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemPatHammer, ItemPatHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemJenHammer, ItemJenHammer.getUnlocalizedName().substring(5));
 		
 	}
 }
