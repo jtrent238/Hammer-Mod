@@ -56,6 +56,7 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPumpkinHammer), "XXX", "XSX", "BSB", 'X', Blocks.pumpkin , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPotatoHammer), "XXX", "XSX", "BSB", 'X', Items.potato , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCarrotHammer), "XXX", "XSX", "BSB", 'X', Items.carrot , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemAppleHammer), "XXX", "XSX", "BSB", 'X', Items.apple , 'S' , Items.stick);
 		
 	}
 	

@@ -1,5 +1,16 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.1.5
+- Added ChangeLog Command 
+- Added WebBrowser
+- Added DanTDM Hammer
+- Added xJSQ Hammer
+- Added SkyTheKidRS Hammer
+- Added Apple Hammer
+- Added Custom Join for Certian Players
+- Changed Texture for FuriousDestroyer Hammer
+- Changed Texture for SuperGirlyGamer Hammer
+
 1.0.1.4
 - Added Sponge Hammer
 - Added Brick Hammer
