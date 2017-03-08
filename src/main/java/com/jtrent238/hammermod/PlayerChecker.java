@@ -28,6 +28,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemDiamondHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 		
 		if(username == "FuriousDestroyer"){
@@ -36,6 +37,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemPatHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 		
 		if(username == "SuperGirlyGamer"){
@@ -44,6 +46,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemJenHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 		
 		if(username == "DanTDM"){
@@ -52,6 +55,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemDanTDMHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 
 		if(username == "xJSQ"){
@@ -60,6 +64,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemxJSQHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 		
 		if(username == "SkyTheKidRS"){
@@ -68,6 +73,7 @@ public class PlayerChecker {
 			
 			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemSkyTheKidRSHammer));
 
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
 		}
 		
 			else{

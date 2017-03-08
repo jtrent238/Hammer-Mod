@@ -1,5 +1,43 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.2.5
+- Added Ice Hammer
+- Added Packed Ice Hammer
+- Added Snow Hammer
+- Added Cake Hammer
+- Added Cinnabar Hammer
+- Added Amber Bearing Stone Hammer
+- Added Ferrous Hammer
+- Added Adaminite Hammer
+- Added Shiny Hammer
+- Added Xychorium Hammer
+- Added So that ALL Hammers will spawn in naturally generated chests
+- Added Custom Tool Material DIRT
+- Added Custom Tool Material GLASS
+- Added Custom Tool Material SAND
+- Added Custom Tool Material CACTUS
+- Added Custom Tool Material GRAVEL
+- Added Custom Tool Material EMERALD
+- Added Custom Tool Material GRASS
+- Added Custom Tool Material WOOL
+- Added Custom Tool Material OBSIDIAN
+- Added Custom Tool Material GLOWSTONE
+- Added Custom Tool Material REDSTONE
+- Added Custom Tool Material LAPIZ
+- Added Custom Tool Material NETHERACK
+- Added Custom Tool Material SOULSAND
+- Added Custom Tool Material COAL
+- Added Custom Tool Material CHARCOAL
+- Added Custom Tool Material ENDSTONE
+- Added Custom Tool Material BONE
+- Added Custom Tool Material SPONGE
+- Added Custom Tool Material BRICK
+- Added Custom Tool Material SUGAR
+- Added Custom Tool Material SLIME
+- Added Custom Tool Material MELON
+- Added Custom Tool Material PUMPKIN
+
+
 1.0.1.5
 - Added ChangeLog Command 
 - Added WebBrowser

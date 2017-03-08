@@ -56,6 +56,7 @@ public class ItemBaseHammer extends ItemPickaxe {
 	
 	private static Set effectiveAgainst = Sets.newHashSet(new Block[] {
 		    Blocks.stone});
+
 	{
 		
 	if(blockMined == Blocks.stone){
@@ -79,10 +80,10 @@ public class ItemBaseHammer extends ItemPickaxe {
     /**
      * Return the name for this tool's material.
      */
-    public String getToolMaterialName()
+    /*public String getToolMaterialName()
     {
         return this.toolMaterial.toString();
-    }
+    }*/
 
     /**
      * Return whether this item is repairable in an anvil.
@@ -172,4 +173,5 @@ public class ItemBaseHammer extends ItemPickaxe {
         return this.damageVsEntity;
     }
 
+    
 }
