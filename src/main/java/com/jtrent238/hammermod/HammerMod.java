@@ -50,7 +50,7 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.2.5";
+	public static final String MODVERSION = "1.0.2.6";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -158,6 +158,8 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
+	
 	//=========Blacksmith End========================================
 	
 	//=========MINESHAFT_CORRIDOR Start========================================
@@ -225,6 +227,8 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.MINESHAFT_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
+	
 	//=========MINESHAFT_CORRIDOR End========================================
 	
 	//=========PYRAMID_DESERT_CHEST Start========================================
@@ -292,6 +296,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_DESERT_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========PYRAMID_DESERT_CHEST End========================================
 	
 	//=========PYRAMID_JUNGLE_CHEST Start========================================
@@ -359,6 +364,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.PYRAMID_JUNGLE_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========PYRAMID_JUNGLE_CHEST End========================================
 	
 	//=========STRONGHOLD_CORRIDOR Start========================================
@@ -426,6 +432,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CORRIDOR).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========STRONGHOLD_CORRIDOR End========================================
 	
 	//=========STRONGHOLD_LIBRARY Start========================================
@@ -493,6 +500,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_LIBRARY).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========STRONGHOLD_LIBRARY End========================================
 	
 	//=========STRONGHOLD_CROSSING Start========================================
@@ -560,6 +568,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.STRONGHOLD_CROSSING).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========STRONGHOLD_CROSSING End========================================
 	
 	//=========BONUS_CHEST Start========================================
@@ -627,6 +636,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.BONUS_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	//=========BONUS_CHEST End========================================
 	
 	//=========DUNGEON_CHEST Start========================================
@@ -694,6 +704,7 @@ public void init(FMLInitializationEvent event)
 	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoodHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemWoolHammer_white), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemxJSQHammer), 0, 1, 1));
+	ChestGenHooks.getInfo(ChestGenHooks.DUNGEON_CHEST).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemThackAttack_MCHammer), 0, 1, 1));
 	
 	//=========DUNGEON_CHEST End========================================
 }

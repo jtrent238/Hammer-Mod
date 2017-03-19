@@ -1,5 +1,13 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.2.6
+- Added ThackAttack_MC Hammer
+- Added Custom Tool Material PAT
+- Added Custom Tool Material JEN 
+- Added Custom Tool Material JSQ
+- Added Custom Tool Material TDM
+- Added Custom Tool Material TATTCKMC
+
 1.0.2.5
 - Added Ice Hammer
 - Added Packed Ice Hammer

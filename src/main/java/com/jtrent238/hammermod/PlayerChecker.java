@@ -79,6 +79,22 @@ public class PlayerChecker {
 			else{
 				System.out.println("Sorry you do not have a custom hammer in the mod!");
 			}
+		
+		if(username == "ThackAttack_MC"){
+			event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Hello" + event.player.getDisplayName() + "!"));
+			event.player.addChatComponentMessage(new ChatComponentText(EnumChatFormatting.GREEN + "Thanks for playing my mod. Lets give you your Hammer! :D"));
+			
+			event.player.inventory.addItemStackToInventory(new ItemStack(ItemLoader.ItemThackAttack_MCHammer));
+
+			System.out.println("Hello " + event.player.getDisplayName() + "!");
+		}
+		
+			else{
+				System.out.println("Sorry you do not have a custom hammer in the mod!");
+			}
+	
 	}
+	
+	
 
 }

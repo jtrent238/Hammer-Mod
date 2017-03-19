@@ -58,6 +58,7 @@ import com.jtrent238.hammermod.items.hammers.ItemSoulSandHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSpongeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemStoneHammer;
 import com.jtrent238.hammermod.items.hammers.ItemSugarHammer;
+import com.jtrent238.hammermod.items.hammers.ItemThackAttack_MCHammer;
 import com.jtrent238.hammermod.items.hammers.ItemTinHammer;
 import com.jtrent238.hammermod.items.hammers.ItemTungstenHammer;
 import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
@@ -157,6 +158,7 @@ public class ItemLoader {
 	public static Item ItemDanTDMHammer;
 	public static Item ItemxJSQHammer;
 	public static Item ItemSkyTheKidRSHammer;
+	public static Item ItemThackAttack_MCHammer;
 	
 
 	private static int emeraldMultiplier = 2;			//Emerald Multiplier (Diamond * Multiplier)
@@ -165,6 +167,8 @@ public class ItemLoader {
 	private static int oM = obsidianMultiplier;			//Obsidian Multiplier (Diamond * Multiplier)
 	private static int nsM = eM + oM * 2;				//Nether Star Multiplier (Diamond * Multiplier)
 	private static int deM = nsM + eM + oM * 4;			//Dragon Egg Multiplier (Diamond * Multiplier)
+	private static int YT = 10;							//YouTuber Multiplier
+	
 	
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 	public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 0, 4);
@@ -193,11 +197,15 @@ public class ItemLoader {
 	public static ToolMaterial SLIME = EnumHelper.addToolMaterial("SLIME", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial MELON = EnumHelper.addToolMaterial("MELON", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial PUMPKIN = EnumHelper.addToolMaterial("PUMPKIN", 3, 1561, 8.0F, 3.0F, 10);
-	/*
-	public static ToolMaterial SAND = EnumHelper.addToolMaterial("SAND", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial SAND = EnumHelper.addToolMaterial("SAND", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial SAND = EnumHelper.addToolMaterial("SAND", 3, 1561, 8.0F, 3.0F, 10);
-	*/
+	
+	
+	public static ToolMaterial PAT = EnumHelper.addToolMaterial("PAT", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial JEN = EnumHelper.addToolMaterial("JEN", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial TDM = EnumHelper.addToolMaterial("TDM", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial JSQ = EnumHelper.addToolMaterial("JSQ", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial SKY = EnumHelper.addToolMaterial("SKY", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial TATTCKMC = EnumHelper.addToolMaterial("TATTCKMC", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	
 	
 	
 	/**
@@ -281,11 +289,12 @@ public class ItemLoader {
 		/*
 		 * Hammers For YouTubers
 		 */
-		ItemPatHammer = new ItemPatHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPatHammer").setTextureName("hammermod:ItemPatHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemJenHammer = new ItemJenHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemJenHammer").setTextureName("hammermod:ItemJenHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemDanTDMHammer = new ItemDanTDMHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemDanTDMHammer").setTextureName("hammermod:ItemDanTDMHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemxJSQHammer = new ItemxJSQHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemxJSQHammer").setTextureName("hammermod:ItemxJSQHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemSkyTheKidRSHammer = new ItemSkyTheKidRSHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSkyTheKidRSHammer").setTextureName("hammermod:ItemSkyTheKidRSHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemPatHammer = new ItemPatHammer(PAT).setUnlocalizedName("ItemPatHammer").setTextureName("hammermod:ItemPatHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemJenHammer = new ItemJenHammer(JEN).setUnlocalizedName("ItemJenHammer").setTextureName("hammermod:ItemJenHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemDanTDMHammer = new ItemDanTDMHammer(TDM).setUnlocalizedName("ItemDanTDMHammer").setTextureName("hammermod:ItemDanTDMHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemxJSQHammer = new ItemxJSQHammer(JSQ).setUnlocalizedName("ItemxJSQHammer").setTextureName("hammermod:ItemxJSQHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSkyTheKidRSHammer = new ItemSkyTheKidRSHammer(SKY).setUnlocalizedName("ItemSkyTheKidRSHammer").setTextureName("hammermod:ItemSkyTheKidRSHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemThackAttack_MCHammer = new ItemThackAttack_MCHammer(TATTCKMC).setUnlocalizedName("ItemThackAttack_MCHammer").setTextureName("hammermod:ItemThackAttack_MCHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		
 		
@@ -377,6 +386,7 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemDanTDMHammer, ItemDanTDMHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemxJSQHammer, ItemxJSQHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSkyTheKidRSHammer, ItemSkyTheKidRSHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemThackAttack_MCHammer, ItemThackAttack_MCHammer.getUnlocalizedName().substring(5));
 		
 		
 	}
