@@ -14,6 +14,8 @@ public class ModRegistry {
 	private static boolean isThaumcraftLoaded;
 	private static boolean isProjectXYLoaded;
 
+	private static boolean isjtrent238youtubersLoaded;
+	
 	public ModRegistry(){
 		
 		
@@ -99,6 +101,22 @@ public class ModRegistry {
 	        }
 	        catch (Exception e) {
 	            LogHelper.log(Level.SEVERE, "Could not load ProjectXY Mod");
+	            e.printStackTrace(System.err);
+	        }
+	    
+			
+			}
+		
+		isjtrent238youtubersLoaded = Loader.isModLoaded("jtrent238youtubers");
+
+		if (isjtrent238youtubersLoaded) {
+			
+			System.out.println("jtrent238's YouTuber Mod Loaded");
+			try {
+	            LogHelper.log(Level.INFO, "Loaded jtrent238's YouTuber Mod");
+	        }
+	        catch (Exception e) {
+	            LogHelper.log(Level.SEVERE, "Could not load jtrent238's YouTuber Mod");
 	            e.printStackTrace(System.err);
 	        }
 	    

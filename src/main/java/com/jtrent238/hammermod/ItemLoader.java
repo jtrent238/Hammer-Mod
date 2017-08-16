@@ -16,6 +16,7 @@ import com.jtrent238.hammermod.items.hammers.ItemCitrineHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCoalHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCopperHammer;
 import com.jtrent238.hammermod.items.hammers.ItemCreeperHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCryingObsidainHammer;
 import com.jtrent238.hammermod.items.hammers.ItemDanTDMHammer;
 import com.jtrent238.hammermod.items.hammers.ItemDiamondHammer;
 import com.jtrent238.hammermod.items.hammers.ItemDirtHammer;
@@ -31,6 +32,7 @@ import com.jtrent238.hammermod.items.hammers.ItemJadeHammer;
 import com.jtrent238.hammermod.items.hammers.ItemJenHammer;
 import com.jtrent238.hammermod.items.hammers.ItemLapizHammer;
 import com.jtrent238.hammermod.items.hammers.ItemMelonHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMythicalHammer;
 import com.jtrent238.hammermod.items.hammers.ItemNetherackHammer;
 import com.jtrent238.hammermod.items.hammers.ItemNikoliteHammer;
 import com.jtrent238.hammermod.items.hammers.ItemObsidianHammer;
@@ -64,15 +66,19 @@ import com.jtrent238.hammermod.items.hammers.ItemTungstenHammer;
 import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
 import com.jtrent238.hammermod.items.hammers.ItemWoolHammer;
 import com.jtrent238.hammermod.items.hammers.ItemXychoriumHammer;
+import com.jtrent238.hammermod.items.hammers.Item_MrGregor_Hammer;
 import com.jtrent238.hammermod.items.hammers.ItemxJSQHammer;
+import com.jtrent238.hammermod.items.hammers.custom.ItemCustomHammer_1;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraftforge.common.config.Property;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class ItemLoader {
 
+	
 	/*
 	 * Basic Minecraft Hammers (Ex. Vannila Ores)
 	 */
@@ -159,7 +165,18 @@ public class ItemLoader {
 	public static Item ItemxJSQHammer;
 	public static Item ItemSkyTheKidRSHammer;
 	public static Item ItemThackAttack_MCHammer;
+	public static Item Item_MrGregor_Hammer;
 	
+	/*
+	 * Community Hammers
+	 */
+	public static Item ItemCryingObsidainHammer;
+	public static Item ItemMythicalHammer;
+	
+	/*
+	 * Custom Hammers
+	 */
+	public static Item ItemCustomHammer_1;
 
 	private static int emeraldMultiplier = 2;			//Emerald Multiplier (Diamond * Multiplier)
 	private static int obsidianMultiplier = (int) 2.5;	//Obsidian Multiplier (Diamond * Multiplier)
@@ -168,7 +185,8 @@ public class ItemLoader {
 	private static int nsM = eM + oM * 2;				//Nether Star Multiplier (Diamond * Multiplier)
 	private static int deM = nsM + eM + oM * 4;			//Dragon Egg Multiplier (Diamond * Multiplier)
 	private static int YT = 10;							//YouTuber Multiplier
-	
+	private static int JSQ_Multiplier = 10;						//xJSQ Multiplier
+	private static int  C1 = HammerMod.CUSTOM_HAMMER_1_MATERIALMODIFIER.getInt();
 	
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 	public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 0, 4);
@@ -202,9 +220,18 @@ public class ItemLoader {
 	public static ToolMaterial PAT = EnumHelper.addToolMaterial("PAT", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
 	public static ToolMaterial JEN = EnumHelper.addToolMaterial("JEN", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
 	public static ToolMaterial TDM = EnumHelper.addToolMaterial("TDM", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial JSQ = EnumHelper.addToolMaterial("JSQ", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial JSQ = EnumHelper.addToolMaterial("JSQ", 3 * YT + JSQ_Multiplier, 1561 * YT + JSQ_Multiplier, 8.0F * YT + JSQ_Multiplier, 3.0F * YT + JSQ_Multiplier, 10 * YT + JSQ_Multiplier);
 	public static ToolMaterial SKY = EnumHelper.addToolMaterial("SKY", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
 	public static ToolMaterial TATTCKMC = EnumHelper.addToolMaterial("TATTCKMC", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	public static ToolMaterial MRGREG = EnumHelper.addToolMaterial("MRGREG", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
+	
+	public static ToolMaterial CRYOBBY = EnumHelper.addToolMaterial("CRYOBBY", 3, 8000, 6, 6, 10);
+	public static ToolMaterial MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10, 15, 5);
+	
+	
+	
+	
+	public static ToolMaterial CUSTOM_1 = EnumHelper.addToolMaterial("CUSTOM_1", 3 * C1, 1561 * C1, 8.0F * C1, 3.0F * C1, 10 * C1);
 	
 	
 	
@@ -295,6 +322,18 @@ public class ItemLoader {
 		ItemxJSQHammer = new ItemxJSQHammer(JSQ).setUnlocalizedName("ItemxJSQHammer").setTextureName("hammermod:ItemxJSQHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemSkyTheKidRSHammer = new ItemSkyTheKidRSHammer(SKY).setUnlocalizedName("ItemSkyTheKidRSHammer").setTextureName("hammermod:ItemSkyTheKidRSHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemThackAttack_MCHammer = new ItemThackAttack_MCHammer(TATTCKMC).setUnlocalizedName("ItemThackAttack_MCHammer").setTextureName("hammermod:ItemThackAttack_MCHammer").setCreativeTab(HammerMod.HammerMod);
+		Item_MrGregor_Hammer = new Item_MrGregor_Hammer(MRGREG).setUnlocalizedName("Item_MrGregor_Hammer").setTextureName("hammermod:Item_MrGregor_Hammer").setCreativeTab(HammerMod.HammerMod);
+		
+		/*
+		 * Community Hammers
+		 */
+		ItemCryingObsidainHammer  = new ItemCryingObsidainHammer(CRYOBBY).setUnlocalizedName("ItemCryingObsidainHammer").setTextureName("hammermod:ItemCryingObsidainHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemMythicalHammer  = new ItemMythicalHammer(MYTHICAL).setUnlocalizedName("ItemMythicalHammer").setTextureName("hammermod:ItemMythicalHammer").setCreativeTab(HammerMod.HammerMod);
+		
+		/*
+		 * Custom Hammers
+		 */
+		ItemCustomHammer_1 = new ItemCustomHammer_1(CUSTOM_1).setUnlocalizedName(HammerMod.CUSTOM_HAMMER_1_NAME.toString()).setTextureName(HammerMod.CUSTOM_HAMMER_1_TEXTURE.toString()).setCreativeTab(HammerMod.HammerMod);
 		
 		
 		
@@ -387,7 +426,21 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemxJSQHammer, ItemxJSQHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSkyTheKidRSHammer, ItemSkyTheKidRSHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemThackAttack_MCHammer, ItemThackAttack_MCHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(Item_MrGregor_Hammer, Item_MrGregor_Hammer.getUnlocalizedName().substring(5));
 		
+		/*
+		 * Community Hammers
+		 */
+		GameRegistry.registerItem(ItemCryingObsidainHammer, ItemCryingObsidainHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemMythicalHammer, ItemMythicalHammer.getUnlocalizedName().substring(5));
+		
+		/*
+		 * Custom Hammers
+		 */
+		
+		if(HammerMod.CUSTOM_HAMMER_1 == true){
+		GameRegistry.registerItem(ItemCustomHammer_1, ItemCustomHammer_1.getUnlocalizedName().substring(5));
+		}
 		
 	}
 }

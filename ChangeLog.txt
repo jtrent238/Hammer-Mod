@@ -1,5 +1,13 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.2.7
+- Added Custom Hammers Feature [WIP]
+- Added Crying Obsidain Hammer
+- Added Mythical Hammer
+- Added Support for jtrent238's YouTubers mod
+- Added Multiplier for xJSQ Hammer [x10]
+- Fixed Issues when crafting Hammers using ores from other mods
+
 1.0.2.6
 - Added ThackAttack_MC Hammer
 - Added Custom Tool Material PAT

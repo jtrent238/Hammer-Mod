@@ -67,7 +67,8 @@ item.ItemAdaminiteHammer.name=Adaminite Hammer
 item.ItemShinyHammer.name=Shiny Hammer
 item.ItemXychoriumHammer.name=Xychorium Hammer
 item.ItemThackAttack_MCHammer.name=ThackAttack_MC Hammer
-
+item.ItemCryingObsidainHammer.name=Crying Obsidain Hammer
+item.ItemMythicalHammer.name=Mythical Hammer
 	/Weapons & Tools
 	/Armor
 	/Spawn Eggs
@@ -88,6 +89,9 @@ achievement.boom.desc=Explode a Creeper Hammer
 //Enchantments
 //Potions
 //ToolTips
+tooltip.hammermod.communityhammer=Community Hammer
+tooltip.hammermod.ItemCryingObsidainHammer.createdby=Hammer Designed By: Thefancyman
+tooltip.hammermod.ItemMythicalHammer.createdby=Hammer Designed By: _Answers_
 
 //Stats
 stat.chexplosions=Creeper Hammer Explosions

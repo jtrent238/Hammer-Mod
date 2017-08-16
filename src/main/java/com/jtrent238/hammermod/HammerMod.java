@@ -2,6 +2,9 @@ package com.jtrent238.hammermod;
 
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 import com.jtrent238.hammermod.command.CommandChangelog;
 import com.jtrent238.hammermod.common.CommonProxy;
 import com.jtrent238.hammermod.items.hammers.ItemBaseHammer;
@@ -35,6 +38,8 @@ import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.common.config.Property;
 import net.minecraftforge.common.util.EnumHelper;
 
 @Mod(modid=HammerMod.MODID, name=HammerMod.MODNAME, version=(HammerMod.MODVERSION))
@@ -50,13 +55,43 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.2.6";
+	public static final String MODVERSION = "1.0.2.7";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
 
 
 	private PlayerLoggedInEvent username;
+
+
+	public static boolean CUSTOM_HAMMER_1_ENCHANT_GLINT;
+
+
+	public static boolean CUSTOM_HAMMER_1;
+
+
+	public static Property CUSTOM_HAMMER_1_NAME;
+
+
+	public static Object CUSTOM_HAMMER_1_TOOLMATERIAL;
+
+
+	public static Property CUSTOM_HAMMER_1_TEXTURE;
+
+
+	public static Property CUSTOM_HAMMER_DESC_1;
+
+
+	public static Property CUSTOM_HAMMER_1_LANG_NAME;
+
+
+	public static Property CUSTOM_HAMMER_1_MATERIALMODIFIER;
+
+
+	public static Property CUSTOM_HAMMER_1_CRAFT;
+
+
+	public static final String CATEGORY_CUSTOM_HAMMERS = "Custom Hammers";
 
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 	//public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 1, 4);
@@ -71,6 +106,45 @@ public class HammerMod
 @Mod.EventHandler
 public void preInit(FMLPreInitializationEvent event)
 {
+	
+	Configuration config = new Configuration(event.getSuggestedConfigurationFile());
+	event.getModConfigurationDirectory();
+	event.getModConfigurationDirectory();
+	event.getModLog();
+	event.getModMetadata();
+	event.getModState();
+	event.getSide();
+	event.getVersionProperties();
+	
+	
+	config.load();
+	config.getLoadedConfigVersion();
+	
+	
+	CUSTOM_HAMMER_1 = config.get(CATEGORY_CUSTOM_HAMMERS, "Enable Custom Hammer 1", false).getBoolean(false);
+	CUSTOM_HAMMER_1_NAME = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Internal Name", "CustomHammer1");
+	CUSTOM_HAMMER_1_LANG_NAME = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Name", "Custom Hammer 1");
+	CUSTOM_HAMMER_1_TOOLMATERIAL = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Tool Material", "IRON");
+	CUSTOM_HAMMER_1_MATERIALMODIFIER = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Material Modifier", 16);
+	CUSTOM_HAMMER_1_TEXTURE = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Texture", "hammermod:\\custom\\custom_1");
+	CUSTOM_HAMMER_DESC_1 = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Description", "I'm A Custom Hammer");
+	CUSTOM_HAMMER_1_CRAFT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Crafting Recipe", "XXX, NSN, NSN, 'X', Items.ingotIron, 'S', Items.stick");
+	CUSTOM_HAMMER_1_ENCHANT_GLINT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Enchantment Effect", false).getBoolean(false);
+	
+	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
+	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
+	//config.getCategoryNames();
+		
+	config.save();
+	
+	event.getModLog();
+	event.getModState();
+	//Configuration configFile = new Configuration(event.getSuggestedConfigurationFile());
+	
+	//loadConfiguration(configFile);
+	
+	System.out.println(MODID + " >>> Configuration File Loaded");
+	
 	
 	ModRegistry.registerMods();
 	PlayerChecker.checkPlayer(username);
@@ -94,6 +168,7 @@ public void init(FMLInitializationEvent event)
 
 	PlayerChecker.checkPlayer(username);
 	
+
 	//=========VILLAGE_BLACKSMITH Start========================================
 	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemAdaminiteHammer), 0, 1, 1));
 	ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(ItemLoader.ItemAmberBearingStoneHammer), 0, 1, 1));
@@ -733,7 +808,32 @@ public static CreativeTabs HammerMod = new CreativeTabs("HammerMod")
 		return false;
 	}
 	*/
+	};
+/**
+public static CreativeTabs CommunityHammers = new CreativeTabs("CommunityHammers")
+
+{
+	public Item getTabIconItem() {
+
+		return new ItemStack(ItemLoader.ItemCryingObsidainHammer).getItem();
 	}
+	public boolean hasSearchBar(){
+		return false;
+	}
+	/*
+	@SideOnly(Side.CLIENT)
+	public String getBackgroundImageName() 
+	{
+		return "EpicProportionsMod_Halloween.png";
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public boolean drawInForegroundOfTab() 
+	{
+		return false;
+	}
+	
+	}*/
 	
 ;
 
