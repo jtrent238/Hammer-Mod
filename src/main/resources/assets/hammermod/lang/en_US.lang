@@ -29,7 +29,7 @@ item.ItemRedstoneHammer.name=Redstone Hammer
 item.ItemLapizHammer.name=Lapis Hammer
 item.ItemJadeHammer.name=Jade Hammer
 item.ItemAmethystHammer.name=Amethyst Hammer
-item.ItemGraphite.name=Graphite Hammer
+item.ItemGraphiteHammer.name=Graphite Hammer
 item.ItemCitrineHammer.name=Citrine Hammer
 item.ItemPierreHammer.name=Pierre Hammer
 item.ItemNetherackHammer.name=Netherack Hammer
@@ -69,6 +69,9 @@ item.ItemXychoriumHammer.name=Xychorium Hammer
 item.ItemThackAttack_MCHammer.name=ThackAttack_MC Hammer
 item.ItemCryingObsidainHammer.name=Crying Obsidain Hammer
 item.ItemMythicalHammer.name=Mythical Hammer
+item.Item_MrGregor_Hammer.name=_MrGregor_ Hammer
+item.ItemToasterHammer.name=Toaster Hammer
+
 	/Weapons & Tools
 	/Armor
 	/Spawn Eggs
@@ -85,16 +88,22 @@ item.ItemMythicalHammer.name=Mythical Hammer
 //Achievements
 achievement.boom=Pssst! BOOM!
 achievement.boom.desc=Explode a Creeper Hammer
+achievement.toast=Umm... TOAST!
+achievement.toast.desc=Make some Toast with the Toaster Hammer
 
 //Enchantments
 //Potions
+
 //ToolTips
 tooltip.hammermod.communityhammer=Community Hammer
+tooltip.hammermod.ythammer=YouTuber Hammer
 tooltip.hammermod.ItemCryingObsidainHammer.createdby=Hammer Designed By: Thefancyman
 tooltip.hammermod.ItemMythicalHammer.createdby=Hammer Designed By: _Answers_
+tooltip.hammermod.ItemToasterHammer.createdby=Hammer Designed By: qwas_1234
 
 //Stats
 stat.chexplosions=Creeper Hammer Explosions
+stat.thbaked=Toast baked with Toaster Hammer.
 
 //Creative Tabs
 itemGroup.HammerMod=jtrent238's Hammer Mod

@@ -66,6 +66,7 @@ public class Recipes {
 		 * Community Hammers
 		 */
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCryingObsidainHammer), "BOB", "OHO", "LOW", 'B', Items.blaze_powder , 'O' , Blocks.obsidian, 'H', ItemLoader.ItemIronHammer, 'L', Items.lava_bucket, 'W', Items.water_bucket);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemToasterHammer), "IBI", "ISI", "ZSZ", 'B', Items.bread , 'I' , Items.iron_ingot, 'S', Items.stick);
 
 	}
 	

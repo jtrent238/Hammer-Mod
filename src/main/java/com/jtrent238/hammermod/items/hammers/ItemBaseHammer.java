@@ -5,9 +5,12 @@ import java.util.Set;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
+import com.jtrent238.hammermod.Abilities;
+import com.jtrent238.hammermod.HammerMod;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -17,6 +20,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
+import net.minecraft.potion.Potion;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
 
@@ -148,7 +152,22 @@ public class ItemBaseHammer extends ItemPickaxe {
         {
             p_150894_1_.damageItem(1, p_150894_7_);
         }
-
+        	
+        	/*
+        if (Abilities.hulkSmash == true) {
+        	Minecraft.getMinecraft().thePlayer.canHarvestBlock(Blocks.bedrock);
+        	p_150894_7_.playSound("hammermod:hulksmash", 5F, 5F);
+        	Minecraft.getMinecraft().thePlayer.getBreakSpeed(p_150894_3_, true, 0, p_150894_4_, p_150894_5_, p_150894_6_);
+        	p_150894_1_.damageItem(100, p_150894_7_);
+        	//Abilities.hulkSmash = false;
+        }
+        	*/
+        
+        if(HammerMod.SMASH_BREAK_SOUND == true) {
+        	p_150894_7_.playSound("hammermod:smash", 5F, 5F);
+        }
+        
+        
         return true;
     }
 

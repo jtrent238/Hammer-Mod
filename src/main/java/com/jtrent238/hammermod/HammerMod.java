@@ -2,9 +2,11 @@ package com.jtrent238.hammermod;
 
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.jtrent238.hammermod.command.CommandAbilities;
 import com.jtrent238.hammermod.command.CommandChangelog;
 import com.jtrent238.hammermod.common.CommonProxy;
 import com.jtrent238.hammermod.items.hammers.ItemBaseHammer;
@@ -55,7 +57,7 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.2.7";
+	public static final String MODVERSION = "1.0.2.8";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
@@ -65,33 +67,19 @@ public class HammerMod
 
 
 	public static boolean CUSTOM_HAMMER_1_ENCHANT_GLINT;
-
-
 	public static boolean CUSTOM_HAMMER_1;
-
-
 	public static Property CUSTOM_HAMMER_1_NAME;
-
-
 	public static Object CUSTOM_HAMMER_1_TOOLMATERIAL;
-
-
 	public static Property CUSTOM_HAMMER_1_TEXTURE;
-
-
 	public static Property CUSTOM_HAMMER_DESC_1;
-
-
 	public static Property CUSTOM_HAMMER_1_LANG_NAME;
-
-
 	public static Property CUSTOM_HAMMER_1_MATERIALMODIFIER;
-
-
 	public static Property CUSTOM_HAMMER_1_CRAFT;
-
-
+	
+	public static boolean SMASH_BREAK_SOUND;
+	public static boolean TOASTER_BREAK_SOUND;
 	public static final String CATEGORY_CUSTOM_HAMMERS = "Custom Hammers";
+	public static final String CATEGORY_SETTINGS = "Settings";
 
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 	//public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 1, 4);
@@ -131,8 +119,12 @@ public void preInit(FMLPreInitializationEvent event)
 	CUSTOM_HAMMER_1_CRAFT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Crafting Recipe", "XXX, NSN, NSN, 'X', Items.ingotIron, 'S', Items.stick");
 	CUSTOM_HAMMER_1_ENCHANT_GLINT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Enchantment Effect", false).getBoolean(false);
 	
+	SMASH_BREAK_SOUND = config.get(CATEGORY_SETTINGS, "HammerCustomBreakSound", false).getBoolean(false);
+	TOASTER_BREAK_SOUND = config.get(CATEGORY_SETTINGS, "ToasterCustomBreakSound", true).getBoolean(true);
+	
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
+	config.addCustomCategoryComment(CATEGORY_SETTINGS, "Settings");
 	//config.getCategoryNames();
 		
 	config.save();
@@ -869,6 +861,7 @@ public void serverStart(FMLServerStartingEvent event)
      
      //manager.registerCommand(new CommandModInfo());
      manager.registerCommand(new CommandChangelog());
+     manager.registerCommand(new CommandAbilities());
 }
 
 					

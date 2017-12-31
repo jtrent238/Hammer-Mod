@@ -172,7 +172,7 @@ public class ItemLoader {
 	 */
 	public static Item ItemCryingObsidainHammer;
 	public static Item ItemMythicalHammer;
-	
+	public static Item ItemToasterHammer;
 	/*
 	 * Custom Hammers
 	 */
@@ -227,7 +227,7 @@ public class ItemLoader {
 	
 	public static ToolMaterial CRYOBBY = EnumHelper.addToolMaterial("CRYOBBY", 3, 8000, 6, 6, 10);
 	public static ToolMaterial MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10, 15, 5);
-	
+	public static ToolMaterial TOASTER = EnumHelper.addToolMaterial("TOASTER", 1, 30000, 1000, (float) 0.5, 10);
 	
 	
 	
@@ -329,6 +329,7 @@ public class ItemLoader {
 		 */
 		ItemCryingObsidainHammer  = new ItemCryingObsidainHammer(CRYOBBY).setUnlocalizedName("ItemCryingObsidainHammer").setTextureName("hammermod:ItemCryingObsidainHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemMythicalHammer  = new ItemMythicalHammer(MYTHICAL).setUnlocalizedName("ItemMythicalHammer").setTextureName("hammermod:ItemMythicalHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemToasterHammer = new ItemToasterHammer(TOASTER).setUnlocalizedName("ItemToasterHammer").setTextureName("hammermod:ItemToasterHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		/*
 		 * Custom Hammers
@@ -433,7 +434,8 @@ public class ItemLoader {
 		 */
 		GameRegistry.registerItem(ItemCryingObsidainHammer, ItemCryingObsidainHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemMythicalHammer, ItemMythicalHammer.getUnlocalizedName().substring(5));
-		
+		GameRegistry.registerItem(ItemToasterHammer, ItemToasterHammer.getUnlocalizedName().substring(5));
+
 		/*
 		 * Custom Hammers
 		 */

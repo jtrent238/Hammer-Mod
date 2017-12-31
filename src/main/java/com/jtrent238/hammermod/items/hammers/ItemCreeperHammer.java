@@ -9,6 +9,8 @@ import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
@@ -42,6 +44,9 @@ public class ItemCreeperHammer extends ItemBaseHammer{
 			
 			
 		}
+	
+	else
+		entityplayer.addChatMessage(new ChatComponentTranslation(EnumChatFormatting.RED + "NO GUNPOWDER!!!", new Object[0]));
 	
 			return itemstack;
     }

@@ -1,5 +1,10 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.2.8
+- Added Toaster Hammer
+- Added YouTuber Hammer Tooltips
+- Added Error for Creeper Hammer if player has no GunPowder
+- Fixed Graphite Hammer Name
 1.0.2.7
 - Added Custom Hammers Feature [WIP]
 - Added Crying Obsidain Hammer
