@@ -211,7 +211,9 @@ public class ItemLoader {
 	public static ToolMaterial NETHERACK = EnumHelper.addToolMaterial("NETHERACK", 1, 400, 5.0F, 2.0F, 8);
 	public static ToolMaterial SOULSAND = EnumHelper.addToolMaterial("SOULSAND", 1, 60, 2.0F, 1.0F, 5);
 	public static ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 450, 2.0F, 1.0F, 4);
-	
+	public static ToolMaterial DRAGEGG = EnumHelper.addToolMaterial("DRAGEGG", 3 * dEgg, 1561 * dEgg, 8.0F * dEgg, 3.0F * dEgg, 10 * dEgg);
+	public static ToolMaterial TNT = EnumHelper.addToolMaterial("TNT", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * bRock, 1561 * bRock, 8.0F * bRock, 3.0F * bRock, 10 * bRock);
 	// TO BE FILLED IN LATER
 	public static ToolMaterial CHARCOAL = EnumHelper.addToolMaterial("CHARCOAL", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial ENDSTONE = EnumHelper.addToolMaterial("ENDSTONE", 3, 1561, 8.0F, 3.0F, 10);
@@ -287,12 +289,16 @@ public class ItemLoader {
 		ItemPackedIceHammer = new ItemPackedIceHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPackedIceHammer").setTextureName("hammermod:ItemPackedIceHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemSnowHammer = new ItemSnowHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSnowHammer").setTextureName("hammermod:ItemSnowHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemCakeHammer = new ItemCakeHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCakeHammer").setTextureName("hammermod:ItemCakeHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemDragonEggHammer = new ItemDragonEggHammer(DRAGEGG).setUnlocalizedName("ItemDragonEggHammer").setTextureName("hammermod:ItemDragonEggHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemTntHammer = new ItemTntHammer(TNT).setUnlocalizedName("ItemTntHammer").setTextureName("hammermod:ItemTntHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemBedrockHammer = new ItemBedrockHammer(BEDROCK).setUnlocalizedName("ItemBedrockHammer").setTextureName("hammermod:ItemBedrockHammer").setCreativeTab(HammerMod.HammerMod);
 
 		/*
 		 * Mob Hammers
 		 */
-		ItemCreeperHammer = new ItemCreeperHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCreeperHammer").setTextureName("hammermod:ItemCreeperHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemPigHammer = new ItemPigHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPigHammer").setTextureName("hammermod:ItemPigHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCreeperHammer = new ItemCreeperHammer(CREEPER).setUnlocalizedName("ItemCreeperHammer").setTextureName("hammermod:ItemCreeperHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemPigHammer = new ItemPigHammer(PIG).setUnlocalizedName("ItemPigHammer").setTextureName("hammermod:ItemPigHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCowHammer = new ItemCowHammer(COW).setUnlocalizedName("ItemCowHammer").setTextureName("hammermod:ItemCowHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		/*
 		 * Hammers Using Ores from other mods
@@ -319,6 +325,9 @@ public class ItemLoader {
 		ItemAdaminiteHammer = new ItemAdaminiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAdaminiteHammer").setTextureName("hammermod:ItemAdaminiteHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemShinyHammer = new ItemShinyHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemShinyHammer").setTextureName("hammermod:ItemShinyHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemXychoriumHammer = new ItemXychoriumHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemXychoriumHammer").setTextureName("hammermod:ItemXychoriumHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemUraniumHammer = new ItemUraniumHammer(URANIUM).setUnlocalizedName("ItemUraniumHammer").setTextureName("hammermod:ItemUraniumHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemTitaniumHammer = new ItemTitaniumHammer(TITANIUM).setUnlocalizedName("ItemTitaniumHammer").setTextureName("hammermod:ItemTitaniumHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAdamantiteHammer = new ItemAdamantiteHammer(ADAM).setUnlocalizedName("ItemAdamantiteHammer").setTextureName("hammermod:ItemAdamantiteHammer").setCreativeTab(HammerMod.HammerMod);
 
 		/*
 		 * Hammers For YouTubers
@@ -392,12 +401,16 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemPackedIceHammer, ItemPackedIceHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemSnowHammer, ItemSnowHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemCakeHammer, ItemCakeHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemDragonEggHammer, ItemDragonEggHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTntHammer, ItemTntHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemBedrockHammer, ItemBedrockHammer.getUnlocalizedName().substring(5));
 
 		/*
 		 * Mob Hammers
 		 */
 		GameRegistry.registerItem(ItemCreeperHammer, ItemCreeperHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemPigHammer, ItemPigHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCowHammer, ItemCowHammer.getUnlocalizedName().substring(5));
 		
 		/*
 		 * Hammers Using Ores from other mods
@@ -424,6 +437,9 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemAdaminiteHammer, ItemAdaminiteHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemShinyHammer, ItemShinyHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemXychoriumHammer, ItemXychoriumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemUraniumHammer, ItemUraniumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTitaniumHammer, ItemTitaniumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAdamantiteHammer, ItemAdamantiteHammer.getUnlocalizedName().substring(5));
 		
 		/*
 		 * Hammers For YouTubers
