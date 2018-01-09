@@ -191,8 +191,10 @@ public class ItemLoader {
 	private static int oM = obsidianMultiplier;			//Obsidian Multiplier (Diamond * Multiplier)
 	private static int nsM = eM + oM * 2;				//Nether Star Multiplier (Diamond * Multiplier)
 	private static int deM = nsM + eM + oM * 4;			//Dragon Egg Multiplier (Diamond * Multiplier)
-	private static int YT = 10;							//YouTuber Multiplier
-	private static int JSQ_Multiplier = 10;						//xJSQ Multiplier
+	private static int brM = nsM + eM + oM * deM;			//Bedrock Multiplier (Diamond * Multiplier)
+	private static int YT = 10;					//YouTuber Multiplier
+	private static int mobM = 4					//Mob Mulitiplier
+	private static int JSQ_Multiplier = 10;				//xJSQ Multiplier
 	private static int  C1 = HammerMod.CUSTOM_HAMMER_1_MATERIALMODIFIER.getInt();
 	
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
@@ -211,9 +213,10 @@ public class ItemLoader {
 	public static ToolMaterial NETHERACK = EnumHelper.addToolMaterial("NETHERACK", 1, 400, 5.0F, 2.0F, 8);
 	public static ToolMaterial SOULSAND = EnumHelper.addToolMaterial("SOULSAND", 1, 60, 2.0F, 1.0F, 5);
 	public static ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 450, 2.0F, 1.0F, 4);
-	public static ToolMaterial DRAGEGG = EnumHelper.addToolMaterial("DRAGEGG", 3 * dEgg, 1561 * dEgg, 8.0F * dEgg, 3.0F * dEgg, 10 * dEgg);
+	public static ToolMaterial DRAGEGG = EnumHelper.addToolMaterial("DRAGEGG", 3 * deM, 1561 * deM, 8.0F * deM, 3.0F * deM, 10 * deM);
 	public static ToolMaterial TNT = EnumHelper.addToolMaterial("TNT", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * bRock, 1561 * bRock, 8.0F * bRock, 3.0F * bRock, 10 * bRock);
+	public static ToolMaterial BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * brM, 1561 * brM, 8.0F * brM, 3.0F * brM, 10 * brM);
+	
 	// TO BE FILLED IN LATER
 	public static ToolMaterial CHARCOAL = EnumHelper.addToolMaterial("CHARCOAL", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial ENDSTONE = EnumHelper.addToolMaterial("ENDSTONE", 3, 1561, 8.0F, 3.0F, 10);
@@ -224,6 +227,22 @@ public class ItemLoader {
 	public static ToolMaterial SLIME = EnumHelper.addToolMaterial("SLIME", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial MELON = EnumHelper.addToolMaterial("MELON", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial PUMPKIN = EnumHelper.addToolMaterial("PUMPKIN", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial POTATO = EnumHelper.addToolMaterial("POTATO", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial CARROT = EnumHelper.addToolMaterial("CARROT", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial APPLE = EnumHelper.addToolMaterial("APPLE", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial ICE = EnumHelper.addToolMaterial("ICE", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial PACKED_ICE = EnumHelper.addToolMaterial("PACKED_ICE", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial SNOW = EnumHelper.addToolMaterial("SNOW", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial CAKE = EnumHelper.addToolMaterial("CAKE", 3, 1561, 8.0F, 3.0F, 10);
+		
+	//Ores from other mods
+	public static ToolMaterial URANIUM = EnumHelper.addToolMaterial("URANIUM", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial ADAM = EnumHelper.addToolMaterial("ADAM", 3, 1561, 8.0F, 3.0F, 10);
+	
+	public static ToolMaterial CREEPER = EnumHelper.addToolMaterial("CREEPER", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
+	public static ToolMaterial PIG = EnumHelper.addToolMaterial("PIG", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
+	public static ToolMaterial COW = EnumHelper.addToolMaterial("COW", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
 	
 	
 	public static ToolMaterial PAT = EnumHelper.addToolMaterial("PAT", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
@@ -282,13 +301,13 @@ public class ItemLoader {
 		ItemSlimeHammer = new ItemSlimeHammer(SLIME).setUnlocalizedName("ItemSlimeHammer").setTextureName("hammermod:ItemSlimeHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemMelonHammer = new ItemMelonHammer(MELON).setUnlocalizedName("ItemMelonHammer").setTextureName("hammermod:ItemMelonHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemPumpkinHammer = new ItemPumpkinHammer(PUMPKIN).setUnlocalizedName("ItemPumpkinHammer").setTextureName("hammermod:ItemPumpkinHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemPotatoHammer = new ItemPotatoHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPotatoHammer").setTextureName("hammermod:ItemPotatoHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemCarrotHammer = new ItemCarrotHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCarrotHammer").setTextureName("hammermod:ItemCarrotHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemAppleHammer = new ItemAppleHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAppleHammer").setTextureName("hammermod:ItemAppleHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemIceHammer = new ItemIceHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemIceHammer").setTextureName("hammermod:ItemIceHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemPackedIceHammer = new ItemPackedIceHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemPackedIceHammer").setTextureName("hammermod:ItemPackedIceHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemSnowHammer = new ItemSnowHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSnowHammer").setTextureName("hammermod:ItemSnowHammer").setCreativeTab(HammerMod.HammerMod);
-		ItemCakeHammer = new ItemCakeHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCakeHammer").setTextureName("hammermod:ItemCakeHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemPotatoHammer = new ItemPotatoHammer(POTATO).setUnlocalizedName("ItemPotatoHammer").setTextureName("hammermod:ItemPotatoHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCarrotHammer = new ItemCarrotHammer(CARROT).setUnlocalizedName("ItemCarrotHammer").setTextureName("hammermod:ItemCarrotHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAppleHammer = new ItemAppleHammer(APPLE).setUnlocalizedName("ItemAppleHammer").setTextureName("hammermod:ItemAppleHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemIceHammer = new ItemIceHammer(ICE).setUnlocalizedName("ItemIceHammer").setTextureName("hammermod:ItemIceHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemPackedIceHammer = new ItemPackedIceHammer(PACKED_ICE).setUnlocalizedName("ItemPackedIceHammer").setTextureName("hammermod:ItemPackedIceHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSnowHammer = new ItemSnowHammer(SNOW).setUnlocalizedName("ItemSnowHammer").setTextureName("hammermod:ItemSnowHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCakeHammer = new ItemCakeHammer(CAKE).setUnlocalizedName("ItemCakeHammer").setTextureName("hammermod:ItemCakeHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemDragonEggHammer = new ItemDragonEggHammer(DRAGEGG).setUnlocalizedName("ItemDragonEggHammer").setTextureName("hammermod:ItemDragonEggHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemTntHammer = new ItemTntHammer(TNT).setUnlocalizedName("ItemTntHammer").setTextureName("hammermod:ItemTntHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemBedrockHammer = new ItemBedrockHammer(BEDROCK).setUnlocalizedName("ItemBedrockHammer").setTextureName("hammermod:ItemBedrockHammer").setCreativeTab(HammerMod.HammerMod);
