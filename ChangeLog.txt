@@ -5,6 +5,7 @@ jtrent238's HammerMod ChangeLog
 - Added YouTuber Hammer Tooltips
 - Added Error for Creeper Hammer if player has no GunPowder
 - Fixed Graphite Hammer Name
+
 1.0.2.7
 - Added Custom Hammers Feature [WIP]
 - Added Crying Obsidain Hammer
