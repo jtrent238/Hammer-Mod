@@ -119,6 +119,9 @@ public class ItemLoader {
 	public static Item ItemPackedIceHammer;
 	public static Item ItemSnowHammer;
 	public static Item ItemCakeHammer;
+	public static Item ItemDragonEggHammer;
+	public static Item ItemTntHammer;
+	public static Item ItemBedrockHammer;
 	
 	
 	
@@ -128,6 +131,7 @@ public class ItemLoader {
 	 */
 	public static Item ItemCreeperHammer;
 	public static Item ItemPigHammer;
+	public static Item ItemCowHammer;
 	
 	
 	/*
@@ -155,6 +159,9 @@ public class ItemLoader {
 	public static Item ItemAdaminiteHammer;
 	public static Item ItemShinyHammer;
 	public static Item ItemXychoriumHammer;
+	Public static Item ItemUraniumHammer;
+	public static Item ItemTitaniumHammer;
+	public static Item ItemAdamantiteHammer;
 	
 	/*
 	 * Hammers For YouTubers
