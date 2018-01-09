@@ -71,6 +71,12 @@ item.ItemCryingObsidainHammer.name=Crying Obsidain Hammer
 item.ItemMythicalHammer.name=Mythical Hammer
 item.Item_MrGregor_Hammer.name=_MrGregor_ Hammer
 item.ItemToasterHammer.name=Toaster Hammer
+item.ItemCowHammer.name=Cow Hammer
+item.ItemBedrockHammer.name=Bedrock Hammer
+item.ItemDragonEggHammer.name=DragonEgg Hammer
+item.ItemTntHammer.name=TNT Hammer
+item.ItemTitaniumHammer.name=Titanium Hammer
+item.ItemUraniumHammer.name=Uranium Hammer
 
 	/Weapons & Tools
 	/Armor

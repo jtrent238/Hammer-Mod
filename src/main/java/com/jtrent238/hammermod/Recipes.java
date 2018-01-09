@@ -61,6 +61,9 @@ public class Recipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemPackedIceHammer), "XXX", "XSX", "BSB", 'X', Blocks.packed_ice , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemSnowHammer), "XXX", "XSX", "BSB", 'X', Blocks.snow , 'S' , Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemCakeHammer), "XXX", "XSX", "BSB", 'X', Blocks.cake , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemDragonEggHammer), "XXX", "XSX", "BSB", 'X', Blocks.dragon_egg , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemTntHammer), "XXX", "XSX", "BSB", 'X', Blocks.tnt , 'S' , Items.stick);
+		GameRegistry.addShapedRecipe(new ItemStack(ItemLoader.ItemBedrockHammer), "XXX", "XSX", "BSB", 'X', Blocks.bedrock , 'S' , Items.stick);
 
 		/*
 		 * Community Hammers
@@ -115,6 +118,8 @@ public class Recipes {
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemAdaminiteHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotAdamintite", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemShinyHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotPlatinum", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemXychoriumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemXychorium", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemTitaniumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotTitanium", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemUraniumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotUranium", 'S', Items.stick}));
 
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemxJSQHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot_xJSQ", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemDanTDMHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot_DanTDM", 'S', Items.stick}));
