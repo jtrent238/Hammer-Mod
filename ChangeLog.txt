@@ -1,5 +1,13 @@
 jtrent238's HammerMod ChangeLog
 
+1.0.2.10
+- Added Bloodstone Hammer
+- Added Rusted Hammer
+- Added Rosite Hammer
+- Added Limonite Hammer
+- Added Explosions to TNT Hammer
+- Added es_ES.lang file
+
 1.0.2.9
 - Added Cow Hammer
 - Added Bedrock Hammer
