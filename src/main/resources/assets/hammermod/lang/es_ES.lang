@@ -1,0 +1,120 @@
+// Archivo de Hammer Mod Lang de jtrent238
+// es_ES
+
+//Artículos
+item.ItemWoodHammer.name = Martillo de madera
+item.ItemStoneHammer.name = Martillo de piedra
+item.ItemIronHammer.name = Martillo de hierro
+item.ItemGoldHammer.name = Gold Hammer
+item.ItemDiamondHammer.name = Martillo de diamante
+item.ItemCopperHammer.name = Martillo de cobre
+item.ItemBronzeHammer.name = Martillo de bronce
+item.ItemCreeperHammer.name = Martillo enredadera
+item.ItemPigHammer.name = Martillo Cerdo
+item.ItemDirtHammer.name = Martillo de suciedad
+item.ItemGlassHammer.name = Martillo de vidrio
+item.ItemSandHammer.name = Martillo de arena
+item.ItemCactusHammer.name = Cactus Hammer
+item.ItemGravelHammer.name = Martillo de grava
+item.ItemSilverHammer.name = Silver Hammer
+item.ItemWoolHammer_white.name = Martillo de lana blanco
+item.ItemTungstenHammer.name = Martillo de tungsteno
+item.ItemRubyHammer.name = Ruby Hammer
+item.ItemEmeraldHammer.name = Martillo Esmeralda
+item.ItemTinHammer.name = Martillo de estaño
+item.ItemGrassHammer.name = Martillo de pasto
+item.ItemObsidianHammer.name = Martillo de Obsidiana
+item.ItemGlowstoneHammer.name = Martillo Glowstone
+item.ItemRedstoneHammer.name = Martillo Redstone
+item.ItemLapizHammer.name = Lapis Hammer
+item.ItemJadeHammer.name = Martillo de Jade
+item.ItemAmethystHammer.name = Martillo de amatista
+item.ItemGraphiteHammer.name = Martillo de grafito
+item.ItemCitrineHammer.name = Martillo de citrino
+item.ItemPierreHammer.name = Pierre Hammer
+item.ItemNetherackHammer.name = Martillo Netherack
+item.ItemSoulSandHammer.name = Alma arena Martillo
+item.ItemCoalHammer.name = Martillo de carbón
+item.ItemCharcoalHammer.name = Martillo de carbón
+item.ItemEndstoneHammer.name = Martillo de piedra final
+item.ItemBoneHammer.name = Martillo de hueso
+item.ItemSapphireHammer.name = Martillo de zafiro
+item.ItemOnyxHammer.name = Martillo de Onyx
+item.ItemNikoliteHammer.name = Martillo Nikolite
+item.ItemSilicaHammer.name = Martillo de sílice
+item.ItemSpongeHammer.name = Martillo de esponja
+item.ItemBrickHammer.name = Martillo de ladrillo
+item.ItemSugarHammer.name = Martillo de azúcar
+item.ItemSlimeHammer.name = Martillo de baba
+item.ItemMelonHammer.name = Martillo de melón
+item.ItemPumpkinHammer.name = Martillo de calabaza
+item.ItemPotatoHammer.name = Martillo de patata
+item.ItemCarrotHammer.name = Martillo de zanahoria
+item.ItemPatHammer.name = Martillo FuriousDestroyer
+item.ItemJenHammer.name = Martillo SuperGirlyGamer
+item.ItemDanTDMHammer.name = Martillo DanTDM
+item.ItemxJSQHammer.name = martillo xJSQ
+item.ItemSkyTheKidRSHammer.name = Martillo SkyTheKidRS
+item.ItemAppleHammer.name = Martillo de manzana
+item.ItemIceHammer.name = Martillo de hielo
+item.ItemPackedIceHammer.name = Martillo de hielo lleno
+item.ItemSnowHammer.name = Martillo de nieve
+item.ItemCakeHammer.name = Martillo para pastel
+item.ItemCinnabarHammer.name = Martillo de cinabrio
+item.ItemAmberBearingStoneHammer.name = Martillo de piedra con cojinete ámbar
+item.ItemFerrousHammer.name = Martillo ferroso
+item.ItemAdaminiteHammer.name = Martillo Adaminita
+item.ItemShinyHammer.name = Martillo brillante
+item.ItemXychoriumHammer.name = Martillo Xychorium
+item.ItemThackAttack_MCHammer.name = ThackAttack_MC Hammer
+item.ItemCryingObsidainHammer.name = Martillo de obsidiana que llora
+item.ItemMythicalHammer.name = Martillo mítico
+item.Item_MrGregor_Hammer.name = _MrGregor_ Hammer
+item.ItemToasterHammer.name = Martillo de la tostadora
+item.ItemCowHammer.name = Martillo de vaca
+item.ItemBedrockHammer.name = Martillo de lecho de roca
+item.ItemDragonEggHammer.name = Martillo DragonEgg
+item.ItemTntHammer.name = Martillo TNT
+item.ItemTitaniumHammer.name = Martillo de titanio
+item.ItemUraniumHammer.name = Martillo de uranio
+item.ItemBloodStoneHammer.name = Martillo de Bloodstone
+item.ItemRustedHammer.name = Martillo oxidado
+item.ItemRositeHammer.name = Martillo de Rosita
+item.ItemLimoniteHammer.name = Martillo de limonita
+/ Armas y herramientas
+/Armadura
+/ Huevos de puesta
+
+// Bloques
+
+// Entidades
+
+// Mod Devs And Helpers
+
+//Envase
+// Generadores
+
+// Logros
+achievement.boom = Pssst! ¡AUGE!
+achievement.boom.desc = Explotar un martillo enredadera
+achievement.toast = Umm ... ¡TOSTADO!
+achievement.toast.desc = Hacer un brindis con el martillo tostador
+
+// Encantamientos
+// Pociones
+
+// Información sobre herramientas
+tooltip.hammermod.communityhammer = Community Hammer
+tooltip.hammermod.ythammer = YouTuber Hammer
+tooltip.hammermod.ItemCryingObsidainHammer.createdby = Martillo Diseñado por: Thefancyman
+tooltip.hammermod.ItemMythicalHammer.createdby = Martillo Diseñado por: _Answers_
+tooltip.hammermod.ItemToasterHammer.createdby = Hammer Diseñado por: qwas_1234
+
+// Estadísticas
+stat.chexplosions = Creeper Hammer Explosions
+stat.thbaked = Tostada al horno con martillo tostador.
+
+// Pestañas creativas
+itemGroup.HammerMod = Mod Hammer de jtrent238
+
+// Misc
