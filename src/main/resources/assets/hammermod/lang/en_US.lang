@@ -77,7 +77,10 @@ item.ItemDragonEggHammer.name=DragonEgg Hammer
 item.ItemTntHammer.name=TNT Hammer
 item.ItemTitaniumHammer.name=Titanium Hammer
 item.ItemUraniumHammer.name=Uranium Hammer
-
+item.ItemBloodStoneHammer.name=Bloodstone Hammer
+item.ItemRustedHammer.name=Rusted Hammer
+item.ItemRositeHammer.name=Rosite Hammer
+item.ItemLimoniteHammer.name=Limonite Hammer
 	/Weapons & Tools
 	/Armor
 	/Spawn Eggs
