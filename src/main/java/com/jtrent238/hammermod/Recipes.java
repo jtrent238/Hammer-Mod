@@ -99,6 +99,8 @@ public class Recipes {
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemJadeHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemJade", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemAmethystHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotAmethest", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemAmethystHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemAmethest", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemAmethystHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotAmethyst", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemAmethystHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemAmethyst", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemGraphiteHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotGraphite", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemCitrineHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotCitrine", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemPierreHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotPierre", 'S', Items.stick}));
