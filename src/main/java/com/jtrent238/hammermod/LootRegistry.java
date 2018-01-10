@@ -95,9 +95,6 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemRositeHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemLimoniteHammer));
 
-
-
-
 		hammers.add(new ItemStack(ItemLoader.ItemPatHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemJenHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemDanTDMHammer));
