@@ -90,6 +90,13 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemXychoriumHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemUraniumHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemTitaniumHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemBloodStoneHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemRustedHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemRositeHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemLimoniteHammer));
+
+
+
 
 		hammers.add(new ItemStack(ItemLoader.ItemPatHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemJenHammer));
@@ -106,7 +113,7 @@ public class LootRegistry {
 	}
 
 	public static void addToChests() {
-		int numHammers = 75;
+		int numHammers = 79;
 		for (int i = 0; i < numHammers ; i++) {
 			
 				if(HammerMod.DEBUG_MODE == true) {
