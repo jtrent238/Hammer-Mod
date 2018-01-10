@@ -122,11 +122,20 @@ public class Recipes {
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemXychoriumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemXychorium", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemTitaniumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotTitanium", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemUraniumHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotUranium", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemBloodStoneHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "gemBloodStone", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemRustedHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotRustedIron", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemRositeHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotLimonite", 'S', Items.stick}));
+		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemLimoniteHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingotRosite", 'S', Items.stick}));
 
+		//For my YouTuber mod
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemxJSQHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot_xJSQ", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemDanTDMHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot_DanTDM", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.ItemSkyTheKidRSHammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot_skythekidRS", 'S', Items.stick}));
 		GameRegistry.addRecipe((IRecipe) new ShapedOreRecipe(ItemLoader.Item_MrGregor_Hammer, true, new Object[]{"FFF", "FSF", "BSB", Character.valueOf('F'), "ingot__MrGregor_", 'S', Items.stick}));
+
+		
+
+
 
     }
 	
