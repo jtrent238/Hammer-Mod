@@ -168,6 +168,10 @@ public class ItemLoader {
 	public static Item ItemXychoriumHammer;
 	public static Item ItemUraniumHammer;
 	public static Item ItemTitaniumHammer;
+	public static Item ItemBloodStoneHammer;
+	public static Item ItemRustedHammer;
+	public static Item ItemRositeHammer;
+	public static Item ItemLimoniteHammer;
 
 	/*
 	 * Hammers For YouTubers
@@ -352,7 +356,14 @@ public class ItemLoader {
 		ItemXychoriumHammer = new ItemXychoriumHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemXychoriumHammer").setTextureName("hammermod:ItemXychoriumHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemUraniumHammer = new ItemUraniumHammer(URANIUM).setUnlocalizedName("ItemUraniumHammer").setTextureName("hammermod:ItemUraniumHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemTitaniumHammer = new ItemTitaniumHammer(TITANIUM).setUnlocalizedName("ItemTitaniumHammer").setTextureName("hammermod:ItemTitaniumHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemBloodStoneHammer = new ItemBloodStoneHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemBloodStoneHammer").setTextureName("hammermod:ItemBloodStoneHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemRustedHammer = new ItemRustedHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemRustedHammer").setTextureName("hammermod:ItemRustedHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemRositeHammer = new ItemRositeHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemRositeHammer").setTextureName("hammermod:ItemRositeHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemLimoniteHammer = new ItemLimoniteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemLimoniteHammer").setTextureName("hammermod:ItemLimoniteHammer").setCreativeTab(HammerMod.HammerMod);
 		
+
+
+
 		/*
 		 * Hammers For YouTubers
 		 */
@@ -463,6 +474,13 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemXychoriumHammer, ItemXychoriumHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemUraniumHammer, ItemUraniumHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemTitaniumHammer, ItemTitaniumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemBloodStoneHammer, ItemBloodStoneHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemRustedHammer, ItemRustedHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemRositeHammer, ItemRositeHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemLimoniteHammer, ItemLimoniteHammer.getUnlocalizedName().substring(5));
+
+
+
 
 		/*
 		 * Hammers For YouTubers
