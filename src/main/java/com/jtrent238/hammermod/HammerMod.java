@@ -57,7 +57,7 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.2.10";
+	public static final String MODVERSION = "1.0.3.9";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";

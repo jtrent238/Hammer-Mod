@@ -1,12 +1,26 @@
 jtrent238's HammerMod ChangeLog
 
-1.0.2.10
+1.0.3.9
 - Added Bloodstone Hammer
 - Added Rusted Hammer
 - Added Rosite Hammer
 - Added Limonite Hammer
+- Added Mithril Hammer
+- Added Prometheum Hammer
+- Added Hepatizon Hammer
+- Added Poop Hammer
+- Added Angmallen Hammer
+- Added Manganese Hammer
+- Added Seared Brick Hammer
+- Added Electrum Hammer
+- Added Pig Iron Hammer
+- Added Ardite Hammer
+- Added Alumite Hammer
+- Added Cobalt Hammer
+- Added Manyullyn Hammer
 - Added Explosions to TNT Hammer
 - Added es_ES.lang file
+- Changed the color of Community Hammer ToolTip
 
 1.0.2.9
 - Added Cow Hammer

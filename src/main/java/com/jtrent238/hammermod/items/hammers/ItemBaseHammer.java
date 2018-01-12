@@ -7,6 +7,7 @@ import com.google.common.collect.Multimap;
 import com.google.common.collect.Sets;
 import com.jtrent238.hammermod.Abilities;
 import com.jtrent238.hammermod.HammerMod;
+import com.jtrent238.hammermod.ItemLoader;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -14,19 +15,30 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.potion.Potion;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.event.world.BlockEvent.BreakEvent;
 
 public class ItemBaseHammer extends ItemPickaxe {
 
 
+	public static final EnumChatFormatting ToolTipColor_TWITCH = EnumChatFormatting.DARK_PURPLE;
+	public static final EnumChatFormatting ToolTipColor_YOUTUBE = EnumChatFormatting.RED;
+	public static final EnumChatFormatting ToolTipColor_COMMUNITY = EnumChatFormatting.YELLOW;
+	public static final EnumChatFormatting ToolTipColor_COMMUNITY_NAME = EnumChatFormatting.GREEN;
+	public static final EnumChatFormatting ToolTipColor_DEVELOPER = EnumChatFormatting.DARK_GREEN;
+	
 	private Object toolMaterial;
 	private Block blockMined;
 	private World world;
@@ -60,6 +72,7 @@ public class ItemBaseHammer extends ItemPickaxe {
 	
 	private static Set effectiveAgainst = Sets.newHashSet(new Block[] {
 		    Blocks.stone});
+	public static Object color;
 
 	{
 		
@@ -171,6 +184,75 @@ public class ItemBaseHammer extends ItemPickaxe {
         return true;
     }
 
+    public void onBlockBreak(BreakEvent event) {
+    	EntityPlayer player = event.getPlayer();
+
+    	if(event.world != null && player != null) {
+    		if(player.inventory.getCurrentItem().getItem() != null) {
+    			if(player.inventory.getCurrentItem().getItem().equals(this)) {
+    				int direction = MathHelper.floor_double((double)(player.rotationYaw * 4.0F / 360.0F) + 0.5D) & 3;
+
+    				ItemStack hammer = player.inventory.getCurrentItem();
+
+    				System.out.println("ITEM IN HAND IS HAMMER");
+
+    				Block block = event.block;
+
+    				World world = event.world;
+
+    				int x = event.x;
+    				int y = event.y;
+    				int z = event.z;
+
+    				NBTTagCompound cmp = hammer.stackTagCompound;
+
+    				if(cmp != null) {
+    					System.out.println("CMP IS NOT NULL");
+
+    					if(cmp.getString("MiningSize") != null) {
+    						System.out.println("MININGSIZE IS NOT NULL");
+
+    						if(cmp.getString("MiningSize").equals("1x1")) {
+    							System.out.println("1x1");
+    							return;
+    						}else if(cmp.getString("MiningSize").equals("3x3")) {
+    							//System.out.println("3x3");
+    							this.breakThreeByThree(world, x, y, z, direction);
+    						}else if(cmp.getString("MiningSize").equals("5x5")) {
+
+    						}else if(cmp.getString("MiningSize").equals("7x7")) {
+
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    
+    public void breakThreeByThree(World world, int x, int y, int z, int playerFacing) {
+    	if(playerFacing == 0 || playerFacing == 2) { //SOUTH
+    		world.func_147480_a(x, y + 1, z, true);
+    		world.func_147480_a(x - 1, y + 1, z, true);
+    		world.func_147480_a(x + 1, y + 1, z, true);
+    		world.func_147480_a(x, y - 1, z, true);
+    		world.func_147480_a(x - 1, y - 1, z, true);
+    		world.func_147480_a(x + 1, y - 1, z, true);
+    		world.func_147480_a(x - 1, y, z, true);
+    		world.func_147480_a(x + 1, y, z, true);
+    	}else {
+    		world.func_147480_a(x, y + 1, z, true);
+    		world.func_147480_a(x, y + 1, z - 1, true);
+    		world.func_147480_a(x, y + 1, z + 1, true);
+    		world.func_147480_a(x, y - 1, z, true);
+    		world.func_147480_a(x, y - 1, z - 1, true);
+    		world.func_147480_a(x, y - 1, z + 1, true);
+    		world.func_147480_a(x, y, z - 1, true);
+    		world.func_147480_a(x, y, z + 1, true);
+    	}
+    }
+    
     /**
      * Metadata-sensitive version of getStrVsBlock
      * @param itemstack The Item Stack

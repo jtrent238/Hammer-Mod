@@ -94,7 +94,21 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemRustedHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemRositeHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemLimoniteHammer));
-
+		hammers.add(new ItemStack(ItemLoader.ItemMithrilHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemPrometheumHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemHepatizonHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemPoopHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAngmallenHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemManganeseHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemSearedBrickHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemElectrumHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemPigIronHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemArditeHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAlumiteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemCobaltHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemLimoniteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemManyullynHammer));
+		
 		hammers.add(new ItemStack(ItemLoader.ItemPatHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemJenHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemDanTDMHammer));
@@ -106,11 +120,12 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemCryingObsidainHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemMythicalHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemToasterHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemDeeAxelJayHammer));
 		
 	}
 
 	public static void addToChests() {
-		int numHammers = 79;
+		int numHammers = 94;
 		for (int i = 0; i < numHammers ; i++) {
 			
 				if(HammerMod.DEBUG_MODE == true) {

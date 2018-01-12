@@ -21,7 +21,7 @@ public class ItemThackAttack_MCHammer extends ItemBaseHammer{
 	 @SideOnly(Side.CLIENT)
 	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
 	 
-		list.add(EnumChatFormatting.RED + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ythammer"));
+		list.add(ItemBaseHammer.ToolTipColor_YOUTUBE + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ythammer"));
 		
 	  }
 }

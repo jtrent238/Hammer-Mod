@@ -81,6 +81,21 @@ item.ItemBloodStoneHammer.name=Bloodstone Hammer
 item.ItemRustedHammer.name=Rusted Hammer
 item.ItemRositeHammer.name=Rosite Hammer
 item.ItemLimoniteHammer.name=Limonite Hammer
+item.ItemDeeAxelJayHammer.name=DeeAxelJay Hammer
+item.ItemMithrilHammer.name=Mithril Hammer
+item.ItemPrometheumHammer.name=Prometheum Hammer
+item.ItemHepatizonHammer.name=Hepatizon Hammer
+item.ItemPoopHammer.name=Poop Hammer
+item.ItemAngmallenHammer.name=Angmallen Hammer
+item.ItemManganeseHammer.name=Manganese Hammer
+item.ItemSearedBrickHammer.name=Seared Brick Hammer
+item.ItemElectrumHammer.name=Electrum Hammer
+item.ItemPigIronHammer.name=Pig Iron Hammer
+item.ItemArditeHammer.name=Ardite Hammer
+item.ItemAlumiteHammer.name=Alumite Hammer
+item.ItemCobaltHammer.name=Cobalt Hammer
+item.ItemManyullynHammer.name=Manyullyn Hammer
+
 	/Weapons & Tools
 	/Armor
 	/Spawn Eggs
@@ -106,6 +121,7 @@ achievement.toast.desc=Make some Toast with the Toaster Hammer
 //ToolTips
 tooltip.hammermod.communityhammer=Community Hammer
 tooltip.hammermod.ythammer=YouTuber Hammer
+tooltip.hammermod.twitchhammer=Twitch Hammer
 tooltip.hammermod.ItemCryingObsidainHammer.createdby=Hammer Designed By: Thefancyman
 tooltip.hammermod.ItemMythicalHammer.createdby=Hammer Designed By: _Answers_
 tooltip.hammermod.ItemToasterHammer.createdby=Hammer Designed By: qwas_1234

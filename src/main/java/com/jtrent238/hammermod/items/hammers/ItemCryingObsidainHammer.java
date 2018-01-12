@@ -21,8 +21,8 @@ public class ItemCryingObsidainHammer extends ItemBaseHammer{
 	@Override
 	 @SideOnly(Side.CLIENT)
 	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-	 list.add(EnumChatFormatting.LIGHT_PURPLE + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ItemCryingObsidainHammer" + "." + "createdby"));
-	 list.add(EnumChatFormatting.DARK_PURPLE + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "communityhammer"));
+	 list.add(ItemBaseHammer.ToolTipColor_COMMUNITY_NAME + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ItemCryingObsidainHammer" + "." + "createdby"));
+	 list.add(ItemBaseHammer.ToolTipColor_COMMUNITY + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "communityhammer"));
 		
 	  }
 

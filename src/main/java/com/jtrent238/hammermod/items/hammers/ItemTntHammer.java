@@ -1,6 +1,10 @@
 package com.jtrent238.hammermod.items.hammers;
 
+import net.minecraft.entity.item.EntityTNTPrimed;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
 
 public class ItemTntHammer  extends ItemBaseHammer{
 
@@ -22,6 +26,7 @@ public class ItemTntHammer  extends ItemBaseHammer{
 			}
 		
 			itemstack.damageItem(1, entityplayer);
+			return itemstack;
 		
 		}
 }
