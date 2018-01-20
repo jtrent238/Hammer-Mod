@@ -1,98 +1,6 @@
 package com.jtrent238.hammermod;
 
-import com.jtrent238.hammermod.items.hammers.ItemAdamantiteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAdaminiteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAlumiteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAmberBearingStoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAmethystHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAngmallenHammer;
-import com.jtrent238.hammermod.items.hammers.ItemAppleHammer;
-import com.jtrent238.hammermod.items.hammers.ItemArditeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemBedrockHammer;
-import com.jtrent238.hammermod.items.hammers.ItemBloodStoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemBoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemBrickHammer;
-import com.jtrent238.hammermod.items.hammers.ItemBronzeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCactusHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCakeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCarrotHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCharcoalHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCinnabarHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCitrineHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCoalHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCobaltHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCopperHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCowHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCreeperHammer;
-import com.jtrent238.hammermod.items.hammers.ItemCryingObsidainHammer;
-import com.jtrent238.hammermod.items.hammers.ItemDanTDMHammer;
-import com.jtrent238.hammermod.items.hammers.ItemDeeAxelJayHammer;
-import com.jtrent238.hammermod.items.hammers.ItemDiamondHammer;
-import com.jtrent238.hammermod.items.hammers.ItemDirtHammer;
-import com.jtrent238.hammermod.items.hammers.ItemDragonEggHammer;
-import com.jtrent238.hammermod.items.hammers.ItemElectrumHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGlassHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGlowstoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGoldHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGraphiteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGrassHammer;
-import com.jtrent238.hammermod.items.hammers.ItemGravelHammer;
-import com.jtrent238.hammermod.items.hammers.ItemHepatizonHammer;
-import com.jtrent238.hammermod.items.hammers.ItemIceHammer;
-import com.jtrent238.hammermod.items.hammers.ItemIronHammer;
-import com.jtrent238.hammermod.items.hammers.ItemJadeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemJenHammer;
-import com.jtrent238.hammermod.items.hammers.ItemLapizHammer;
-import com.jtrent238.hammermod.items.hammers.ItemLimoniteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemManganeseHammer;
-import com.jtrent238.hammermod.items.hammers.ItemManyullynHammer;
-import com.jtrent238.hammermod.items.hammers.ItemMelonHammer;
-import com.jtrent238.hammermod.items.hammers.ItemMithrilHammer;
-import com.jtrent238.hammermod.items.hammers.ItemMythicalHammer;
-import com.jtrent238.hammermod.items.hammers.ItemNetherackHammer;
-import com.jtrent238.hammermod.items.hammers.ItemNikoliteHammer;
-import com.jtrent238.hammermod.items.hammers.ItemObsidianHammer;
-import com.jtrent238.hammermod.items.hammers.ItemOnyxHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPackedIceHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPatHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPierreHammer;
-import com.jtrent238.hammermod.items.hammers.ItemEmeraldHammer;
-import com.jtrent238.hammermod.items.hammers.ItemEndstoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemFerrousHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPigHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPigIronHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPoopHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPotatoHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPrometheumHammer;
-import com.jtrent238.hammermod.items.hammers.ItemPumpkinHammer;
-import com.jtrent238.hammermod.items.hammers.ItemRedstoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemRositeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemRubyHammer;
-import com.jtrent238.hammermod.items.hammers.ItemRustedHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSandHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSapphireHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSearedBrickHammer;
-import com.jtrent238.hammermod.items.hammers.ItemShinyHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSilicaHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSilverHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSkyTheKidRSHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSlimeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSnowHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSoulSandHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSpongeHammer;
-import com.jtrent238.hammermod.items.hammers.ItemStoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemSugarHammer;
-import com.jtrent238.hammermod.items.hammers.ItemThackAttack_MCHammer;
-import com.jtrent238.hammermod.items.hammers.ItemTinHammer;
-import com.jtrent238.hammermod.items.hammers.ItemTitaniumHammer;
-import com.jtrent238.hammermod.items.hammers.ItemTntHammer;
-import com.jtrent238.hammermod.items.hammers.ItemTungstenHammer;
-import com.jtrent238.hammermod.items.hammers.ItemUraniumHammer;
-import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
-import com.jtrent238.hammermod.items.hammers.ItemWoolHammer;
-import com.jtrent238.hammermod.items.hammers.ItemXychoriumHammer;
-import com.jtrent238.hammermod.items.hammers.Item_MrGregor_Hammer;
-import com.jtrent238.hammermod.items.hammers.ItemxJSQHammer;
+import com.jtrent238.hammermod.items.hammers.*;
 import com.jtrent238.hammermod.items.hammers.custom.ItemCustomHammer_1;
 
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -148,9 +56,6 @@ public class ItemLoader {
 	public static Item ItemTntHammer;
 	public static Item ItemBedrockHammer;
 	
-	
-	
-	
 	/*
 	 * Mob Hammers
 	 */
@@ -203,6 +108,29 @@ public class ItemLoader {
 	public static Item ItemAlumiteHammer;
 	public static Item ItemCobaltHammer;
 	public static Item ItemManyullynHammer;
+	public static Item ItemOureclaseHammer;
+	public static Item ItemHaderothHammer;
+	public static Item ItemInfuscoliumHammer;
+	public static Item ItemRubberHammer;
+	public static Item ItemDesichalkosHammer;
+	public static Item ItemMeutoiteHammer;
+	public static Item ItemEximiteHammer;
+	public static Item ItemMidasiumHammer;
+	public static Item ItemSanguiniteHammer;
+	public static Item ItemInolashiteHammer;
+	public static Item ItemVulcaniteHammer;
+	public static Item ItemLemuriteHammer;
+	public static Item ItemAmordrineHammer;
+	public static Item ItemCeruclaseHammer;
+	public static Item ItemKalendriteHammer;
+	public static Item ItemVyroxeresHammer;
+	public static Item ItemCarmotHammer;
+	public static Item ItemTartariteHammer;
+	public static Item ItemAtlarusHammer;
+	public static Item ItemAstralHammer;
+	public static Item ItemCelenegilHammer;
+	public static Item ItemAredriteHammer;
+	public static Item ItemOrichalcumHammer;
 	
 	/*
 	 * Hammers For YouTubers
@@ -226,6 +154,13 @@ public class ItemLoader {
 	public static Item ItemCryingObsidainHammer;
 	public static Item ItemMythicalHammer;
 	public static Item ItemToasterHammer;
+	
+	/*
+	 * Special Hammers
+	 */
+	public static Item ItemRainbowHammer;
+	public static Item ItemMissingTextureHammer;
+	
 	/*
 	 * Custom Hammers
 	 */
@@ -243,6 +178,7 @@ public class ItemLoader {
 	private static int PATREON = YT * TWITCH;			//Patreon Multiplier
 	private static int mobM = 4;						//Mob Mulitiplier
 	private static int JSQ_Multiplier = 10;				//xJSQ Multiplier
+	private static int RAINBOW_MULTIPLIER = HammerMod.numHammers;	//Rainbow Multiplier
 	private static int  C1 = HammerMod.CUSTOM_HAMMER_1_MATERIALMODIFIER.getInt();
 	
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
@@ -308,7 +244,7 @@ public class ItemLoader {
 	public static ToolMaterial MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10, 15, 5);
 	public static ToolMaterial TOASTER = EnumHelper.addToolMaterial("TOASTER", 1, 30000, 1000, (float) 0.5, 10);
 	
-	
+	public static ToolMaterial RAINBOW = EnumHelper.addToolMaterial("RAINBOW", 3 * RAINBOW_MULTIPLIER, 1561 * RAINBOW_MULTIPLIER, 8.0F * RAINBOW_MULTIPLIER, 3.0F * RAINBOW_MULTIPLIER, 10 * RAINBOW_MULTIPLIER);
 	
 	public static ToolMaterial CUSTOM_1 = EnumHelper.addToolMaterial("CUSTOM_1", 3 * C1, 1561 * C1, 8.0F * C1, 3.0F * C1, 10 * C1);
 	
@@ -414,10 +350,31 @@ public class ItemLoader {
 		ItemAlumiteHammer = new ItemAlumiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAlumiteHammer").setTextureName("hammermod:ItemAlumiteHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemCobaltHammer = new ItemCobaltHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCobaltHammer").setTextureName("hammermod:ItemCobaltHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemManyullynHammer = new ItemManyullynHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemManyullynHammer").setTextureName("hammermod:ItemManyullynHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemOureclaseHammer = new ItemOureclaseHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemOureclaseHammer").setTextureName("hammermod:ItemOureclaseHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemHaderothHammer = new ItemHaderothHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemHaderothHammer").setTextureName("hammermod:ItemHaderothHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemInfuscoliumHammer = new ItemInfuscoliumHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemInfuscoliumHammer").setTextureName("hammermod:ItemManyullynHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemRubberHammer = new ItemRubberHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemRubberHammer").setTextureName("hammermod:ItemRubberHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemDesichalkosHammer = new ItemDesichalkosHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemDesichalkosHammer").setTextureName("hammermod:ItemDesichalkosHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemMeutoiteHammer = new ItemMeutoiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemMeutoiteHammer").setTextureName("hammermod:ItemMeutoiteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemEximiteHammer = new ItemEximiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemEximiteHammer").setTextureName("hammermod:ItemEximiteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemMidasiumHammer = new ItemMidasiumHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemMidasiumHammer").setTextureName("hammermod:ItemMidasiumHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemSanguiniteHammer = new ItemSanguiniteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemSanguiniteHammer").setTextureName("hammermod:ItemSanguiniteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemInolashiteHammer = new ItemInolashiteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemInolashiteHammer").setTextureName("hammermod:ItemInolashiteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemVulcaniteHammer = new ItemVulcaniteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemVulcaniteHammer").setTextureName("hammermod:ItemVulcaniteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemLemuriteHammer = new ItemLemuriteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemLemuriteHammer").setTextureName("hammermod:ItemLemuriteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAmordrineHammer = new ItemAmordrineHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAmordrineHammer").setTextureName("hammermod:ItemAmordrineHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCeruclaseHammer = new ItemCeruclaseHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCeruclaseHammer").setTextureName("hammermod:ItemCeruclaseHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemKalendriteHammer = new ItemKalendriteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemKalendriteHammer").setTextureName("hammermod:ItemKalendriteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemVyroxeresHammer = new ItemVyroxeresHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemVyroxeresHammer").setTextureName("hammermod:ItemVyroxeresHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCarmotHammer = new ItemCarmotHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCarmotHammer").setTextureName("hammermod:ItemCarmotHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemTartariteHammer = new ItemTartariteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemTartariteHammer").setTextureName("hammermod:ItemTartariteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAtlarusHammer = new ItemAtlarusHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAtlarusHammer").setTextureName("hammermod:ItemAtlarusHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAstralHammer = new ItemAstralHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAstralHammer").setTextureName("hammermod:ItemAstralHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemCelenegilHammer = new ItemCelenegilHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemCelenegilHammer").setTextureName("hammermod:ItemCelenegilHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemAredriteHammer = new ItemAredriteHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemAredriteHammer").setTextureName("hammermod:ItemAredriteHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemOrichalcumHammer = new ItemOrichalcumHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemOrichalcumHammer").setTextureName("hammermod:ItemOrichalcumHammer").setCreativeTab(HammerMod.HammerMod);
 		
-
-
-
+		
 		/*
 		 * Hammers For YouTubers
 		 */
@@ -442,6 +399,12 @@ public class ItemLoader {
 		ItemMythicalHammer  = new ItemMythicalHammer(MYTHICAL).setUnlocalizedName("ItemMythicalHammer").setTextureName("hammermod:ItemMythicalHammer").setCreativeTab(HammerMod.HammerMod);
 		ItemToasterHammer = new ItemToasterHammer(TOASTER).setUnlocalizedName("ItemToasterHammer").setTextureName("hammermod:ItemToasterHammer").setCreativeTab(HammerMod.HammerMod);
 		
+		/*
+		 * Special Hammers
+		 */
+		ItemRainbowHammer = new ItemRainbowHammer(RAINBOW).setUnlocalizedName("ItemRainbowHammer").setTextureName("hammermod:ItemRainbowHammer").setCreativeTab(HammerMod.HammerMod);
+		ItemMissingTextureHammer = new ItemMissingTextureHammer(ToolMaterial.EMERALD).setUnlocalizedName("ItemMissingTextureHammer").setTextureName("hammermod:ItemMissingTextureHammer").setCreativeTab(HammerMod.HammerMod);
+
 		/*
 		 * Custom Hammers
 		 */
@@ -551,8 +514,29 @@ public class ItemLoader {
 		GameRegistry.registerItem(ItemAlumiteHammer, ItemAlumiteHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemCobaltHammer, ItemCobaltHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemManyullynHammer, ItemManyullynHammer.getUnlocalizedName().substring(5));
-
-
+		GameRegistry.registerItem(ItemOureclaseHammer, ItemOureclaseHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemHaderothHammer, ItemHaderothHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemInfuscoliumHammer, ItemInfuscoliumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemRubberHammer, ItemRubberHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemDesichalkosHammer, ItemDesichalkosHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemMeutoiteHammer, ItemMeutoiteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemEximiteHammer, ItemEximiteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemMidasiumHammer, ItemMidasiumHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemSanguiniteHammer, ItemSanguiniteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemInolashiteHammer, ItemInolashiteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemVulcaniteHammer, ItemVulcaniteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemLemuriteHammer, ItemLemuriteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAmordrineHammer, ItemAmordrineHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCeruclaseHammer, ItemCeruclaseHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemKalendriteHammer, ItemKalendriteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemVyroxeresHammer, ItemVyroxeresHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCarmotHammer, ItemCarmotHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemTartariteHammer, ItemTartariteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAtlarusHammer, ItemAtlarusHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAstralHammer, ItemAstralHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemCelenegilHammer, ItemCelenegilHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemAredriteHammer, ItemAredriteHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemOrichalcumHammer, ItemOrichalcumHammer.getUnlocalizedName().substring(5));
 
 		/*
 		 * Hammers For YouTubers
@@ -574,8 +558,14 @@ public class ItemLoader {
 		 * Community Hammers
 		 */
 		GameRegistry.registerItem(ItemCryingObsidainHammer, ItemCryingObsidainHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemMythicalHammer, ItemMythicalHammer.getUnlocalizedName().substring(5));
+		//GameRegistry.registerItem(ItemMythicalHammer, ItemMythicalHammer.getUnlocalizedName().substring(5));
 		GameRegistry.registerItem(ItemToasterHammer, ItemToasterHammer.getUnlocalizedName().substring(5));
+
+		/*
+		 * Special Hammers
+		 */
+		GameRegistry.registerItem(ItemRainbowHammer, ItemRainbowHammer.getUnlocalizedName().substring(5));
+		GameRegistry.registerItem(ItemMissingTextureHammer, ItemMissingTextureHammer.getUnlocalizedName().substring(5));
 
 		/*
 		 * Custom Hammers

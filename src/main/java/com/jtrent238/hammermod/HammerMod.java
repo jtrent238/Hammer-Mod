@@ -57,12 +57,13 @@ public class HammerMod
 
 	@Instance(MODID)
     public static HammerMod instance;
-	public static final String MODVERSION = "1.0.3.9";
+	public static final String MODVERSION = "1.1.3.9";
 	public static final String MODNAME = "jtrent238's Hammer Mod";
 	public static final String MODAUTHOR = "jtrent238";
 	public static final String MC = "1.7.10";
 
-
+	public static final int numHammers = 119;
+	
 	private PlayerLoggedInEvent username;
 
 
@@ -81,6 +82,7 @@ public class HammerMod
 	public static boolean RANDOM_TOAST;
 	public static boolean SHARP_TOAST;
 	public static boolean DEBUG_MODE;
+	public static boolean RAINBOWCRAFT;
 	
 	public static final String CATEGORY_CUSTOM_HAMMERS = "Custom Hammers";
 	public static final String CATEGORY_SETTINGS = "Settings";
@@ -128,7 +130,7 @@ public void preInit(FMLPreInitializationEvent event)
 	RANDOM_TOAST = config.get(CATEGORY_SETTINGS, "RandomToast", false).getBoolean(false);
 	SHARP_TOAST = config.get(CATEGORY_SETTINGS, "SharpToast", false).getBoolean(false);
 	DEBUG_MODE  = config.get(CATEGORY_SETTINGS, "DebugMode", false).getBoolean(false);
-	
+	RAINBOWCRAFT  = config.get(CATEGORY_SETTINGS, "RainbowHammerRecipe", false).getBoolean(false);
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
 	config.addCustomCategoryComment(CATEGORY_SETTINGS, "Settings");

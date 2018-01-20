@@ -108,6 +108,29 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemCobaltHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemLimoniteHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemManyullynHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemOureclaseHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemHaderothHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemInfuscoliumHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemRubberHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemDesichalkosHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemMeutoiteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemEximiteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemMidasiumHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemSanguiniteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemInolashiteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemVulcaniteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemLemuriteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAmordrineHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemCeruclaseHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemKalendriteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemVyroxeresHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemCarmotHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemTartariteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAtlarusHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAstralHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemCelenegilHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemAredriteHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemOrichalcumHammer));
 		
 		hammers.add(new ItemStack(ItemLoader.ItemPatHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemJenHammer));
@@ -118,14 +141,18 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.Item_MrGregor_Hammer));
 
 		hammers.add(new ItemStack(ItemLoader.ItemCryingObsidainHammer));
-		hammers.add(new ItemStack(ItemLoader.ItemMythicalHammer));
+		//hammers.add(new ItemStack(ItemLoader.ItemMythicalHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemToasterHammer));
+		
 		hammers.add(new ItemStack(ItemLoader.ItemDeeAxelJayHammer));
 		
+		hammers.add(new ItemStack(ItemLoader.ItemRainbowHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemMissingTextureHammer));
 	}
 
 	public static void addToChests() {
-		int numHammers = 94;
+		//int numHammers = 98;
+		int numHammers = HammerMod.numHammers;
 		for (int i = 0; i < numHammers ; i++) {
 			
 				if(HammerMod.DEBUG_MODE == true) {

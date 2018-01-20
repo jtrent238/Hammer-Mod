@@ -38,6 +38,11 @@ public class ItemBaseHammer extends ItemPickaxe {
 	public static final EnumChatFormatting ToolTipColor_COMMUNITY = EnumChatFormatting.YELLOW;
 	public static final EnumChatFormatting ToolTipColor_COMMUNITY_NAME = EnumChatFormatting.GREEN;
 	public static final EnumChatFormatting ToolTipColor_DEVELOPER = EnumChatFormatting.DARK_GREEN;
+	public static final EnumChatFormatting ToolTipColor_SPECIAL = EnumChatFormatting.GOLD;
+	public static final EnumChatFormatting ToolTipColor_RAINBOW = EnumChatFormatting.DARK_GREEN;
+	public static final EnumChatFormatting ToolTipColor_BASIC = EnumChatFormatting.DARK_AQUA;
+	public static final EnumChatFormatting ToolTipColor_MULTIPLIER = EnumChatFormatting.AQUA;
+	public static final EnumChatFormatting ToolTipColor_INFO = EnumChatFormatting.DARK_GRAY;
 	
 	private Object toolMaterial;
 	private Block blockMined;

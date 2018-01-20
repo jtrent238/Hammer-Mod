@@ -95,6 +95,31 @@ item.ItemArditeHammer.name=Ardite Hammer
 item.ItemAlumiteHammer.name=Alumite Hammer
 item.ItemCobaltHammer.name=Cobalt Hammer
 item.ItemManyullynHammer.name=Manyullyn Hammer
+item.ItemRainbowHammer.name=Rainbow Hammer
+item.ItemOureclaseHammer.name=Oureclase Hammer
+item.ItemHaderothHammer.name=Haderoth Hammer
+item.ItemInfuscoliumHammer.name=Infuscolium Hammer
+item.ItemMissingTextureHammer.name=Missing Texture Hammer
+item.ItemRubberHammer.name=Rubber Hammer
+item.ItemDesichalkosHammer.name=Desichalkos Hammer
+item.ItemMeutoiteHammer.name=Meutoite Hammer
+item.ItemEximiteHammer.name=Eximite Hammer
+item.ItemMidasiumHammer.name=Midasium Hammer
+item.ItemSanguiniteHammer.name=Sanguinite Hammer
+item.ItemInolashiteHammer.name=Inolashite Hammer
+item.ItemVulcaniteHammer.name=Vulcanite Hammer
+item.ItemLemuriteHammer.name=Lemurite Hammer
+item.ItemAmordrineHammer.name=Amordrine Hammer
+item.ItemCeruclaseHammer.name=Ceruclase Hammer
+item.ItemKalendriteHammer.name=Kalendrite Hammer
+item.ItemVyroxeresHammer.name=Vyroxeres Hammer
+item.ItemCarmotHammer.name=Carmot Hammer
+item.ItemTartariteHammer.name=Tartarite Hammer
+item.ItemAtlarusHammer.name=Atlarus Hammer
+item.ItemAstralHammer.name=Astral Hammer
+item.ItemCelenegilHammer.name=Celenegil Hammer
+item.ItemAredriteHammer.name=Aredrite Hammer
+item.ItemOrichalcumHammer.name=Orichalcum Hammer
 
 	/Weapons & Tools
 	/Armor
@@ -114,7 +139,8 @@ achievement.boom=Pssst! BOOM!
 achievement.boom.desc=Explode a Creeper Hammer
 achievement.toast=Umm... TOAST!
 achievement.toast.desc=Make some Toast with the Toaster Hammer
-
+achievement.rainbow=Wait... Was this Hammer supposed to be a secret?
+achievement.rainbow.desc=Obtain a Rainbow Hammer
 //Enchantments
 //Potions
 
@@ -122,6 +148,10 @@ achievement.toast.desc=Make some Toast with the Toaster Hammer
 tooltip.hammermod.communityhammer=Community Hammer
 tooltip.hammermod.ythammer=YouTuber Hammer
 tooltip.hammermod.twitchhammer=Twitch Hammer
+tooltip.hammermod.special=Special Hammer
+tooltip.hammermod.multiplier=The Multiplier for this Hammer is: 
+tooltip.hammermod.rainbowhammer.multiplierinfo=(Based on Total Number of Hammers in the mod) 
+
 tooltip.hammermod.ItemCryingObsidainHammer.createdby=Hammer Designed By: Thefancyman
 tooltip.hammermod.ItemMythicalHammer.createdby=Hammer Designed By: _Answers_
 tooltip.hammermod.ItemToasterHammer.createdby=Hammer Designed By: qwas_1234

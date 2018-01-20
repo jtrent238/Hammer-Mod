@@ -24,6 +24,8 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     
 	public static Achievement achievementboom;
 	public static Achievement achievementtoast;
+	public static Achievement achievementrainbow;
+	
     
 
     
@@ -35,11 +37,14 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
     {
     	achievementboom = new Achievement("achievement." + HammerMod.MODID + ".boom", "boom", 0, 0, new ItemStack(ItemLoader.ItemCreeperHammer, 1), (Achievement)achievementboom).initIndependentStat().registerStat();
     	achievementtoast = new Achievement("achievement." + HammerMod.MODID + ".toast", "toast", 0, 1, new ItemStack(ItemLoader.ItemToasterHammer, 1), (Achievement)achievementtoast).initIndependentStat().registerStat();
+    	achievementrainbow = new Achievement("achievement." + HammerMod.MODID + ".rainbow", "rainbow", 0, 2, new ItemStack(ItemLoader.ItemRainbowHammer, 1), (Achievement)achievementrainbow).initIndependentStat().registerStat();
+    	
     	
     	
     	AchievementPage.registerAchievementPage(new AchievementPage(HammerMod.MODID + HammerMod.MODVERSION + "Achievements", new Achievement[]{
     			achievementboom,
-    			achievementtoast
+    			achievementtoast,
+    			achievementrainbow
     			}));
 
     }

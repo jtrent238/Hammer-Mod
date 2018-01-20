@@ -1,5 +1,33 @@
 jtrent238's HammerMod ChangeLog
 
+1.1.3.9
+- Added Rainbow Hammer
+- Added Oureclase Hammer
+- Added Haderoth Hammer
+- Added Infuscolium Hammer
+- Added Missing Texture Hammer
+- Added Rubber Hammer
+- Added Desichalkos Hammer
+- Added Meutoite Hammer
+- Added Eximite Hammer
+- Added Midasium Hammer
+- Added Sanguinite Hammer
+- Added Inolashite Hammer
+- Added Vulcanite Hammer
+- Added Lemurite Hammer
+- Added Amordrine Hammer
+- Added Ceruclase Hammer
+- Added Kalendrite Hammer
+- Added Vyroxeres Hammer
+- Added Carmot Hammer
+- Added Tartarite Hammer
+- Added Atlarus Hammer
+- Added Astral Hammer
+- Added Celenegil Hammer
+- Added Aredrite Hammer
+- Added Orichalcum Hammer
+- Removed Mythical Hammer
+
 1.0.3.9
 - Added Bloodstone Hammer
 - Added Rusted Hammer
