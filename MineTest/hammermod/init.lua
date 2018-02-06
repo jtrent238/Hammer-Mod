@@ -401,10 +401,109 @@ minetest.register_tool("hammermod:ItemCakeHammer", {
 	},
 })
 
+minetest.register_tool("hammermod:ItemCactusHammer", {
+	description = "Cactus Hammer",
+	inventory_image = "ItemCactusHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemRoseHammer", {
+	description = "Rose Hammer",
+	inventory_image = "ItemRoseHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemSandHammer", {
+	description = "Sand Hammer",
+	inventory_image = "ItemSandHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemxJSQHammer", {
+	description = "xJSQ Hammer",
+	inventory_image = "ItemxJSQHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemincapablegamersHammer", {
+	description = "incapablegamers Hammer",
+	inventory_image = "ItemincapablegamersHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemMissingTextureHammer", {
+	description = "Missing Texture Hammer",
+	inventory_image = "ItemMissingTextureHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemRedstoneHammer", {
+	description = "RedStone Hammer",
+	inventory_image = "ItemRedstoneHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemIceHammer", {
+	description = "Ice Hammer",
+	inventory_image = "ItemIceHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemBronzeHammer", {
+	description = "Bronze Hammer",
+	inventory_image = "ItemBronzeHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
 -- ITEMS
---minetest.register_craftitem('epicproportions:ingot_jen', {
---    description = 'SuperGirlyGamer Ingot',
---    inventory_image = 'itemJenIngot.png',
+--minetest.register_craftitem('hammermod:ItemToast', {
+--    description = 'Toast',
+--    inventory_image = 'ItemToast.png',
 --    stack_max = 64,
 --})
 
