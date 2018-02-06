@@ -14,6 +14,7 @@ default = {}
 -- Load other files
 dofile(minetest.get_modpath("hammermod").."/functions.lua")
 dofile(minetest.get_modpath("hammermod").."/playerchecker.lua")
+dofile(minetest.get_modpath("hammermod").."/confighandler.lua")
 
 -- Set a noticeable inventory formspec for players
 minetest.register_on_joinplayer(function(player)
