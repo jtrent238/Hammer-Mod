@@ -17,15 +17,16 @@ dofile(minetest.get_modpath("hammermod").."/functions.lua")
 -- Set a noticeable inventory formspec for players
 minetest.register_on_joinplayer(function(player)
 	local cb = function(player)
-		minetest.chat_send_player(player:get_player_name(), "This is the [minimal] \"Minimal Development Test\" game. Use [minetest_game] for the real thing.")
+		minetest.chat_send_player(player:get_player_name(), "Hammermod made by: jtrent238")
 	end
 	minetest.after(2.0, cb, player)
 end)
 
+minetest.mkdir(config\hammermod)
+
 --
 -- Hammer definition
 --
-
 
 minetest.register_tool("hammermod:ItemWoodHammer", {
 	description = "Wood Hammer",
@@ -179,6 +180,14 @@ minetest.register_tool("hammermod:ItemToasterHammer", {
 			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
 		}
 	},
+	sounds = {
+            dig = <ModSounds>, -- "__group" = group-based sound (default)
+            dug = <SimpleSoundSpec>
+        }
+	sound = {
+            breaks = "default_tool_break", -- tools only
+            place = --[[<SimpleSoundSpec>]],
+        }
 })
 
 minetest.register_tool("hammermod:ItemGrassHammer", {
