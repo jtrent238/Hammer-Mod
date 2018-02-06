@@ -13,8 +13,8 @@ default = {}
 
 -- Load other files
 dofile(minetest.get_modpath("hammermod").."/functions.lua")
-dofile(minetest.get_modpath("hammermod").."/playerchecker.lua")
-dofile(minetest.get_modpath("hammermod").."/confighandler.lua")
+--dofile(minetest.get_modpath("hammermod").."/playerchecker.lua")
+--dofile(minetest.get_modpath("hammermod").."/confighandler.lua")
 
 -- Set a noticeable inventory formspec for players
 minetest.register_on_joinplayer(function(player)
@@ -24,7 +24,7 @@ minetest.register_on_joinplayer(function(player)
 	minetest.after(2.0, cb, player)
 end)
 
-minetest.mkdir(config\hammermod)
+--dofile(minetest.mkdir(config\hammermod))
 
 --
 -- Hammer definition
@@ -181,15 +181,7 @@ minetest.register_tool("hammermod:ItemToasterHammer", {
 		groupcaps={
 			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
 		}
-	},
-	sounds = {
-            dig = <ModSounds>, -- "__group" = group-based sound (default)
-            dug = <SimpleSoundSpec>
-        }
-	sound = {
-            breaks = "default_tool_break", -- tools only
-            place = --[[<SimpleSoundSpec>]],
-        }
+	}
 })
 
 minetest.register_tool("hammermod:ItemGrassHammer", {
@@ -522,11 +514,38 @@ minetest.register_tool("hammermod:ItemBronzeHammer", {
 
 -- CRAFTS
 
---minetest.register_craft({
---    output = 'epicproportions:pick_pat',
---    recipe = {
---      {'epicproportions:ingot_pat','epicproportions:ingot_pat','epicproportions:ingot_pat'},
---      {'', 'group:stick', ''},
---      {'', 'group:stick', ''},
---    }
---})
+minetest.register_craft({
+    output = 'hammermod:ItemCopperHammer',
+    recipe = {
+      {'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
+      {'default:copper_ingot', 'group:stick', 'default:copper_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemIronHammer',
+    recipe = {
+      {'default:iron_lump','default:iron_lump','default:iron_lump'},
+      {'default:iron_lump', 'group:stick', 'default:iron_lump'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemSteelHammer',
+    recipe = {
+      {'default:steel_ingot','default:steel_ingot','default:steel_ingot'},
+      {'default:steel_ingot', 'group:stick', 'default:steel_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemBronzeHammer',
+    recipe = {
+      {'default:bronze_ingot','default:bronze_ingot','default:bronze_ingot'},
+      {'default:bronze_ingot', 'group:stick', 'default:bronze_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
