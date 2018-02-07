@@ -17,7 +17,7 @@ dofile(minetest.get_modpath("hammermod").."/functions.lua")
 -- Set a noticeable inventory formspec for players
 minetest.register_on_joinplayer(function(player)
 	local cb = function(player)
-		minetest.chat_send_player(player:get_player_name(), "This is the [minimal] \"Minimal Development Test\" game. Use [minetest_game] for the real thing.")
+		minetest.chat_send_player(player:get_player_name(), "Hammermod made by: jtrent238")
 	end
 	minetest.after(2.0, cb, player)
 end)
@@ -260,10 +260,263 @@ minetest.register_tool("hammermod:ItemMelonHammer", {
 	},
 })
 
+minetest.register_tool("hammermod:ItemChickenHammer", {
+	description = "Chicken Hammer",
+	inventory_image = "ItemChickenHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemCoalHammer", {
+	description = "Coal Hammer",
+	inventory_image = "ItemCoalHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemCharcoalHammer", {
+	description = "Charcoal Hammer",
+	inventory_image = "ItemCharcoalHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemWheatHammer", {
+	description = "Wheat Hammer",
+	inventory_image = "ItemWheatHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemBedrockHammer", {
+	description = "Bedrock Hammer",
+	inventory_image = "ItemBedrockHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemBoneHammer", {
+	description = "Bone Hammer",
+	inventory_image = "ItemBoneHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemBrickHammer", {
+	description = "Brick Hammer",
+	inventory_image = "ItemBrickHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemClayHammer", {
+	description = "Clay Hammer",
+	inventory_image = "ItemClayHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemCopperHammer", {
+	description = "Copper Hammer",
+	inventory_image = "ItemCopperHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemAppleHammer", {
+	description = "Apple Hammer",
+	inventory_image = "ItemAppleHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemPumpkinHammer", {
+	description = "Pumpkin Hammer",
+	inventory_image = "ItemPumpkinHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemGlowstoneHammer", {
+	description = "Glowstone Hammer",
+	inventory_image = "ItemGlowstoneHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemTinHammer", {
+	description = "Tin Hammer",
+	inventory_image = "ItemTinHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemCakeHammer", {
+	description = "Cake Hammer",
+	inventory_image = "ItemCakeHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemCactusHammer", {
+	description = "Cactus Hammer",
+	inventory_image = "ItemCactusHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemRoseHammer", {
+	description = "Rose Hammer",
+	inventory_image = "ItemRoseHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemSandHammer", {
+	description = "Sand Hammer",
+	inventory_image = "ItemSandHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemxJSQHammer", {
+	description = "xJSQ Hammer",
+	inventory_image = "ItemxJSQHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemincapablegamersHammer", {
+	description = "incapablegamers Hammer",
+	inventory_image = "ItemincapablegamersHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemMissingTextureHammer", {
+	description = "Missing Texture Hammer",
+	inventory_image = "ItemMissingTextureHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemRedstoneHammer", {
+	description = "RedStone Hammer",
+	inventory_image = "ItemRedstoneHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemIceHammer", {
+	description = "Ice Hammer",
+	inventory_image = "ItemIceHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+minetest.register_tool("hammermod:ItemBronzeHammer", {
+	description = "Bronze Hammer",
+	inventory_image = "ItemBronzeHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
 -- ITEMS
---minetest.register_craftitem('epicproportions:ingot_jen', {
---    description = 'SuperGirlyGamer Ingot',
---    inventory_image = 'itemJenIngot.png',
+--minetest.register_craftitem('hammermod:ItemToast', {
+--    description = 'Toast',
+--    inventory_image = 'ItemToast.png',
 --    stack_max = 64,
 --})
 
@@ -271,11 +524,38 @@ minetest.register_tool("hammermod:ItemMelonHammer", {
 
 -- CRAFTS
 
---minetest.register_craft({
---    output = 'epicproportions:pick_pat',
---    recipe = {
---      {'epicproportions:ingot_pat','epicproportions:ingot_pat','epicproportions:ingot_pat'},
---      {'', 'group:stick', ''},
---      {'', 'group:stick', ''},
---    }
---})
+minetest.register_craft({
+    output = 'hammermod:ItemCopperHammer',
+    recipe = {
+      {'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
+      {'default:copper_ingot', 'group:stick', 'default:copper_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemIronHammer',
+    recipe = {
+      {'default:iron_lump','default:iron_lump','default:iron_lump'},
+      {'default:iron_lump', 'group:stick', 'default:iron_lump'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemSteelHammer',
+    recipe = {
+      {'default:steel_ingot','default:steel_ingot','default:steel_ingot'},
+      {'default:steel_ingot', 'group:stick', 'default:steel_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemBronzeHammer',
+    recipe = {
+      {'default:bronze_ingot','default:bronze_ingot','default:bronze_ingot'},
+      {'default:bronze_ingot', 'group:stick', 'default:bronze_ingot'},
+      {'', 'group:stick', ''},
+    }
+})
