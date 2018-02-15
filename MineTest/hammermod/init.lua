@@ -1,12 +1,5 @@
--- default (Minetest 0.4 mod)
--- Most default stuff
-
--- The API documentation in here was moved into doc/lua_api.txt
-
-WATER_ALPHA = 160
-WATER_VISC = 1
-LAVA_VISC = 7
-LIGHT_MAX = 14
+-- hammermod (Hammer Mod 1.0.0.0)
+-- Hammer mod made by jtrent238
 
 -- Definitions made by this mod that other mods can use too
 hammermod = {}
