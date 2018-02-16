@@ -58,3 +58,48 @@ minetest.register_craft({
       {'', 'group:stick', ''},
     }
 })
+
+minetest.register_craft({
+    output = 'hammermod:ItemWoodHammer',
+    recipe = {
+      {'default:acacia_wood','default:acacia_wood','default:acacia_wood'},
+      {'default:acacia_wood', 'group:stick', 'default:acacia_wood'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemWoodHammer',
+    recipe = {
+      {'default:aspen_wood','default:aspen_wood','default:aspen_wood'},
+      {'default:aspen_wood', 'group:stick', 'default:aspen_wood'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemWoodHammer',
+    recipe = {
+      {'default:pine_wood','default:pine_wood','default:pine_wood'},
+      {'default:pine_wood', 'group:stick', 'default:pine_wood'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemWoodHammer',
+    recipe = {
+      {'default:wood','default:wood','default:wood'},
+      {'default:wood', 'group:stick', 'default:wood'},
+      {'', 'group:stick', ''},
+    }
+})
+
+minetest.register_craft({
+    output = 'hammermod:ItemMeseHammer',
+    recipe = {
+      {'default:mese_crystal','default:mese_crystal','default:mese_crystal'},
+      {'default:mese_crystal', 'group:stick', 'default:mese_crystal'},
+      {'', 'group:stick', ''},
+    }
+})
