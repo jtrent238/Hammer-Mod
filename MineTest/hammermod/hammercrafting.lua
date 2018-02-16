@@ -107,128 +107,96 @@ if moretrees then
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:apple_tree", "moretrees:apple_tree", "moretrees:apple_tree"},
-			{"moretrees:apple_tree", "group:stick", "moretrees:apple_tree"},
+			{"moretrees:apple_tree_planks", "moretrees:apple_tree_planks", "moretrees:apple_tree_planks"},
+			{"moretrees:apple_tree_planks", "group:stick", "moretrees:apple_tree_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:oak", "moretrees:oak", "moretrees:oak"},
-			{"moretrees:oak", "group:stick", "moretrees:oak"},
+			{"moretrees:oak_planks", "moretrees:oak_planks", "moretrees:oak_planks"},
+			{"moretrees:oak_planks", "group:stick", "moretrees:oak_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:acorn", "moretrees:acorn", "moretrees:acorn"},
-			{"moretrees:acorn", "group:stick", "moretrees:acorn"},
+			{"moretrees:acorn_planks", "moretrees:acorn_planks", "moretrees:acorn_planks"},
+			{"moretrees:acorn_planks", "group:stick", "moretrees:acorn_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:sequoia", "moretrees:sequoia", "moretrees:sequoia"},
-			{"moretrees:sequoia", "group:stick", "moretrees:sequoia"},
+			{"moretrees:sequoia_planks", "moretrees:sequoia_planks", "moretrees:sequoia_planks"},
+			{"moretrees:sequoia_planks", "group:stick", "moretrees:sequoia_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:beech", "moretrees:beech", "moretrees:beech"},
-			{"moretrees:beech", "group:stick", "moretrees:beech"},
+			{"moretrees:beech_planks", "moretrees:beech_planks", "moretrees:beech_planks"},
+			{"moretrees:beech_planks", "group:stick", "moretrees:beech_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:birch", "moretrees:birch", "moretrees:birch"},
-			{"moretrees:birch", "group:stick", "moretrees:birch"},
+			{"moretrees:birch_planks", "moretrees:birch_planks", "moretrees:birch_planks"},
+			{"moretrees:birch_planks", "group:stick", "moretrees:birch_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:palm", "moretrees:palm", "moretrees:palm"},
-			{"moretrees:palm", "group:stick", "moretrees:palm"},
+			{"moretrees:palm_planks", "moretrees:palm_planks", "moretrees:palm_planks"},
+			{"moretrees:palm_planks", "group:stick", "moretrees:palm_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:palm_fruit_trunk_gen", "moretrees:palm_fruit_trunk_gen", "moretrees:palm_fruit_trunk_gen"},
-			{"moretrees:palm_fruit_trunk_gen", "group:stick", "moretrees:palm_fruit_trunk_gen"},
+			{"moretrees:beech_planks", "moretrees:beech_planks", "moretrees:beech_planks"},
+			{"moretrees:beech_planks", "group:stick", "moretrees:beech_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:beech", "moretrees:beech", "moretrees:beech"},
-			{"moretrees:beech", "group:stick", "moretrees:beech"},
+			{"moretrees:date_palm_planks", "moretrees:date_palm_planks", "moretrees:date_palm_planks"},
+			{"moretrees:date_palm_planks", "group:stick", "moretrees:date_palm_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:date_palm", "moretrees:date_palm", "moretrees:date_palm"},
-			{"moretrees:date_palm", "group:stick", "moretrees:date_palm"},
+			{"moretrees:spruce_planks", "moretrees:spruce_planks", "moretrees:spruce_planks"},
+			{"moretrees:spruce_planks", "group:stick", "moretrees:spruce_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:date_palm_fruit_trunk", "moretrees:date_palm_fruit_trunk", "moretrees:date_palm_fruit_trunk"},
-			{"moretrees:date_palm_fruit_trunk", "group:stick", "moretrees:date_palm_fruit_trunk"},
+			{"moretrees:cedar_planks", "moretrees:cedar_planks", "moretrees:cedar_planks"},
+			{"moretrees:cedar_planks", "group:stick", "moretrees:cedar_planks"},
 			{"", "group:stick", ""},
 		}
 	})
 	minetest.register_craft({
 		output = "hammermod:ItemWoodHammer",
 		recipe = {
-			{"moretrees:spruce", "moretrees:spruce", "moretrees:spruce"},
-			{"moretrees:spruce", "group:stick", "moretrees:spruce"},
-			{"", "group:stick", ""},
-		}
-	})
-	minetest.register_craft({
-		output = "hammermod:ItemWoodHammer",
-		recipe = {
-			{"moretrees:spruce_cone", "moretrees:spruce_cone", "moretrees:spruce_cone"},
-			{"moretrees:spruce_cone", "group:stick", "moretrees:spruce_cone"},
-			{"", "group:stick", ""},
-		}
-	})
-	minetest.register_craft({
-		output = "hammermod:ItemWoodHammer",
-		recipe = {
-			{"moretrees:cedar", "moretrees:cedar", "moretrees:cedar"},
-			{"moretrees:cedar", "group:stick", "moretrees:cedar"},
-			{"", "group:stick", ""},
-		}
-	})
-	minetest.register_craft({
-		output = "hammermod:ItemWoodHammer",
-		recipe = {
-			{"moretrees:cedar_cone", "moretrees:cedar_cone", "moretrees:cedar_cone"},
-			{"moretrees:cedar_cone", "group:stick", "moretrees:cedar_cone"},
-			{"", "group:stick", ""},
-		}
-	})
-	minetest.register_craft({
-		output = "hammermod:ItemWoodHammer",
-		recipe = {
-			{"moretrees:poplar", "moretrees:poplar", "moretrees:poplar"},
-			{"moretrees:poplar", "group:stick", "moretrees:poplar"},
+			{"moretrees:poplar_planks", "moretrees:poplar_planks", "moretrees:poplar_planks"},
+			{"moretrees:poplar_planks", "group:stick", "moretrees:poplar_planks"},
 			{"", "group:stick", ""},
 		}
 	})
@@ -273,3 +241,122 @@ if moretrees then
 		}
 	})
 end
+
+minetest.register_craft({
+	output = "hammermod:ItemSandHammer",
+	recipe = {
+		{"default:sand", "default:sand", "default:sand"},
+		{"default:sand", "group:stick", "default:sand"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemSandHammer",
+	recipe = {
+		{"default:desert_sand", "default:desert_sand", "default:desert_sand"},
+		{"default:desert_sand", "group:stick", "default:desert_sand"},
+		{"", "group:stick", ""},
+	}
+})
+	
+minetest.register_craft({
+	output = "hammermod:ItemTntHammer",
+	recipe = {
+		{"tnt:tnt", "tnt:tnt", "tnt:tnt"},
+		{"tnt:tnt", "group:stick", "tnt:tnt"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemStoneHammer",
+	recipe = {
+		{"default:cobble", "default:cobble", "default:cobble"},
+		{"default:cobble", "group:stick", "default:cobble"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemBrickHammer",
+	recipe = {
+		{"default:brick", "default:brick", "default:brick"},
+		{"default:brick", "group:stick", "default:brick"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemClayHammer",
+	recipe = {
+		{"default:clay_lump", "default:clay_lump", "default:clay_lump"},
+		{"default:clay_lump", "group:stick", "default:clay_lump"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemIceHammer",
+	recipe = {
+		{"default:ice", "default:ice", "default:ice"},
+		{"default:ice", "group:stick", "default:ice"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemGlassHammer",
+	recipe = {
+		{"default:glass", "default:glass", "default:glass"},
+		{"default:glass", "group:stick", "default:glass"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemRoseHammer",
+	recipe = {
+		{"flowers:rose", "flowers:rose", "flowers:rose"},
+		{"flowers:rose", "group:stick", "flowers:rose"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemCoalHammer",
+	recipe = {
+		{"default:coal_lump", "default:coal_lump", "default:coal_lump"},
+		{"default:coal_lump", "group:stick", "default:coal_lump"},
+		{"", "group:stick", ""},
+	}
+})
+
+minetest.register_craft({
+	output = "hammermod:ItemDirtHammer",
+	recipe = {
+		{"default:dirt", "default:dirt", "default:dirt"},
+		{"default:dirt", "group:stick", "default:dirt"},
+		{"", "group:stick", ""},
+	}
+})
+
+if moretrees then
+	minetest.register_craft({
+		output = "hammermod:ItemCakeHammer",
+		recipe = {
+			{"moretrees:date_nut_cake", "moretrees:date_nut_cake", "moretrees:date_nut_cake"},
+			{"moretrees:date_nut_cake", "group:stick", "moretrees:date_nut_cake"},
+			{"", "group:stick", ""},
+		}
+	})
+end
+
+minetest.register_craft({
+	output = "hammermod:ItemWheatHammer",
+	recipe = {
+		{"farming:wheat", "farming:wheat", "farming:wheat"},
+		{"farming:wheat", "group:stick", "farming:wheat"},
+		{"", "group:stick", ""},
+	}
+})
