@@ -38,3 +38,23 @@ minetest.register_craft({
       {'', 'group:stick', ''},
     }
 })
+
+if mobs and ( mobs.redo or mobs.mod == 'redo') then
+	minetest.register_craft({
+		output = "hammermod:ItemLeatherHammer",
+		recipe = {
+			{"mobs:leather", "mobs:leather", "mobs:leather"},
+			{"mobs:leather", "group:stick", "mobs:leather"},
+			{"", "group:stick", ""},
+		}
+	})
+end
+
+minetest.register_craft({
+    output = 'hammermod:ItemMeseHammer',
+    recipe = {
+      {'default:mese_crystal','default:mese_crystal','default:mese_crystal'},
+      {'default:mese_crystal', 'group:stick', 'default:mese_crystal'},
+      {'', 'group:stick', ''},
+    }
+})
