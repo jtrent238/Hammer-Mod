@@ -11,6 +11,7 @@ hammermod.modname = minetest.get_current_modname()
 --dofile(minetest.get_modpath("hammermod").."/playerchecker.lua")
 dofile(minetest.get_modpath("hammermod").."/coreinjection.lua")
 dofile(minetest.get_modpath("hammermod").."/hammerdefinition.lua")
+dofile(minetest.get_modpath("hammermod").."/hammercrafting.lua")
 
 -- Set a noticeable inventory formspec for players
 minetest.register_on_joinplayer(function(player)
