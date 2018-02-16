@@ -490,3 +490,28 @@ minetest.register_tool("hammermod:ItemBronzeHammer", {
 		}
 	},
 })
+
+
+minetest.register_tool("hammermod:ItemMeseHammer", {
+	description = "Mese Hammer",
+	inventory_image = "ItemMeseHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
+
+minetest.register_tool("hammermod:ItemLeatherHammer", {
+	description = "Leather Hammer",
+	inventory_image = "ItemLeatherHammer.png",
+	tool_capabilities = {
+		max_drop_level=0,
+		groupcaps={
+			cracky={times={[2]=2.00, [3]=1.20}, uses=10, maxlevel=1}
+		}
+	},
+})
+
