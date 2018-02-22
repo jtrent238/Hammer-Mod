@@ -446,19 +446,19 @@ public class ItemLoader {
 			GameRegistry.registerItem(ItemGlassHammer, ItemGlassHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.SAND_HAMMER_ENABLE == true){	
-				GameRegistry.registerItem(ItemSandHammer, ItemSandHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemSandHammer, ItemSandHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.CACTUS_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemCactusHammer, ItemCactusHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemCactusHammer, ItemCactusHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.GRAVEL_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemGravelHammer, ItemGravelHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemGravelHammer, ItemGravelHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.WOOL_WHITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemWoolHammer_white, ItemWoolHammer_white.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.EMERALD_HAMMER_ENABLE == true){
-		G	ameRegistry.registerItem(ItemEmeraldHammer, ItemEmeraldHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemEmeraldHammer, ItemEmeraldHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.GRASS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemGrassHammer, ItemGrassHammer.getUnlocalizedName().substring(5));
