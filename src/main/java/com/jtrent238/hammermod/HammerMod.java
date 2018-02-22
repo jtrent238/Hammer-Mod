@@ -115,7 +115,7 @@ public void preInit(FMLPreInitializationEvent event)
 	config.load();
 	config.getLoadedConfigVersion();
 	
-	
+	//========================================CUSTOM HAMMERS=============================================
 	CUSTOM_HAMMER_1 = config.get(CATEGORY_CUSTOM_HAMMERS, "Enable Custom Hammer 1", false).getBoolean(false);
 	CUSTOM_HAMMER_1_NAME = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Internal Name", "CustomHammer1");
 	CUSTOM_HAMMER_1_LANG_NAME = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Name", "Custom Hammer 1");
@@ -125,13 +125,63 @@ public void preInit(FMLPreInitializationEvent event)
 	CUSTOM_HAMMER_DESC_1 = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Description", "I'm A Custom Hammer");
 	CUSTOM_HAMMER_1_CRAFT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Crafting Recipe", "XXX, NSN, NSN, 'X', Items.ingotIron, 'S', Items.stick");
 	CUSTOM_HAMMER_1_ENCHANT_GLINT = config.get(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer 1 Enchantment Effect", false).getBoolean(false);
+	//===================================================================================================
 	
+	//=======================================SETTINGS====================================================
 	SMASH_BREAK_SOUND = config.get(CATEGORY_SETTINGS, "HammerCustomBreakSound", false).getBoolean(false);
 	TOASTER_BREAK_SOUND = config.get(CATEGORY_SETTINGS, "ToasterCustomBreakSound", true).getBoolean(true);
 	RANDOM_TOAST = config.get(CATEGORY_SETTINGS, "RandomToast", false).getBoolean(false);
 	SHARP_TOAST = config.get(CATEGORY_SETTINGS, "SharpToast", false).getBoolean(false);
 	DEBUG_MODE  = config.get(CATEGORY_SETTINGS, "DebugMode", false).getBoolean(false);
 	RAINBOWCRAFT  = config.get(CATEGORY_SETTINGS, "RainbowHammerRecipe", false).getBoolean(false);
+	//====================================================================================================
+	
+	//==========================VANNILA HAMMERS===========================================================
+	WOOD_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	STONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	IRON_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GOLD_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	DIAMOND_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	DIRT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GLASS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SAND_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CACTUS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GRAVEL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	WOOL_WHITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	EMERALD_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GRASS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	OBISIDIAN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GLOWSTONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	REDSTONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	LAPIZ_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	NETHERRACK_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SOULSAND_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	COAL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CHARCOAL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ENDSTONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	BONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SPONGE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	BRICK_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SUGAR_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PUMPKIN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	POTATO_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CARROT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	APPLE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ICE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PACKEDICE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CAKE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	DRAGONEGG_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	TNT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	BEDROCK_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//=======================================================================================================
+	
+	//========================================MOB HAMMERS====================================================
+	PIG_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	COW_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CREEPER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//=======================================================================================================
+	
+	
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
 	config.addCustomCategoryComment(CATEGORY_SETTINGS, "Settings");
