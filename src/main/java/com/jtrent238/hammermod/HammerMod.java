@@ -86,6 +86,7 @@ public class HammerMod
 	
 	public static final String CATEGORY_CUSTOM_HAMMERS = "Custom Hammers";
 	public static final String CATEGORY_SETTINGS = "Settings";
+	public static final String CATEGORY_SETTINGS = "Hammers";
 
 	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
 	//public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 1, 4);
@@ -134,6 +135,8 @@ public void preInit(FMLPreInitializationEvent event)
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
 	config.addCustomCategoryComment(CATEGORY_SETTINGS, "Settings");
+	config.addCustomCategoryComment(CATEGORY_HAMMERS, "Hammers");
+	
 	//config.getCategoryNames();
 		
 	config.save();
