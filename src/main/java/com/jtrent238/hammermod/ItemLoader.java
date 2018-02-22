@@ -419,7 +419,7 @@ public class ItemLoader {
 	 * Register Items.
 	 */
 	private static void registerItems(){
-		
+		if(HammerMod.DISABLE_ALL_HAMMER == false){
 		/*
 		 * Basic Minecraft Hammers (Ex. Vannila Ores)
 		 */
@@ -466,9 +466,15 @@ public class ItemLoader {
 		/*
 		 * Mob Hammers
 		 */
-		GameRegistry.registerItem(ItemCreeperHammer, ItemCreeperHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemPigHammer, ItemPigHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemCowHammer, ItemCowHammer.getUnlocalizedName().substring(5));
+		if(HammerMod.CREEPER_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemCreeperHammer, ItemCreeperHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.PIG_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemPigHammer, ItemPigHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.COW_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemCowHammer, ItemCowHammer.getUnlocalizedName().substring(5));
+		}
 		
 		/*
 		 * Hammers Using Ores from other mods
@@ -541,39 +547,61 @@ public class ItemLoader {
 		/*
 		 * Hammers For YouTubers
 		 */
-		GameRegistry.registerItem(ItemPatHammer, ItemPatHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemJenHammer, ItemJenHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemDanTDMHammer, ItemDanTDMHammer.getUnlocalizedName().substring(5));
+		if(HammerMod.PAT_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemPatHammer, ItemPatHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.JEN_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemJenHammer, ItemJenHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.DANTDM_HAMMER_ENABLE == true){
+				GameRegistry.registerItem(ItemDanTDMHammer, ItemDanTDMHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.JSQ_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemxJSQHammer, ItemxJSQHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.SKYRS_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemSkyTheKidRSHammer, ItemSkyTheKidRSHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.THACKATTACK_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemThackAttack_MCHammer, ItemThackAttack_MCHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.MRGREGOR_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(Item_MrGregor_Hammer, Item_MrGregor_Hammer.getUnlocalizedName().substring(5));
+		}
 		
 		/*
 		 * Hammers For Twitch Streamers
 		 */
+		if(HammerMod.DEEJAYAXEL_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemDeeAxelJayHammer, ItemDeeAxelJayHammer.getUnlocalizedName().substring(5));
-		
+		}
 		/*
 		 * Community Hammers
 		 */
+		if(HammerMod.CRYOBBY_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemCryingObsidainHammer, ItemCryingObsidainHammer.getUnlocalizedName().substring(5));
+		}
 		//GameRegistry.registerItem(ItemMythicalHammer, ItemMythicalHammer.getUnlocalizedName().substring(5));
+		if(HammerMod.TOASTER_HAMMER_ENABLE == true){
 		GameRegistry.registerItem(ItemToasterHammer, ItemToasterHammer.getUnlocalizedName().substring(5));
+		}
 
 		/*
 		 * Special Hammers
 		 */
-		GameRegistry.registerItem(ItemRainbowHammer, ItemRainbowHammer.getUnlocalizedName().substring(5));
-		GameRegistry.registerItem(ItemMissingTextureHammer, ItemMissingTextureHammer.getUnlocalizedName().substring(5));
-
+		if(HammerMod.RAINBOW_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemRainbowHammer, ItemRainbowHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.MISSING_TEXTURE_HAMMER_ENABLE == true){
+			GameRegistry.registerItem(ItemMissingTextureHammer, ItemMissingTextureHammer.getUnlocalizedName().substring(5));
+		}
 		/*
 		 * Custom Hammers
 		 */
 		
 		if(HammerMod.CUSTOM_HAMMER_1 == true){
-		GameRegistry.registerItem(ItemCustomHammer_1, ItemCustomHammer_1.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemCustomHammer_1, ItemCustomHammer_1.getUnlocalizedName().substring(5));
 		}
-		
+		}	
 	}
 }
