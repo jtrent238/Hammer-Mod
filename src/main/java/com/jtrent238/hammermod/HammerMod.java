@@ -181,6 +181,27 @@ public void preInit(FMLPreInitializationEvent event)
 	CREEPER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
 	//=======================================================================================================
 	
+	//======================================MODDED HAMMERS===================================================
+	_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//=======================================================================================================
+	
+	//=====================================COMMUNITY HAMMERS=================================================
+	TOASTER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CRYOBBY_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//=======================================================================================================
+	
+	//======================================YOUTUBE HAMMERS==================================================
+	TDM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PAT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	JEN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	JSQ_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	MRGREGOR_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	THACKATTACK_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//========================================================================================================
+	
+	//===================================TWITCH HAMMERS=======================================================
+	DEEJAYAXEL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	//========================================================================================================
 	
 	//config.addCustomCategoryComment(CATEGORY_INFO, "This Configfile is still [WIP] and may not work properly. ***Some things won't work!");
 	config.addCustomCategoryComment(CATEGORY_CUSTOM_HAMMERS, "Custom Hammer Settings");
