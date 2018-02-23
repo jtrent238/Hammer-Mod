@@ -559,193 +559,193 @@ public class ItemLoader {
 		 * Hammers Using Ores from other mods
 		 * **NOTE: REQUIRES Other mods to craft these hammers**
 		 */
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.COPPER_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCopperHammer, ItemCopperHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.BRONZE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemBronzeHammer, ItemBronzeHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SILVER_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemSilverHammer, ItemSilverHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.TUNGSTEN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemTungstenHammer, ItemTungstenHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.RUBY_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemRubyHammer, ItemRubyHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.TIN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemTinHammer, ItemTinHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.JADE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemJadeHammer, ItemJadeHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.AMETHYSTS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAmethystHammer, ItemAmethystHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.GRAPHITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemGraphiteHammer, ItemGraphiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.CITRINE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCitrineHammer, ItemCitrineHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.PIERRE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPierreHammer, ItemPierreHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SAPPHIRE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemSapphireHammer, ItemSapphireHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ONYX_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemOnyxHammer, ItemOnyxHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.NIKOLITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemNikoliteHammer, ItemNikoliteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SILICA_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemSilicaHammer, ItemSilicaHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.CINNABAR_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCinnabarHammer, ItemCinnabarHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.AMBER_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAmberBearingStoneHammer, ItemAmberBearingStoneHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.FERROUS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemFerrousHammer, ItemFerrousHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ADAMITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAdaminiteHammer, ItemAdaminiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SHINY_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemShinyHammer, ItemShinyHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.XYCHORINUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemXychoriumHammer, ItemXychoriumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.URANIUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemUraniumHammer, ItemUraniumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.TITANIUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemTitaniumHammer, ItemTitaniumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.BLOODSTONE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemBloodStoneHammer, ItemBloodStoneHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.RUSTED_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemRustedHammer, ItemRustedHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ROSITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemRositeHammer, ItemRositeHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.LIMONITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemLimoniteHammer, ItemLimoniteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.MITHRIL_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemMithrilHammer, ItemMithrilHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.PROMETHEUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPrometheumHammer, ItemPrometheumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.HEPATIZON_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemHepatizonHammer, ItemHepatizonHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.POOP_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPoopHammer, ItemPoopHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ANGMALLEN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAngmallenHammer, ItemAngmallenHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.MAGANESE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemManganeseHammer, ItemManganeseHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SEAREDBRICK_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemSearedBrickHammer, ItemSearedBrickHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ELECTRUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemElectrumHammer, ItemElectrumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.PIGIRON_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPigIronHammer, ItemPigIronHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ARDITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemArditeHammer, ItemArditeHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ALUMITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAlumiteHammer, ItemAlumiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.COBALT_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCobaltHammer, ItemCobaltHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.MANYULLYN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemManyullynHammer, ItemManyullynHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.OURCLASE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemOureclaseHammer, ItemOureclaseHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.HADEROTH_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemHaderothHammer, ItemHaderothHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.INFUSCOILUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemInfuscoliumHammer, ItemInfuscoliumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.RUBBER_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemRubberHammer, ItemRubberHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.DESICHALKOS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemDesichalkosHammer, ItemDesichalkosHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.MEUTOITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemMeutoiteHammer, ItemMeutoiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.EXIMITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemEximiteHammer, ItemEximiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.MIDASUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemMidasiumHammer, ItemMidasiumHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.SANGUINITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemSanguiniteHammer, ItemSanguiniteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.INOLASHITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemInolashiteHammer, ItemInolashiteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.VULCANITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemVulcaniteHammer, ItemVulcaniteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.LEMURITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemLemuriteHammer, ItemLemuriteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.AMARDRINE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAmordrineHammer, ItemAmordrineHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.CERUCLASE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCeruclaseHammer, ItemCeruclaseHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.KALENDRIDE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemKalendriteHammer, ItemKalendriteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.VYROXERS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemVyroxeresHammer, ItemVyroxeresHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.CARMOT_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCarmotHammer, ItemCarmotHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.TARTARITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemTartariteHammer, ItemTartariteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ATLARUS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAtlarusHammer, ItemAtlarusHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ASTRAL_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAstralHammer, ItemAstralHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.CELENEGIL_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemCelenegilHammer, ItemCelenegilHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.AREDRITE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAredriteHammer, ItemAredriteHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.COW_HAMMER_ENABLE == true){
+		if(HammerMod.ORICALCUM_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemOrichalcumHammer, ItemOrichalcumHammer.getUnlocalizedName().substring(5));
 		}
 		   
