@@ -35,6 +35,7 @@ public class ItemBaseHammer extends ItemPickaxe {
 
 	public static final EnumChatFormatting ToolTipColor_TWITCH = EnumChatFormatting.DARK_PURPLE;
 	public static final EnumChatFormatting ToolTipColor_YOUTUBE = EnumChatFormatting.RED;
+	public static final EnumChatFormatting ToolTipColor_PATREON = EnumChatFormatting.GOLD;
 	public static final EnumChatFormatting ToolTipColor_COMMUNITY = EnumChatFormatting.YELLOW;
 	public static final EnumChatFormatting ToolTipColor_COMMUNITY_NAME = EnumChatFormatting.GREEN;
 	public static final EnumChatFormatting ToolTipColor_DEVELOPER = EnumChatFormatting.DARK_GREEN;
@@ -68,8 +69,17 @@ public class ItemBaseHammer extends ItemPickaxe {
 		this.getToolClasses(stack);
 		this.field_150934_a = 4.0F + material.getDamageVsEntity() * hammerMaterial;
 			toolClass = "hammer";
+		this.canRepair = true;
+		this.getMetadata(getMaxDamage());
+		this.setFull3D();
+		this.canRepairItems();
         }
 	
+
+	private void canRepairItems() {
+		
+	}
+
 	@Override
 	public Set<String> getToolClasses(ItemStack stack) {
 	    return ImmutableSet.of("pickaxe", "sword");
