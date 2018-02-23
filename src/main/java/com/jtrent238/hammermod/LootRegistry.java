@@ -145,6 +145,7 @@ public class LootRegistry {
 		hammers.add(new ItemStack(ItemLoader.ItemToasterHammer));
 		
 		hammers.add(new ItemStack(ItemLoader.ItemDeeAxelJayHammer));
+		hammers.add(new ItemStack(ItemLoader.ItemincapablegamerHammer));
 		
 		hammers.add(new ItemStack(ItemLoader.ItemRainbowHammer));
 		hammers.add(new ItemStack(ItemLoader.ItemMissingTextureHammer));

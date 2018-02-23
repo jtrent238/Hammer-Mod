@@ -147,6 +147,7 @@ public class ItemLoader {
 	 * Hammers For Twitch Streamers
 	 */
 	public static Item ItemDeeAxelJayHammer;
+	public static Item ItemincapablegamerHammer;
 	
 	/*
 	 * Community Hammers
@@ -238,7 +239,7 @@ public class ItemLoader {
 	public static ToolMaterial MRGREG = EnumHelper.addToolMaterial("MRGREG", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
 	
 	public static ToolMaterial DAXEJ = EnumHelper.addToolMaterial("DAXEJ", 3 * TWITCH, 1561 * TWITCH, 8.0F * TWITCH, 3.0F * TWITCH, 10 * TWITCH);
-	
+	public static ToolMaterial INCAPGAMER = EnumHelper.addToolMaterial("INCAPGAMER", 3 * TWITCH, 1561 * TWITCH, 8.0F * TWITCH, 3.0F * TWITCH, 10 * TWITCH);
 	
 	public static ToolMaterial CRYOBBY = EnumHelper.addToolMaterial("CRYOBBY", 3, 8000, 6, 6, 10);
 	public static ToolMaterial MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10, 15, 5);
@@ -390,7 +391,7 @@ public class ItemLoader {
 		 * Hammers For Twitch Streamers
 		 */
 		ItemDeeAxelJayHammer = new ItemDeeAxelJayHammer(DAXEJ).setUnlocalizedName("ItemDeeAxelJayHammer").setTextureName("hammermod:ItemDeeAxelJayHammer").setCreativeTab(HammerMod.HammerMod);
-		
+		ItemincapablegamerHammer = new ItemincapablegamerHammer(INCAPGAMER).setUnlocalizedName("ItemincapablegamerHammer").setTextureName("hammermod:ItemincapablegamerHammer").setCreativeTab(HammerMod.HammerMod);
 		
 		/*
 		 * Community Hammers
@@ -424,7 +425,7 @@ public class ItemLoader {
 		/*
 		 * Basic Minecraft Hammers (Ex. Vannila Ores)
 		 */
-		if(HammerMod.WOOD_HAMMER_ENABLE{
+		if(HammerMod.WOOD_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemWoodHammer, ItemWoodHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.STONE_HAMMER_ENABLE == true){
@@ -463,7 +464,7 @@ public class ItemLoader {
 		if(HammerMod.GRASS_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemGrassHammer, ItemGrassHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.OBSIDIAN_HAMMER_ENABLE == true){
+		if(HammerMod.OBISIDIAN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemObsidianHammer, ItemObsidianHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.GLOWSTONE_HAMMER_ENABLE == true){
@@ -475,7 +476,7 @@ public class ItemLoader {
 		if(HammerMod.LAPIZ_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemLapizHammer, ItemLapizHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.NETHERACK_HAMMER_ENABLE == true){
+		if(HammerMod.NETHERRACK_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemNetherackHammer, ItemNetherackHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.SOULSAND_HAMMER_ENABLE == true){
@@ -511,7 +512,7 @@ public class ItemLoader {
 		if(HammerMod.PUMPKIN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPumpkinHammer, ItemPumpkinHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.POTATO_HAMMER_ENABLE == true){1
+		if(HammerMod.POTATO_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemPotatoHammer, ItemPotatoHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.CARROT_HAMMER_ENABLE == true){
@@ -580,7 +581,7 @@ public class ItemLoader {
 		if(HammerMod.JADE_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemJadeHammer, ItemJadeHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.AMETHYSTS_HAMMER_ENABLE == true){
+		if(HammerMod.AMETHEYST_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemAmethystHammer, ItemAmethystHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.GRAPHITE_HAMMER_ENABLE == true){
@@ -758,27 +759,30 @@ public class ItemLoader {
 		if(HammerMod.JEN_HAMMER_ENABLE == true){
 			GameRegistry.registerItem(ItemJenHammer, ItemJenHammer.getUnlocalizedName().substring(5));
 		}
-		if(HammerMod.DANTDM_HAMMER_ENABLE == true){
+		if(HammerMod.TDM_HAMMER_ENABLE == true){
 				GameRegistry.registerItem(ItemDanTDMHammer, ItemDanTDMHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.JSQ_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemxJSQHammer, ItemxJSQHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemxJSQHammer, ItemxJSQHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.SKYRS_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemSkyTheKidRSHammer, ItemSkyTheKidRSHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemSkyTheKidRSHammer, ItemSkyTheKidRSHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.THACKATTACK_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemThackAttack_MCHammer, ItemThackAttack_MCHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemThackAttack_MCHammer, ItemThackAttack_MCHammer.getUnlocalizedName().substring(5));
 		}
 		if(HammerMod.MRGREGOR_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(Item_MrGregor_Hammer, Item_MrGregor_Hammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(Item_MrGregor_Hammer, Item_MrGregor_Hammer.getUnlocalizedName().substring(5));
 		}
 		
 		/*
 		 * Hammers For Twitch Streamers
 		 */
 		if(HammerMod.DEEJAYAXEL_HAMMER_ENABLE == true){
-		GameRegistry.registerItem(ItemDeeAxelJayHammer, ItemDeeAxelJayHammer.getUnlocalizedName().substring(5));
+			GameRegistry.registerItem(ItemDeeAxelJayHammer, ItemDeeAxelJayHammer.getUnlocalizedName().substring(5));
+		}
+		if(HammerMod.INCAPABLEGAMER_HAMMER_ENABLE == true) {
+			GameRegistry.registerItem(ItemincapablegamerHammer, ItemincapablegamerHammer.getUnlocalizedName().substring(5));
 		}
 		/*
 		 * Community Hammers
@@ -807,6 +811,7 @@ public class ItemLoader {
 		if(HammerMod.CUSTOM_HAMMER_1 == true){
 			GameRegistry.registerItem(ItemCustomHammer_1, ItemCustomHammer_1.getUnlocalizedName().substring(5));
 		}
+		
 		}	
 	}
 }
