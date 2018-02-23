@@ -182,7 +182,67 @@ public void preInit(FMLPreInitializationEvent event)
 	//=======================================================================================================
 	
 	//======================================MODDED HAMMERS===================================================
-	_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	COPPER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	BRONZE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SILVER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	TUNGSTEN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	RUBY_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	TIN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	JADE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	AMETHEYST_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	GRAPHITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CITRINE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PIERRE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ONYX_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	NIKOLITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SILICA_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CINNABAR_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	AMBER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	FERROUS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ADAMITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SHINY_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	XYCHORINUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	URANIUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	TITANIUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	BLOODSTONE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	RUSTED_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ROSITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	LIMONITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	MITHRIL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PROMETHEUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	HEPATIZON_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	POOP_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ANGMALLEN_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	MAGANESE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SEAREDBRICK_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ELECTRUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	PIGIRON_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ARDITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ALUMITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	COBALT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	OURCLASE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	HADEROTH_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	INFUSCOILUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	RUBBER_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	DESICHALKOS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	MEUTOITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	EXIMITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	MIDASUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	SANGUINITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	INOLASHITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	VULCANITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	LEMURITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	AMARDRINE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CERUCLASE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	KALENDRIDE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	VYROXERS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CARMOT_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	TARTARITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ATLARUS_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ASTRAL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	CELENEGIL_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	AREDRITE_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
+	ORICALCUM_HAMMER_ENABLE = config.get(CATEGORY_hammers, "Hammer", true).getBoolean(true);
 	//=======================================================================================================
 	
 	//=====================================COMMUNITY HAMMERS=================================================
