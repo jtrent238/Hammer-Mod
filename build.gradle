@@ -17,7 +17,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.1.3.9"
+version = "1.1.3.10"
 group= "com.jtrent238.hammermod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "hammermod"
 

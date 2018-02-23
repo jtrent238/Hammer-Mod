@@ -1,5 +1,8 @@
 jtrent238's HammerMod ChangeLog
 
+1.1.3.10
+- Added Config Option for Each Hammer
+
 1.1.3.9
 - Added Rainbow Hammer
 - Added Oureclase Hammer
