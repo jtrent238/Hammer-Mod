@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "MSM",
+        " S "
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:stone",
+			"data": 1
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:granite_hammer",
+        "count": 1
+    }
+}

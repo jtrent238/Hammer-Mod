@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "MSM",
+        " S "
+    ],
+    "key": {
+        "M": {
+            "type": "forge:ore_dict",
+			"ore": "ingotLimonite"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:limonite_hammer",
+        "count": 1
+    }
+}

@@ -1,11 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemInfuscoliumHammer extends ItemBaseHammer {
 
-public class ItemInfuscoliumHammer extends ItemBaseHammer{
-
-	public ItemInfuscoliumHammer(ToolMaterial material) {
-		super(material);
+	public ItemInfuscoliumHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
 }

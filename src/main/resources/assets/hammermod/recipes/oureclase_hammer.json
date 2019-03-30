@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "MSM",
+        " S "
+    ],
+    "key": {
+        "M": {
+            "type": "forge:ore_dict",
+			"ore": "ingotOureclase"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:oureclase_hammer",
+        "count": 1
+    }
+}

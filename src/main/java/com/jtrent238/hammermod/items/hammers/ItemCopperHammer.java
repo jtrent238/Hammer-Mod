@@ -1,17 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemCopperHammer extends ItemBaseHammer {
 
-public class ItemCopperHammer extends ItemBaseHammer{
-
-
-	public ItemCopperHammer(ToolMaterial material) {
-		super(material);
+	public ItemCopperHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

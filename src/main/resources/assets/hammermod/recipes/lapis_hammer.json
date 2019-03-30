@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "MSM",
+        " S "
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:dye",
+			"data": 4
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:lapis_hammer",
+        "count": 1
+    }
+}

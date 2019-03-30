@@ -1,16 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemCactusHammer extends ItemBaseHammer {
 
-public class ItemCactusHammer  extends ItemBaseHammer{
-
-
-	public ItemCactusHammer(ToolMaterial material) {
-		super(material);
+	public ItemCactusHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

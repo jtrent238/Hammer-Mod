@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "IBI",
+        "ISI",
+        " S "
+    ],
+    "key": {
+		"B": {
+			"item": "minecraft:bread"
+		},
+        "I": {
+            "item": "minecraft:iron_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:toaster_hammer",
+        "count": 1
+    }
+}

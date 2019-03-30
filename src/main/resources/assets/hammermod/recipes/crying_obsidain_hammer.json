@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "BOB",
+        "OHO",
+        "LOW"
+    ],
+    "key": {
+		"B": {
+			"item": "minecraft:blaze_powder"
+		},
+        "O": {
+            "item": "minecraft:obsidian"
+        },
+        "H": {
+            "item": "hammermod:iron_hammer"
+        }
+		,
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "hammermod:crying_obsidain_hammer",
+        "count": 1
+    }
+}

@@ -1,32 +1,36 @@
 package com.jtrent238.hammermod.items.hammers;
 
+import com.jtrent238.hammermod.Config;
+
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class ItemTntHammer  extends ItemBaseHammer{
+public class ItemTntHammer extends ItemBaseHammer {
 
-	public ItemTntHammer(ToolMaterial material) {
-		super(material);
+	public ItemTntHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-	public ItemStack onItemRightClick(ItemStack itemstack, World world,EntityPlayer entityplayer)
-    {
-			
-		if(!world.isRemote)
-			
-			{
-			
-    		EntityTNTPrimed par1 = new EntityTNTPrimed(world);
-    		par1.setPosition(entityplayer.posX, entityplayer.posY,entityplayer.posZ); 
-    		world.spawnEntityInWorld(par1);
-			
+		@Override
+		public boolean hitEntity(ItemStack stack, net.minecraft.entity.EntityLivingBase target,
+				net.minecraft.entity.EntityLivingBase attacker) {
+			if (Config.TNT_HIT = true) {
+				EntityPlayer entityplayer = (EntityPlayer) attacker;
+				World world = attacker.getEntityWorld();
+	
+				int x = target.getPosition().getX();
+				int y = target.getPosition().getY();
+				int z = target.getPosition().getZ();
+	
+				world.spawnEntity(new EntityTNTPrimed(world));
 			}
-		
-			itemstack.damageItem(1, entityplayer);
-			return itemstack;
-		
-		}
+			return super.hitEntity(stack, target, attacker);
+	}
+
+
 }

@@ -1,9 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-public class ItemDragonEggHammer extends ItemBaseHammer{
+public class ItemDragonEggHammer extends ItemBaseHammer {
 
-	public ItemDragonEggHammer(ToolMaterial material) {
-		super(material);
+	public ItemDragonEggHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
 }

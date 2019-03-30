@@ -1,16 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemObsidianHammer extends ItemBaseHammer {
 
-public class ItemObsidianHammer  extends ItemBaseHammer{
-
-
-	public ItemObsidianHammer(ToolMaterial material) {
-		super(material);
+	public ItemObsidianHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

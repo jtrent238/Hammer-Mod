@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "MMM",
+        "MSM",
+        " S "
+    ],
+    "key": {
+        "M": {
+            "item": "minecraft:wool",
+			"data": 13
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "hammermod:wool_hammer_green",
+        "count": 1
+    }
+}

@@ -1,19 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import java.util.Set;
+public class ItemDiamondHammer extends ItemBaseHammer {
 
-import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-
-public class ItemDiamondHammer  extends ItemBaseHammer{
-
-
-	public ItemDiamondHammer(ToolMaterial material) {
-		super(material);
+	public ItemDiamondHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

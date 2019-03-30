@@ -2,31 +2,22 @@ package com.jtrent238.hammermod.items.hammers;
 
 import java.util.List;
 
-import com.jtrent238.hammermod.HammerMod;
+import com.jtrent238.hammermod.Main;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.StatCollector;
+import net.minecraft.world.World;
 
-public class ItemJenHammer  extends ItemBaseHammer{
+public class ItemJenHammer extends ItemBaseHammer {
 
-
-	public ItemJenHammer(ToolMaterial material) {
-		super(material);
+	public ItemJenHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
 	@Override
-	 @SideOnly(Side.CLIENT)
-	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-	 
-		list.add(ItemBaseHammer.ToolTipColor_YOUTUBE + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ythammer"));
-		
-	  }
-
-	
+	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+		tooltip.add(ItemBaseHammer.ToolTipColor_YOUTUBE    + "tooltip." + Main.MODID + "." + "ythammer");
+	}
 }

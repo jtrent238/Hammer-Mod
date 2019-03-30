@@ -1,11 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemCakeHammer extends ItemBaseHammer {
 
-public class ItemCakeHammer extends ItemBaseHammer{
-
-	public ItemCakeHammer(ToolMaterial material) {
-		super(material);
+	public ItemCakeHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
 }

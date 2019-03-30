@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "hammermod:items/sky_the_kid_hammer"
+    }
+}

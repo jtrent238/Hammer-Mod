@@ -1,9 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-public class ItemIceHammer extends ItemBaseHammer{
+public class ItemIceHammer extends ItemBaseHammer {
 
-	public ItemIceHammer(ToolMaterial material) {
-		super(material);
+	public ItemIceHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
 }

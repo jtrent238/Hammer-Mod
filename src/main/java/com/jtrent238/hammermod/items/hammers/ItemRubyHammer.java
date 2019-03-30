@@ -1,16 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemRubyHammer extends ItemBaseHammer {
 
-public class ItemRubyHammer  extends ItemBaseHammer{
-
-
-	public ItemRubyHammer(ToolMaterial material) {
-		super(material);
+	public ItemRubyHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

@@ -1,11 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemAdaminiteHammer extends ItemBaseHammer {
 
-public class ItemAdaminiteHammer extends ItemBaseHammer{
-
-	public ItemAdaminiteHammer(ToolMaterial material) {
-		super(material);
+	public ItemAdaminiteHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
 }

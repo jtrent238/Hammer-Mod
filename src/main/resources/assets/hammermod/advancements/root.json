@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Hammer Mod"
+        },
+        "description": {
+            "text": "jtrent238's Hammer Mod"
+        },
+        "icon": {
+            "item": "hammermod:diamond_hammer"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "hammermod:textures/gui/advancements/backgrounds/myawesomebackground.png"
+    },
+    "criteria": {
+        "main_advancement": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

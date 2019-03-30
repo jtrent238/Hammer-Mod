@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "text": "Thor's Hammer"
+        },
+        "description": {
+            "text": "Strike lightning with the Lightning Hammer."
+        },
+        "icon": {
+            "item": "hammermod:lightning_hammer"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "strike_lightning": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "hammermod:root"
+}

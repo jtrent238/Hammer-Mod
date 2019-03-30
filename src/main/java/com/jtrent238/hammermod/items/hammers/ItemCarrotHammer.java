@@ -1,16 +1,11 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import net.minecraft.item.Item.ToolMaterial;
+public class ItemCarrotHammer extends ItemBaseHammer {
 
-public class ItemCarrotHammer  extends ItemBaseHammer{
-
-
-	public ItemCarrotHammer(ToolMaterial material) {
-		super(material);
+	public ItemCarrotHammer(ToolMaterial material, String unlocalizedName, String registryName) {
+		super(material, unlocalizedName, registryName);
+		this.setUnlocalizedName(unlocalizedName);
+		this.setRegistryName(registryName);
 	}
 
-
-
-
-	
 }

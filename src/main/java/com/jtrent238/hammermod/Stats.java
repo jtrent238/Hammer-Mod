@@ -2,7 +2,7 @@ package com.jtrent238.hammermod;
 
 import net.minecraft.stats.StatBase;
 import net.minecraft.stats.StatBasic;
-import net.minecraft.util.ChatComponentTranslation;
+import net.minecraft.util.text.TextComponentString;
 
 public class Stats {
 
@@ -12,8 +12,9 @@ public class Stats {
 
 	public static void RegisterStats() {
 		
-		chexplosions = new StatBasic("stat.chexplosions", new ChatComponentTranslation("stat.chexplosions", new Object[0])).initIndependentStat().registerStat();
-		thbaked = new StatBasic("stat.thbaked", new ChatComponentTranslation("stat.thbaked", new Object[0])).initIndependentStat().registerStat();
+		chexplosions = new StatBasic("stat.chexplosions", new TextComponentString("stat.chexplosions")).initIndependentStat().registerStat();
+		thbaked = new StatBasic("stat.thbaked", new TextComponentString("stat.thbaked")).initIndependentStat().registerStat();
 		
 	}
+	
 }

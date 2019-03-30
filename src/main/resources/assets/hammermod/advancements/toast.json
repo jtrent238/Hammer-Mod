@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "Umm... TOAST!"
+        },
+        "description": {
+            "text": "Make some Toast with the Toaster Hammer"
+        },
+        "icon": {
+            "item": "hammermod:toaster_hammer"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "new_item": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:bread",
+						"tag": "Toast",
+                        "count": {
+                            "min": 1,
+                            "max": 1
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "hammermod:root"
+}

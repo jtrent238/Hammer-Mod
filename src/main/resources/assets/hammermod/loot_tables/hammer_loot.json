@@ -1,0 +1,99 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:pat_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:jen_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:tdm_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:jsq_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:sky_the_kid_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:thack_attack_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:mr_gregor_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:mining_worm_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:deeaxeljay_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:crying_obsidain_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:toaster_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:pure_devil_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:lightning_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:rainbow_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:missing_texture_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:creeper_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:pig_hammer"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "hammermod:cow_hammer"
+                }
+            ]
+        }
+    ]
+}
