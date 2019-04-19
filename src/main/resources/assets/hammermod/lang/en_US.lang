@@ -149,6 +149,36 @@ item.ChorusHammer.name=Chorus Hammer
 item.GraniteHammer.name=Granite Hammer
 item.EndBricksHammer.name=End Bricks Hammer
 item.AndesiteHammer.name=Andesite Hammer
+item.ClayHammerBlack.name=Black Terracotta Hammer
+item.ClayHammerBlue.name=Blue Terracotta Hammer
+item.ClayHammerBrown.name=Brown Terracotta Hammer
+item.ClayHammerCyan.name=Cyan Terracotta Hammer
+item.ClayHammerGreen.name=Green Terracotta Hammer
+item.ClayHammerGrey.name=Grey Terracotta Hammer
+item.ClayHammerLightBlue.name=Light Blue Terracotta Hammer
+item.ClayHammerLime.name=Lime Terracotta Hammer
+item.ClayHammerMagenta.name=Magenta Terracotta Hammer
+item.ClayHammerOrange.name=Orange Terracotta Hammer
+item.ClayHammerPink.name=Pink Terracotta Hammer
+item.ClayHammerPurple.name=Purple Terracotta Hammer
+item.ClayHammerRed.name=Red Terracotta Hammer
+item.ClayHammerSilver.name=Silver Terracotta Hammer
+item.ClayHammerWhite.name=White Terracotta Hammer
+item.ShulkerHammerBlack.name=Black Shulker Hammer
+item.ShulkerHammerBlue.name=Blue Shulker Hammer
+item.ShulkerHammerBrown.name=Brown Shulker Hammer
+item.ShulkerHammerCyan.name=Cyan Shulker Hammer
+item.ShulkerHammerGreen.name=Green Shulker Hammer
+item.ShulkerHammerGrey.name=Grey Shulker Hammer
+item.ShulkerHammerLightBlue.name=Light Blue Shulker Hammer
+item.ShulkerHammerLime.name=Lime Shulker Hammer
+item.ShulkerHammerMagenta.name=Magenta Shulker Hammer
+item.ShulkerHammerOrange.name=Orange Shulker Hammer
+item.ShulkerHammerPink.name=Pink Shulker Hammer
+item.ShulkerHammerPurple.name=Purple Shulker Hammer
+item.ShulkerHammerRed.name=Red Shulker Hammer
+item.ShulkerHammerSilver.name=Silver Shulker Hammer
+item.ShulkerHammerWhite.name=White Shulker Hammer
 
 	/Weapons & Tools
 	/Armor

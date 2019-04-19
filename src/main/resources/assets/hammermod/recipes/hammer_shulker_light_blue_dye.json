@@ -1,0 +1,24 @@
+{
+   "type": "minecraft:crafting_shaped",
+   "pattern": [
+       "MDM",
+       "MSM",
+       " S "
+   ],
+   "key": {
+       "M": {
+           "item": "minecraft:shulker_shell"
+       },
+	   "D": {
+           "item": "minecraft:dye",
+		   "data": 12
+       },
+       "S": {
+           "item": "minecraft:stick"
+       }
+   },
+   "result": {
+       "item": "hammermod:hammer_shulker_light_blue",
+       "count": 1
+    }
+}

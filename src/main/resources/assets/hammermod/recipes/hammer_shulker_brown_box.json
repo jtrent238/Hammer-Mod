@@ -1,0 +1,20 @@
+{
+   "type": "minecraft:crafting_shaped",
+   "pattern": [
+       "MMM",
+       "MSM",
+       " S "
+   ],
+   "key": {
+       "M": {
+           "item": "minecraft:brown_shulker_box"
+       },
+       "S": {
+           "item": "minecraft:stick"
+       }
+   },
+   "result": {
+       "item": "hammermod:hammer_shulker_brown",
+       "count": 1
+    }
+}

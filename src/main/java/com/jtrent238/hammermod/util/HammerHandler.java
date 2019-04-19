@@ -11,7 +11,9 @@ public class HammerHandler {
 
 	public static ArrayList<ItemStack> hammers = new ArrayList<ItemStack>();
 	
+
 	public static void addHammersToArray(Item[] items) {
+		
 		/*
 		 * Basic Minecraft Hammers (Ex. Vannila Ores)
 		 */
@@ -69,7 +71,44 @@ public class HammerHandler {
 	    hammers.add(new ItemStack(ModItems.hammerDragonEgg));
 	    hammers.add(new ItemStack(ModItems.hammerTnt));
 	    hammers.add(new ItemStack(ModItems.hammerBedrock));
-		
+	    hammers.add(new ItemStack(ModItems.hammerPurpur));
+	    hammers.add(new ItemStack(ModItems.hammerEndBricks));
+	    hammers.add(new ItemStack(ModItems.hammerChorus));
+	    hammers.add(new ItemStack(ModItems.hammerGranite));
+	    hammers.add(new ItemStack(ModItems.hammerAndesite));
+	    hammers.add(new ItemStack(ModItems.hammerClayBlack));
+	    hammers.add(new ItemStack(ModItems.hammerClayBlue));
+	    hammers.add(new ItemStack(ModItems.hammerClayBrown));
+	    hammers.add(new ItemStack(ModItems.hammerClayCyan));
+	    hammers.add(new ItemStack(ModItems.hammerClayGreen));
+	    hammers.add(new ItemStack(ModItems.hammerClayGrey));
+	    hammers.add(new ItemStack(ModItems.hammerClayLightBlue));
+	    hammers.add(new ItemStack(ModItems.hammerClayLime));
+	    hammers.add(new ItemStack(ModItems.hammerClayMagenta));
+	    hammers.add(new ItemStack(ModItems.hammerClayOrange));
+	    hammers.add(new ItemStack(ModItems.hammerClayPink));
+	    hammers.add(new ItemStack(ModItems.hammerClayPurple));
+	    hammers.add(new ItemStack(ModItems.hammerClayRed));
+	    hammers.add(new ItemStack(ModItems.hammerClaySilver));
+	    hammers.add(new ItemStack(ModItems.hammerClayWhite));
+	    hammers.add(new ItemStack(ModItems.hammerHay));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerBlack));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerBlue));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerBrown));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerCyan));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerGreen));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerGrey));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerLightBlue));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerLime));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerMagenta));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerOrange));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerPink));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerPurple));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerRed));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerSilver));
+	    hammers.add(new ItemStack(ModItems.hammerShulkerWhite));
+	    	
+	    
 	    /*
 		 * Hammers Using Ores from other mods
 		 * **NOTE: REQUIRES Other mods to craft these hammers**

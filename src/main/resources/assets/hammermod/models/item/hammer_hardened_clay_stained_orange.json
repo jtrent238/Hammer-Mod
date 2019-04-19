@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "hammermod:items/hammer_hardened_clay_stained_orange"
+    }
+}

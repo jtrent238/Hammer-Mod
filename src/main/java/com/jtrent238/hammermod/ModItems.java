@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 import org.apache.logging.log4j.Level;
 
+import com.jtrent238.hammermod.api.HammerModAPI;
 import com.jtrent238.hammermod.items.hammers.*;
 import com.jtrent238.hammermod.items.materials.HammerMaterial;
+import com.jtrent238.hammermod.util.CustomHammerRegistry;
 import com.jtrent238.hammermod.util.HammerHandler;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -87,6 +89,39 @@ public class ModItems {
 	public static final ItemBaseHammer hammerChorus = new ItemChorusHammer(HammerMaterial.CHORUS, "ChorusHammer", "chorus_hammer");
 	public static final ItemBaseHammer hammerGranite = new ItemGraniteHammer(HammerMaterial.GRANITE, "GraniteHammer", "granite_hammer");
 	public static final ItemBaseHammer hammerAndesite = new ItemAndesiteHammer(HammerMaterial.ANDESITE, "AndesiteHammer", "andesite_hammer");
+	public static final ItemBaseHammer hammerClayBlack = new ItemClayHammerBlack(HammerMaterial.HARDCLAY, "ClayHammerBlack", "hammer_hardened_clay_stained_black");
+	public static final ItemBaseHammer hammerClayBlue = new ItemClayHammerBlue(HammerMaterial.HARDCLAY, "ClayHammerBlue", "hammer_hardened_clay_stained_blue");
+	public static final ItemBaseHammer hammerClayBrown = new ItemClayHammerBrown(HammerMaterial.HARDCLAY, "ClayHammerBrown", "hammer_hardened_clay_stained_brown");
+	public static final ItemBaseHammer hammerClayCyan = new ItemClayHammerCyan(HammerMaterial.HARDCLAY, "ClayHammerCyan", "hammer_hardened_clay_stained_cyan");
+	public static final ItemBaseHammer hammerClayGreen = new ItemClayHammerGreen(HammerMaterial.HARDCLAY, "ClayHammerGreen", "hammer_hardened_clay_stained_green");
+	public static final ItemBaseHammer hammerClayGrey = new ItemClayHammerGrey(HammerMaterial.HARDCLAY, "ClayHammerGrey", "hammer_hardened_clay_stained_grey");
+	public static final ItemBaseHammer hammerClayLightBlue = new ItemClayHammerLightBlue(HammerMaterial.HARDCLAY, "ClayHammerLightBlue", "hammer_hardened_clay_stained_light_blue");
+	public static final ItemBaseHammer hammerClayLime = new ItemClayHammerLime(HammerMaterial.HARDCLAY, "ClayHammerLime", "hammer_hardened_clay_stained_lime");
+	public static final ItemBaseHammer hammerClayMagenta = new ItemClayHammerMagenta(HammerMaterial.HARDCLAY, "ClayHammerMagenta", "hammer_hardened_clay_stained_magenta");
+	public static final ItemBaseHammer hammerClayOrange = new ItemClayHammerOrange(HammerMaterial.HARDCLAY, "ClayHammerOrange", "hammer_hardened_clay_stained_orange");
+	public static final ItemBaseHammer hammerClayPink = new ItemClayHammerPink(HammerMaterial.HARDCLAY, "ClayHammerPink", "hammer_hardened_clay_stained_pink");
+	public static final ItemBaseHammer hammerClayPurple = new ItemClayHammerPurple(HammerMaterial.HARDCLAY, "ClayHammerPurple", "hammer_hardened_clay_stained_purple");
+	public static final ItemBaseHammer hammerClayRed = new ItemClayHammerRed(HammerMaterial.HARDCLAY, "ClayHammerRed", "hammer_hardened_clay_stained_red");
+	public static final ItemBaseHammer hammerClaySilver = new ItemClayHammerSilver(HammerMaterial.HARDCLAY, "ClayHammerSilver", "hammer_hardened_clay_stained_silver");
+	public static final ItemBaseHammer hammerClayWhite = new ItemClayHammerWhite(HammerMaterial.HARDCLAY, "ClayHammerWhite", "hammer_hardened_clay_stained_white");
+	public static final ItemBaseHammer hammerHay = new ItemHayHammer(HammerMaterial.HAY, "HayHammer", "hammer_hay");
+	
+	public static final ItemBaseHammer hammerShulkerBlack = new ItemShulkerHammerBlack(HammerMaterial.SHULKER, "ShulkerHammerBlack", "hammer_shulker_black");
+	public static final ItemBaseHammer hammerShulkerBlue = new ItemShulkerHammerBlue(HammerMaterial.SHULKER, "ShulkerHammerBlue", "hammer_shulker_blue");
+	public static final ItemBaseHammer hammerShulkerBrown = new ItemShulkerHammerBrown(HammerMaterial.SHULKER, "ShulkerHammerBrown", "hammer_shulker_brown");
+	public static final ItemBaseHammer hammerShulkerCyan = new ItemShulkerHammerCyan(HammerMaterial.SHULKER, "ShulkerHammerCyan", "hammer_shulker_cyan");
+	public static final ItemBaseHammer hammerShulkerGreen = new ItemShulkerHammerGreen(HammerMaterial.SHULKER, "ShulkerHammerGreen", "hammer_shulker_green");
+	public static final ItemBaseHammer hammerShulkerGrey = new ItemShulkerHammerGrey(HammerMaterial.SHULKER, "ShulkerHammerGrey", "hammer_shulker_grey");
+	public static final ItemBaseHammer hammerShulkerLightBlue = new ItemShulkerHammerLightBlue(HammerMaterial.SHULKER, "ShulkerHammerLightBlue", "hammer_shulker_light_blue");
+	public static final ItemBaseHammer hammerShulkerLime = new ItemShulkerHammerLime(HammerMaterial.SHULKER, "ShulkerHammerLime", "hammer_shulker_lime");
+	public static final ItemBaseHammer hammerShulkerMagenta = new ItemShulkerHammerMagenta(HammerMaterial.SHULKER, "ShulkerHammerMagenta", "hammer_shulker_magenta");
+	public static final ItemBaseHammer hammerShulkerOrange = new ItemShulkerHammerOrange(HammerMaterial.SHULKER, "ShulkerHammerOrange", "hammer_shulker_orange");
+	public static final ItemBaseHammer hammerShulkerPink = new ItemShulkerHammerPink(HammerMaterial.SHULKER, "ShulkerHammerPink", "hammer_shulker_pink");
+	public static final ItemBaseHammer hammerShulkerPurple = new ItemShulkerHammerPurple(HammerMaterial.SHULKER, "ShulkerHammerPurple", "hammer_shulker_purple");
+	public static final ItemBaseHammer hammerShulkerRed = new ItemShulkerHammerRed(HammerMaterial.SHULKER, "ShulkerHammerRed", "hammer_shulker_red");
+	public static final ItemBaseHammer hammerShulkerSilver = new ItemShulkerHammerSilver(HammerMaterial.SHULKER, "ShulkerHammerSilver", "hammer_shulker_silver");
+	public static final ItemBaseHammer hammerShulkerWhite = new ItemShulkerHammerWhite(HammerMaterial.SHULKER, "ShulkerHammerWhite", "hammer_shulker_white");
+	
 	
 	/*
 	 * Hammers Using Ores from other mods
@@ -206,7 +241,14 @@ public class ModItems {
 	    		hammerCoal, hammerCharcoal, hammerEndstone, hammerBone, hammerSponge, hammerBrick, hammerSugar, hammerSlime, 
 	    		hammerMelon, hammerPumpkin, hammerPotato, hammerCarrot, hammerApple, hammerIce, hammerPackedIce, hammerSnow, 
 	    		hammerCake, hammerDragonEgg, hammerTnt, hammerBedrock, hammerPurpur, hammerEndBricks, hammerChorus,
-	    		hammerGranite, hammerAndesite,
+	    		hammerGranite, hammerAndesite, hammerClayBlack, hammerClayBlue, hammerClayBrown, hammerClayCyan, hammerClayGreen,
+	    		hammerClayGrey, hammerClayLightBlue, hammerClayLime, hammerClayMagenta, hammerClayOrange, hammerClayPink,
+	    		hammerClayPurple, hammerClayRed, hammerClaySilver, hammerClayWhite, hammerHay, hammerShulkerBlack, hammerShulkerBlue,
+	    		hammerShulkerBrown, hammerShulkerCyan, hammerShulkerGreen, hammerShulkerGrey, hammerShulkerLightBlue, hammerShulkerLime,
+	    		hammerShulkerMagenta, hammerShulkerOrange, hammerShulkerPink, hammerShulkerPurple, hammerShulkerRed, hammerShulkerSilver,
+	    		hammerShulkerWhite,
+	    			
+	    		
 			/*
 			 * Hammers Using Ores from other mods
 			 * **NOTE: REQUIRES Other mods to craft these hammers**
@@ -246,6 +288,7 @@ public class ModItems {
 	    	 */
 	    		hammerCreeper, hammerPig, hammerCow
 		});
+		//event.getRegistry().registerAll(CustomHammerRegistry.registerHammers());
 	  }
 	
 	@SubscribeEvent
@@ -313,7 +356,38 @@ public class ModItems {
 	    registerRender(hammerChorus);
 	    registerRender(hammerGranite);
 	    registerRender(hammerAndesite);
-		
+	    registerRender(hammerClayBlack);
+	    registerRender(hammerClayBlue);
+	    registerRender(hammerClayBrown);
+	    registerRender(hammerClayCyan);
+	    registerRender(hammerClayGreen);
+	    registerRender(hammerClayGrey);
+	    registerRender(hammerClayLightBlue);
+	    registerRender(hammerClayLime);
+	    registerRender(hammerClayMagenta);
+	    registerRender(hammerClayOrange);
+	    registerRender(hammerClayPink);
+	    registerRender(hammerClayPurple);
+	    registerRender(hammerClayRed);
+	    registerRender(hammerClaySilver);
+	    registerRender(hammerClayWhite);
+	    registerRender(hammerHay);
+	    registerRender(hammerShulkerBlack);
+	    registerRender(hammerShulkerBlue);
+	    registerRender(hammerShulkerBrown);
+	    registerRender(hammerShulkerCyan);
+	    registerRender(hammerShulkerGreen);
+	    registerRender(hammerShulkerGrey);
+	    registerRender(hammerShulkerLightBlue);
+	    registerRender(hammerShulkerLime);
+	    registerRender(hammerShulkerMagenta);
+	    registerRender(hammerShulkerOrange);
+	    registerRender(hammerShulkerPink);
+	    registerRender(hammerShulkerPurple);
+	    registerRender(hammerShulkerRed);
+	    registerRender(hammerShulkerSilver);
+	    registerRender(hammerShulkerWhite);
+	    	
 	    /*
 		 * Hammers Using Ores from other mods
 		 * **NOTE: REQUIRES Other mods to craft these hammers**
@@ -422,7 +496,7 @@ public class ModItems {
 		
 	  }
 	
-	private static void registerRender(Item item) {
+	public static void registerRender(Item item) {
 	   ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(item.getRegistryName().toString()), "inventory"));
 	   
 		   if(Config.debugMode == true) {

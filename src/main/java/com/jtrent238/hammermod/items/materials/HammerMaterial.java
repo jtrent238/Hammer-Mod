@@ -1,6 +1,7 @@
 package com.jtrent238.hammermod.items.materials;
 
 import com.jtrent238.hammermod.Main;
+import com.jtrent238.jtcoremod.JTAPI;
 
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
@@ -51,15 +52,18 @@ public class HammerMaterial {
 	public static ToolMaterial TNT = EnumHelper.addToolMaterial("TNT", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * brM, 1561 * brM, 8.0F * brM, 3.0F * brM, 10 * brM);
 	public static ToolMaterial CHARCOAL = EnumHelper.addToolMaterial("CHARCOAL", 1, 450, 2.0F, 1.0F, 4);
-	public static ToolMaterial ENDSTONE = ToolMaterial.STONE;
-	public static ToolMaterial GRANITE = ToolMaterial.STONE;
-	public static ToolMaterial ANDESITE = ToolMaterial.STONE;
+	public static ToolMaterial ENDSTONE = STONE;
+	public static ToolMaterial GRANITE = STONE;
+	public static ToolMaterial ANDESITE = STONE;
+	public static ToolMaterial HARDCLAY = STONE;
+	public static ToolMaterial HAY = CACTUS;
+	public static ToolMaterial SHULKER = EnumHelper.addToolMaterial("SHULKER", 4, 2672, 10.0F, 6.0F, 12);
 	
 	// TO BE FILLED IN LATER
 	
 	public static ToolMaterial BONE = EnumHelper.addToolMaterial("BONE", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial SPONGE = EnumHelper.addToolMaterial("SPONGE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial BRICK = EnumHelper.addToolMaterial("BRICK", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial BRICK = STONE;
 	public static ToolMaterial SUGAR = EnumHelper.addToolMaterial("SUGAR", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial SLIME = EnumHelper.addToolMaterial("SLIME", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial MELON = EnumHelper.addToolMaterial("MELON", 3, 1561, 8.0F, 3.0F, 10);
@@ -71,10 +75,10 @@ public class HammerMaterial {
 	public static ToolMaterial PACKED_ICE = EnumHelper.addToolMaterial("PACKED_ICE", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial SNOW = EnumHelper.addToolMaterial("SNOW", 3, 1561, 8.0F, 3.0F, 10);
 	public static ToolMaterial CAKE = EnumHelper.addToolMaterial("CAKE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial PURPUR = EnumHelper.addToolMaterial("PURPUR", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial ENDBRICKS = EnumHelper.addToolMaterial("ENDBRICKS", 3, 1561, 8.0F, 3.0F, 10);
+	public static ToolMaterial PURPUR = STONE;
+	public static ToolMaterial ENDBRICKS = STONE;
 	public static ToolMaterial CHORUS = EnumHelper.addToolMaterial("CHORUS", 3, 1561, 8.0F, 3.0F, 10);
-
+	
 	
 	//Ores from other mods
 	public static ToolMaterial URANIUM = EnumHelper.addToolMaterial("URANIUM", 3, 1561, 8.0F, 3.0F, 10);
@@ -108,5 +112,9 @@ public class HammerMaterial {
 	public static ToolMaterial MISSINGTEX = EnumHelper.addToolMaterial("MISSINGTEX", 3 * RAINBOW_MULTIPLIER / 2, 1561 * RAINBOW_MULTIPLIER / 2, 8.0F * RAINBOW_MULTIPLIER / 2, 3.0F * RAINBOW_MULTIPLIER / 2, 10 * RAINBOW_MULTIPLIER / 2);
 	
 	//public static ToolMaterial CUSTOM_1 = EnumHelper.addToolMaterial("CUSTOM_1", 3 * C1, 1561 * C1, 8.0F * C1, 3.0F * C1, 10 * C1);
+	
+	public static void addHammerMaterial(String material, int harvestLevel,  int durability,  int miningSpeed,  int damageVsEntities,  int enchantability) {
+		JTAPI.addNewToolMaterial(material, harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
+	}
 	
 }

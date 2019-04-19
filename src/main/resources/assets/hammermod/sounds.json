@@ -1,5 +1,5 @@
 {
-    "hammermod:smash": {"category": "master","sounds": [{"name": "smash","stream": false}]},
-	"hammermod:toasterbreak": {"category": "master","sounds": [{"name": "toasterbreak","stream": false}]},
-	"hammermod:toasterbake": {"category": "master","sounds": [{"name": "toasterbake","stream": false}]}
+    "smash": {"category": "master","sounds": [{"name": "hammermod:smash","stream": false}]},
+	"toasterbreak": {"category": "master","sounds": [{"name": "hammermod:toasterbreak","stream": false}]},
+	"toasterbake": {"category": "master","sounds": [{"name": "hammermod:toasterbake","stream": false}]}
 	}

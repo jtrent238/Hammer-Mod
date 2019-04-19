@@ -1,0 +1,21 @@
+{
+   "type": "minecraft:crafting_shaped",
+   "pattern": [
+       "MMM",
+       "MSM",
+       " S "
+   ],
+   "key": {
+       "M": {
+           "item": "minecraft:stained_hardened_clay",
+		   "data": 9
+       },
+       "S": {
+           "item": "minecraft:stick"
+       }
+   },
+   "result": {
+       "item": "hammermod:hardened_clay_stained_cyan",
+       "count": 1
+    }
+}
