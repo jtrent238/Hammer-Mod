@@ -1,118 +1,79 @@
 package com.jtrent238.hammermod;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import net.minecraft.item.Item;
 import java.io.IOException;
+import net.minecraft.item.ItemStack;
+import java.io.Writer;
 import java.io.PrintWriter;
-import java.util.Random;
-
-import javax.swing.JOptionPane;
-
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.Logger;
-
-import com.jtrent238.hammermod.event.GlobalEvents;
-import com.jtrent238.hammermod.items.materials.HammerMaterial;
-import com.jtrent238.hammermod.proxy.CommonProxy;
-import com.jtrent238.hammermod.util.CustomHammerRegistry;
+import java.io.FileWriter;
 import com.jtrent238.hammermod.util.HammerHandler;
+import org.apache.logging.log4j.Level;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import com.jtrent238.hammermod.util.LootHandler;
 import com.jtrent238.hammermod.util.ModelRegistryHandler;
-import com.jtrent238.hammermod.util.UpdateChecker;
-import com.jtrent238.jtcoremod.JTAPI;
-
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.PlayerEvent;
+import net.minecraft.creativetab.CreativeTabs;
+import org.apache.logging.log4j.Logger;
+import net.minecraftforge.fml.common.SidedProxy;
+import com.jtrent238.hammermod.proxy.CommonProxy;
+import net.minecraftforge.fml.common.Mod;
 
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.MODVERSION/*, dependencies = "required-after:jtcoremod@[2.0.0.3,)"*/, useMetadata = true)
-public class Main {
-
+@Mod(modid = "hammermod", name = "jtrent238's Hammer Mod", version = "2.1.3.10", dependencies = "required-after:forge@[11.16.0.1865,)", useMetadata = true, acceptedMinecraftVersions = "[1.12.2]")
+public class Main
+{
     public static final String MODID = "hammermod";
-	public static final String MODNAME = "jtrent238's Hammer Mod";
-	public static final String MODAUTHOR = "jtrent238";
-	public static final String MODVERSION = "2.1.3.10-indev";
-	public static final String MC = "1.12.2";
-
+    public static final String MODNAME = "jtrent238's Hammer Mod";
+    public static final String MODAUTHOR = "jtrent238";
+    public static final String MODVERSION = "2.1.3.10";
+    public static final String MC = "1.12.2";
     @SidedProxy(clientSide = "com.jtrent238.hammermod.proxy.ClientProxy", serverSide = "com.jtrent238.hammermod.proxy.ServerProxy")
     public static CommonProxy proxy;
-
-    public static int numHammers = 176;
-    
+    public static int numHammers;
     @Mod.Instance
     public static Main instance;
-
     public static Logger logger;
-
+    public static CreativeTabs tab_HammerMod;
+    
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {
-        logger = event.getModLog();
-        proxy.preInit(event);
-    }
-
-    @Mod.EventHandler
-    public void init(FMLInitializationEvent e, ModelRegistryEvent mre){
-        proxy.init(e);
-        CustomHammerRegistry.createBaseHammer(MODAUTHOR);
-        ModelRegistryHandler.registerModels(mre);
-        ModRecipes.registerRecpies();
-        LootHandler.registerLoot();
-    }
-
-    @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent e) throws IOException {
-        proxy.postInit(e);
-        //JTAPI.addNewCreativeTab("tab_HammerMod", ModItems.hammerDiamond, false);
-        //UpdateChecker.isUpdateAvailable();
-        //UpdateChecker.displayUpdateMsgBox();
-        
-        
-        this.logger.log(Level.INFO, "There are currently " + numHammers + " hammers in the mod.");
-        
-        for (int i = 0; i >= numHammers; i++) {
-        	this.logger.log(Level.INFO, "Registered Hammer: " + HammerHandler.hammers.get(i));
-        	this.logger.log(Level.INFO, "TEST" + i);
-        	FileWriter fileWriter = new FileWriter("hammers.txt");
-        	PrintWriter printWriter = new PrintWriter(fileWriter);
-        	printWriter.printf("%s", HammerHandler.hammers.get(i).toString());
-        	printWriter.close();
-        }
-        
-//        if (WebUtil.isUpdateAvailable() == true) {
-//        	this.logger.log(Level.INFO, "An update is available for " + Main.MODNAME + ".");
-//        	this.logger.log(Level.INFO, "Your Version: " + Main.MODVERSION + " Latest version: " + WebUtil.webVer);
-//		} else if (WebUtil.isUpdateAvailable() == false) {
-//			this.logger.log(Level.INFO, "You are using the latest version of " + Main.MODNAME + ".");
-//		}
-        
-//      FileWriter fileWriter = new FileWriter("hammermod_info.txt");
-//    	PrintWriter printWriter = new PrintWriter(fileWriter);
-//    	printWriter.println("Mod ID: " + MODID + " " + MODVERSION);
-//    	printWriter.close();
-        
-        
+    public void preInit(final FMLPreInitializationEvent a1) {
+        Main.logger = /*EL:47*/a1.getModLog();
+        Main.proxy.preInit(/*EL:48*/a1);
     }
     
-    public static CreativeTabs tab_HammerMod = new CreativeTabs("tab_HammerMod") {
-    	
-    	public ItemStack getTabIconItem() {
-    		
-    		return new ItemStack(ModItems.hammerDiamond);
-    	}
-    	
-    	public boolean hasSearchBar(){
-    		return false;
-    	}
-    	
-    };
+    @Mod.EventHandler
+    public void init(final FMLInitializationEvent a1, final ModelRegistryEvent a2) {
+        Main.proxy.init(/*EL:53*/a1);
+        /*SL:54*/ModelRegistryHandler.registerModels(a2);
+        /*SL:55*/ModRecipes.registerRecpies();
+        /*SL:56*/LootHandler.registerLoot();
+    }
+    
+    @Mod.EventHandler
+    public void postInit(final FMLPostInitializationEvent v-2) throws IOException {
+        Main.proxy.postInit(/*EL:61*/v-2);
+        Main.logger.log(Level.INFO, /*EL:63*/"There are currently " + Main.numHammers + " hammers in the mod.");
+        /*SL:65*/for (int i = 0; i > Main.numHammers; ++i) {
+            Main.logger.log(Level.INFO, /*EL:66*/"Registered Hammer: " + HammerHandler.hammers.get(i));
+            Main.logger.log(Level.INFO, /*EL:67*/"TEST" + i);
+            final FileWriter a1 = /*EL:68*/new FileWriter("hammers.txt");
+            final PrintWriter v1 = /*EL:69*/new PrintWriter(a1);
+            /*SL:70*/v1.printf("%s", HammerHandler.hammers.get(i).toString());
+            /*SL:71*/v1.close();
+        }
+    }
+    
+    static {
+        Main.numHammers = 144;
+        Main.tab_HammerMod = new CreativeTabs("tab_HammerMod") {
+            public ItemStack func_78016_d() {
+                /*SL:85*/return new ItemStack((Item)ModItems.hammerDiamond);
+            }
+            
+            public boolean hasSearchBar() {
+                /*SL:88*/return false;
+            }
+        };
+    }
 }

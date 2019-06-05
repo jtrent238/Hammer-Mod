@@ -1,508 +1,599 @@
 package com.jtrent238.hammermod;
 
-import java.util.ArrayList;
-
-import org.apache.logging.log4j.Level;
-
-import com.jtrent238.hammermod.api.HammerModAPI;
-import com.jtrent238.hammermod.items.hammers.*;
+import com.jtrent238.hammermod.items.hammers.ItemCowHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPigHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCreeperHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMissingTextureHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRainbowHammer;
+import com.jtrent238.hammermod.items.hammers.ItemLightningHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPureDevilHammer;
+import com.jtrent238.hammermod.items.hammers.ItemToasterHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCryingObsidainHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDeeAxelJayHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMiningWormHammer;
+import com.jtrent238.hammermod.items.hammers.Item_MrGregor_Hammer;
+import com.jtrent238.hammermod.items.hammers.ItemThackAttack_MCHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSkyTheKidRSHammer;
+import com.jtrent238.hammermod.items.hammers.ItemxJSQHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDanTDMHammer;
+import com.jtrent238.hammermod.items.hammers.ItemJenHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPatHammer;
+import com.jtrent238.hammermod.items.hammers.ItemOrichalcumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAredriteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCelenegilHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAstralHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAtlarusHammer;
+import com.jtrent238.hammermod.items.hammers.ItemTartariteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCarmotHammer;
+import com.jtrent238.hammermod.items.hammers.ItemVyroxeresHammer;
+import com.jtrent238.hammermod.items.hammers.ItemKalendriteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCeruclaseHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAmordrineHammer;
+import com.jtrent238.hammermod.items.hammers.ItemLemuriteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemVulcaniteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemInolashiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSanguiniteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMidasiumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemEximiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMeutoiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDesichalkosHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRubberHammer;
+import com.jtrent238.hammermod.items.hammers.ItemInfuscoliumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemHaderothHammer;
+import com.jtrent238.hammermod.items.hammers.ItemOureclaseHammer;
+import com.jtrent238.hammermod.items.hammers.ItemManyullynHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCobaltHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAlumiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemArditeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPigIronHammer;
+import com.jtrent238.hammermod.items.hammers.ItemElectrumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSearedBrickHammer;
+import com.jtrent238.hammermod.items.hammers.ItemManganeseHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAngmallenHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPoopHammer;
+import com.jtrent238.hammermod.items.hammers.ItemHepatizonHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPrometheumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMithrilHammer;
+import com.jtrent238.hammermod.items.hammers.ItemLimoniteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRositeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRustedHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBloodStoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemTitaniumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemUraniumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemXychoriumHammer;
+import com.jtrent238.hammermod.items.hammers.ItemShinyHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAdaminiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemFerrousHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAmberBearingStoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCinnabarHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSilicaHammer;
+import com.jtrent238.hammermod.items.hammers.ItemNikoliteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemOnyxHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSapphireHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPierreHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCitrineHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGraphiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAmethystHammer;
+import com.jtrent238.hammermod.items.hammers.ItemJadeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSilverHammer;
+import com.jtrent238.hammermod.items.hammers.ItemTinHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRubyHammer;
+import com.jtrent238.hammermod.items.hammers.ItemTungstenHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBronzeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCopperHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAndesiteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGraniteHammer;
+import com.jtrent238.hammermod.items.hammers.ItemChorusHammer;
+import com.jtrent238.hammermod.items.hammers.ItemEndBricksHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPurpurHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBedrockHammer;
+import com.jtrent238.hammermod.items.hammers.ItemTntHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDragonEggHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCakeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSnowHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPackedIceHammer;
+import com.jtrent238.hammermod.items.hammers.ItemIceHammer;
+import com.jtrent238.hammermod.items.hammers.ItemAppleHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCarrotHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPotatoHammer;
+import com.jtrent238.hammermod.items.hammers.ItemPumpkinHammer;
+import com.jtrent238.hammermod.items.hammers.ItemMelonHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSlimeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSugarHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBrickHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSpongeHammer;
+import com.jtrent238.hammermod.items.hammers.ItemBoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemEndstoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCharcoalHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCoalHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSoulSandHammer;
+import com.jtrent238.hammermod.items.hammers.ItemNetherackHammer;
+import com.jtrent238.hammermod.items.hammers.ItemLapisHammer;
+import com.jtrent238.hammermod.items.hammers.ItemRedstoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGlowstoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemObsidianHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGrassHammer;
+import com.jtrent238.hammermod.items.hammers.ItemEmeraldHammer;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerWhite;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerOrange;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerMagenta;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerLightBlue;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerYellow;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerLime;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerPink;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerGrey;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerSilver;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerCyan;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerPurple;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerBlue;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerBrown;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerGreen;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerRed;
+import com.jtrent238.hammermod.items.hammers.ItemWoolHammerBlack;
+import com.jtrent238.hammermod.items.hammers.ItemGravelHammer;
+import com.jtrent238.hammermod.items.hammers.ItemCactusHammer;
+import com.jtrent238.hammermod.items.hammers.ItemSandHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGlassHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDirtHammer;
+import com.jtrent238.hammermod.items.hammers.ItemDiamondHammer;
+import com.jtrent238.hammermod.items.hammers.ItemGoldHammer;
+import com.jtrent238.hammermod.items.hammers.ItemIronHammer;
+import com.jtrent238.hammermod.items.hammers.ItemStoneHammer;
+import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
 import com.jtrent238.hammermod.items.materials.HammerMaterial;
-import com.jtrent238.hammermod.util.CustomHammerRegistry;
-import com.jtrent238.hammermod.util.HammerHandler;
-
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.event.RegistryEvent.Register;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
+import net.minecraftforge.registries.IForgeRegistryEntry;
+import net.minecraft.item.Item;
+import net.minecraftforge.event.RegistryEvent;
+import com.jtrent238.hammermod.items.hammers.ItemBaseHammer;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@ObjectHolder(Main.MODID)@EventBusSubscriber
-public class ModItems {
-	
-	
-	/*
-	 * Basic Minecraft Hammers (Ex. Vannila Ores)
-	 */
-	public static final ItemBaseHammer hammerWood = new ItemWoodHammer(HammerMaterial.WOOD, "WoodHammer", "wood_hammer");
-	public static final ItemBaseHammer hammerStone = new ItemStoneHammer(HammerMaterial.STONE, "StoneHammer", "stone_hammer");
-	public static final ItemBaseHammer hammerIron = new ItemIronHammer(HammerMaterial.IRON, "IronHammer", "iron_hammer");
-	public static final ItemBaseHammer hammerGold = new ItemGoldHammer(HammerMaterial.GOLD, "GoldHammer", "gold_hammer");
-	public static final ItemBaseHammer hammerDiamond = new ItemDiamondHammer(HammerMaterial.DIAMOND, "DiamondHammer", "diamond_hammer");
-	public static final ItemBaseHammer hammerDirt = new ItemDirtHammer(HammerMaterial.DIRT, "DirtHammer", "dirt_hammer");
-	public static final ItemBaseHammer hammerGlass = new ItemGlassHammer(HammerMaterial.GLASS, "GlassHammer", "glass_hammer");
-	public static final ItemBaseHammer hammerSand = new ItemSandHammer(HammerMaterial.SAND, "SandHammer", "sand_hammer");
-	public static final ItemBaseHammer hammerCactus = new ItemCactusHammer(HammerMaterial.CACTUS, "CactusHammer", "cactus_hammer");
-	public static final ItemBaseHammer hammerGravel = new ItemGravelHammer(HammerMaterial.GRAVEL, "GravelHammer", "gravel_hammer");
-	public static final ItemBaseHammer hammerWoolBlack = new ItemWoolHammerBlack(HammerMaterial.WOOL, "WoolHammerBlack", "wool_hammer_black");
-	public static final ItemBaseHammer hammerWoolRed = new ItemWoolHammerRed(HammerMaterial.WOOL, "WoolHammerRed", "wool_hammer_red");
-	public static final ItemBaseHammer hammerWoolGreen = new ItemWoolHammerGreen(HammerMaterial.WOOL, "WoolHammerGreen", "wool_hammer_green");
-	public static final ItemBaseHammer hammerWoolBrown = new ItemWoolHammerBrown(HammerMaterial.WOOL, "WoolHammerBrown", "wool_hammer_brown");
-	public static final ItemBaseHammer hammerWoolBlue = new ItemWoolHammerBlue(HammerMaterial.WOOL, "WoolHammerBlue", "wool_hammer_blue");
-	public static final ItemBaseHammer hammerWoolPurple = new ItemWoolHammerPurple(HammerMaterial.WOOL, "WoolHammerPurple", "wool_hammer_purple");
-	public static final ItemBaseHammer hammerWoolCyan = new ItemWoolHammerCyan(HammerMaterial.WOOL, "WoolHammerCyan", "wool_hammer_cyan");
-	public static final ItemBaseHammer hammerWoolSilver = new ItemWoolHammerSilver(HammerMaterial.WOOL, "WoolHammerSilver", "wool_hammer_silver");
-	public static final ItemBaseHammer hammerWoolGrey = new ItemWoolHammerGrey(HammerMaterial.WOOL, "WoolHammerGrey", "wool_hammer_grey");
-	public static final ItemBaseHammer hammerWoolPink = new ItemWoolHammerPink(HammerMaterial.WOOL, "WoolHammerPink", "wool_hammer_pink");
-	public static final ItemBaseHammer hammerWoolLime = new ItemWoolHammerLime(HammerMaterial.WOOL, "WoolHammerLime", "wool_hammer_lime");
-	public static final ItemBaseHammer hammerWoolYellow = new ItemWoolHammerYellow(HammerMaterial.WOOL, "WoolHammerYellow", "wool_hammer_yellow");
-	public static final ItemBaseHammer hammerWoolLightBlue = new ItemWoolHammerLightBlue(HammerMaterial.WOOL, "WoolHammerLightBlue", "wool_hammer_lightblue");
-	public static final ItemBaseHammer hammerWoolMagenta = new ItemWoolHammerMagenta(HammerMaterial.WOOL, "WoolHammerMagenta", "wool_hammer_magenta");
-	public static final ItemBaseHammer hammerWoolOrange = new ItemWoolHammerOrange(HammerMaterial.WOOL, "WoolHammerOrange", "wool_hammer_orange");
-	public static final ItemBaseHammer hammerWoolWhite = new ItemWoolHammerWhite(HammerMaterial.WOOL, "WoolHammerWhite", "wool_hammer_white");
-	public static final ItemBaseHammer hammerEmerald = new ItemEmeraldHammer(HammerMaterial.EMERALD, "EmeraldHammer", "emerald_hammer");
-	public static final ItemBaseHammer hammerGrass = new ItemGrassHammer(HammerMaterial.GRASS, "GrassHammer", "grass_hammer");
-	public static final ItemBaseHammer hammerObsidian = new ItemObsidianHammer(HammerMaterial.OBSIDIAN, "ObsidianHammer", "obsidian_hammer");
-	public static final ItemBaseHammer hammerGlowstone = new ItemGlowstoneHammer(HammerMaterial.GLOWSTONE, "GlowstoneHammer", "glowstone_hammer");
-	public static final ItemBaseHammer hammerRedstone = new ItemRedstoneHammer(HammerMaterial.REDSTONE, "RedstoneHammer", "redstone_hammer");
-	public static final ItemBaseHammer hammerLapis = new ItemLapisHammer(HammerMaterial.LAPIS, "LapisHammer", "lapis_hammer");
-	public static final ItemBaseHammer hammerNetherack = new ItemNetherackHammer(HammerMaterial.NETHERACK, "NetherackHammer", "netherack_hammer");
-	public static final ItemBaseHammer hammerSoulsand = new ItemSoulSandHammer(HammerMaterial.SOULSAND, "SoulSandHammer", "soulsand_hammer"); 
-	public static final ItemBaseHammer hammerCoal = new ItemCoalHammer(HammerMaterial.COAL, "CoalHammer", "coal_hammer");
-	public static final ItemBaseHammer hammerCharcoal = new ItemCharcoalHammer(HammerMaterial.CHARCOAL, "CharcoalHammer", "charcoal_hammer");
-	public static final ItemBaseHammer hammerEndstone = new ItemEndstoneHammer(HammerMaterial.ENDSTONE, "EndstoneHammer", "endstone_hammer");
-	public static final ItemBaseHammer hammerBone = new ItemBoneHammer(HammerMaterial.BONE, "BoneHammer", "bone_hammer");
-	public static final ItemBaseHammer hammerSponge = new ItemSpongeHammer(HammerMaterial.SPONGE, "SpongeHammer", "sponge_hammer");
-	public static final ItemBaseHammer hammerBrick = new ItemBrickHammer(HammerMaterial.BRICK, "BrickHammer", "brick_hammer");
-	public static final ItemBaseHammer hammerSugar = new ItemSugarHammer(HammerMaterial.SUGAR, "SugarHammer", "sugar_hammer");
-	public static final ItemBaseHammer hammerSlime = new ItemSlimeHammer(HammerMaterial.SLIME, "SlimeHammer", "slime_hammer");
-	public static final ItemBaseHammer hammerMelon = new ItemMelonHammer(HammerMaterial.MELON, "MelonHammer", "melon_hammer");
-	public static final ItemBaseHammer hammerPumpkin = new ItemPumpkinHammer(HammerMaterial.PUMPKIN, "PumpkinHammer", "pumpkin_hammer");
-	public static final ItemBaseHammer hammerPotato = new ItemPotatoHammer(HammerMaterial.POTATO, "PotatoHammer", "potato_hammer");
-	public static final ItemBaseHammer hammerCarrot = new ItemCarrotHammer(HammerMaterial.CARROT, "CarrotHammer", "carrot_hammer");
-	public static final ItemBaseHammer hammerApple = new ItemAppleHammer(HammerMaterial.APPLE, "AppleHammer", "apple_hammer");
-	public static final ItemBaseHammer hammerIce = new ItemIceHammer(HammerMaterial.ICE, "IceHammer", "ice_hammer");
-	public static final ItemBaseHammer hammerPackedIce = new ItemPackedIceHammer(HammerMaterial.PACKED_ICE, "PackedIceHammer", "packed_ice_hammer");
-	public static final ItemBaseHammer hammerSnow = new ItemSnowHammer(HammerMaterial.SNOW, "SnowHammer", "snow_hammer");
-	public static final ItemBaseHammer hammerCake = new ItemCakeHammer(HammerMaterial.CAKE, "CakeHammer", "cake_hammer");
-	public static final ItemBaseHammer hammerDragonEgg = new ItemDragonEggHammer(HammerMaterial.DRAGEGG, "DragonEggHammer", "dragon_egg_hammer");
-	public static final ItemBaseHammer hammerTnt = new ItemTntHammer(HammerMaterial.TNT, "TntHammer", "tnt_hammer");
-	public static final ItemBaseHammer hammerBedrock = new ItemBedrockHammer(HammerMaterial.BEDROCK, "BedrockHammer", "bedrock_hammer");
-	public static final ItemBaseHammer hammerPurpur = new ItemPurpurHammer(HammerMaterial.PURPUR, "PurpurHammer", "purpur_hammer");
-	public static final ItemBaseHammer hammerEndBricks = new ItemEndBricksHammer(HammerMaterial.ENDBRICKS, "EndBricksHammer", "end_bricks_hammer");
-	public static final ItemBaseHammer hammerChorus = new ItemChorusHammer(HammerMaterial.CHORUS, "ChorusHammer", "chorus_hammer");
-	public static final ItemBaseHammer hammerGranite = new ItemGraniteHammer(HammerMaterial.GRANITE, "GraniteHammer", "granite_hammer");
-	public static final ItemBaseHammer hammerAndesite = new ItemAndesiteHammer(HammerMaterial.ANDESITE, "AndesiteHammer", "andesite_hammer");
-	public static final ItemBaseHammer hammerClayBlack = new ItemClayHammerBlack(HammerMaterial.HARDCLAY, "ClayHammerBlack", "hammer_hardened_clay_stained_black");
-	public static final ItemBaseHammer hammerClayBlue = new ItemClayHammerBlue(HammerMaterial.HARDCLAY, "ClayHammerBlue", "hammer_hardened_clay_stained_blue");
-	public static final ItemBaseHammer hammerClayBrown = new ItemClayHammerBrown(HammerMaterial.HARDCLAY, "ClayHammerBrown", "hammer_hardened_clay_stained_brown");
-	public static final ItemBaseHammer hammerClayCyan = new ItemClayHammerCyan(HammerMaterial.HARDCLAY, "ClayHammerCyan", "hammer_hardened_clay_stained_cyan");
-	public static final ItemBaseHammer hammerClayGreen = new ItemClayHammerGreen(HammerMaterial.HARDCLAY, "ClayHammerGreen", "hammer_hardened_clay_stained_green");
-	public static final ItemBaseHammer hammerClayGrey = new ItemClayHammerGrey(HammerMaterial.HARDCLAY, "ClayHammerGrey", "hammer_hardened_clay_stained_grey");
-	public static final ItemBaseHammer hammerClayLightBlue = new ItemClayHammerLightBlue(HammerMaterial.HARDCLAY, "ClayHammerLightBlue", "hammer_hardened_clay_stained_light_blue");
-	public static final ItemBaseHammer hammerClayLime = new ItemClayHammerLime(HammerMaterial.HARDCLAY, "ClayHammerLime", "hammer_hardened_clay_stained_lime");
-	public static final ItemBaseHammer hammerClayMagenta = new ItemClayHammerMagenta(HammerMaterial.HARDCLAY, "ClayHammerMagenta", "hammer_hardened_clay_stained_magenta");
-	public static final ItemBaseHammer hammerClayOrange = new ItemClayHammerOrange(HammerMaterial.HARDCLAY, "ClayHammerOrange", "hammer_hardened_clay_stained_orange");
-	public static final ItemBaseHammer hammerClayPink = new ItemClayHammerPink(HammerMaterial.HARDCLAY, "ClayHammerPink", "hammer_hardened_clay_stained_pink");
-	public static final ItemBaseHammer hammerClayPurple = new ItemClayHammerPurple(HammerMaterial.HARDCLAY, "ClayHammerPurple", "hammer_hardened_clay_stained_purple");
-	public static final ItemBaseHammer hammerClayRed = new ItemClayHammerRed(HammerMaterial.HARDCLAY, "ClayHammerRed", "hammer_hardened_clay_stained_red");
-	public static final ItemBaseHammer hammerClaySilver = new ItemClayHammerSilver(HammerMaterial.HARDCLAY, "ClayHammerSilver", "hammer_hardened_clay_stained_silver");
-	public static final ItemBaseHammer hammerClayWhite = new ItemClayHammerWhite(HammerMaterial.HARDCLAY, "ClayHammerWhite", "hammer_hardened_clay_stained_white");
-	public static final ItemBaseHammer hammerHay = new ItemHayHammer(HammerMaterial.HAY, "HayHammer", "hammer_hay");
-	
-	public static final ItemBaseHammer hammerShulkerBlack = new ItemShulkerHammerBlack(HammerMaterial.SHULKER, "ShulkerHammerBlack", "hammer_shulker_black");
-	public static final ItemBaseHammer hammerShulkerBlue = new ItemShulkerHammerBlue(HammerMaterial.SHULKER, "ShulkerHammerBlue", "hammer_shulker_blue");
-	public static final ItemBaseHammer hammerShulkerBrown = new ItemShulkerHammerBrown(HammerMaterial.SHULKER, "ShulkerHammerBrown", "hammer_shulker_brown");
-	public static final ItemBaseHammer hammerShulkerCyan = new ItemShulkerHammerCyan(HammerMaterial.SHULKER, "ShulkerHammerCyan", "hammer_shulker_cyan");
-	public static final ItemBaseHammer hammerShulkerGreen = new ItemShulkerHammerGreen(HammerMaterial.SHULKER, "ShulkerHammerGreen", "hammer_shulker_green");
-	public static final ItemBaseHammer hammerShulkerGrey = new ItemShulkerHammerGrey(HammerMaterial.SHULKER, "ShulkerHammerGrey", "hammer_shulker_grey");
-	public static final ItemBaseHammer hammerShulkerLightBlue = new ItemShulkerHammerLightBlue(HammerMaterial.SHULKER, "ShulkerHammerLightBlue", "hammer_shulker_light_blue");
-	public static final ItemBaseHammer hammerShulkerLime = new ItemShulkerHammerLime(HammerMaterial.SHULKER, "ShulkerHammerLime", "hammer_shulker_lime");
-	public static final ItemBaseHammer hammerShulkerMagenta = new ItemShulkerHammerMagenta(HammerMaterial.SHULKER, "ShulkerHammerMagenta", "hammer_shulker_magenta");
-	public static final ItemBaseHammer hammerShulkerOrange = new ItemShulkerHammerOrange(HammerMaterial.SHULKER, "ShulkerHammerOrange", "hammer_shulker_orange");
-	public static final ItemBaseHammer hammerShulkerPink = new ItemShulkerHammerPink(HammerMaterial.SHULKER, "ShulkerHammerPink", "hammer_shulker_pink");
-	public static final ItemBaseHammer hammerShulkerPurple = new ItemShulkerHammerPurple(HammerMaterial.SHULKER, "ShulkerHammerPurple", "hammer_shulker_purple");
-	public static final ItemBaseHammer hammerShulkerRed = new ItemShulkerHammerRed(HammerMaterial.SHULKER, "ShulkerHammerRed", "hammer_shulker_red");
-	public static final ItemBaseHammer hammerShulkerSilver = new ItemShulkerHammerSilver(HammerMaterial.SHULKER, "ShulkerHammerSilver", "hammer_shulker_silver");
-	public static final ItemBaseHammer hammerShulkerWhite = new ItemShulkerHammerWhite(HammerMaterial.SHULKER, "ShulkerHammerWhite", "hammer_shulker_white");
-	
-	
-	/*
-	 * Hammers Using Ores from other mods
-	 * **NOTE: REQUIRES Other mods to craft these hammers**
-	 */
-	public static final ItemBaseHammer hammerCopper = new ItemCopperHammer(HammerMaterial.DEFAULT, "CopperHammer", "copper_hammer");
-	public static final ItemBaseHammer hammerBronze = new ItemBronzeHammer(HammerMaterial.DEFAULT, "BronzeHammer", "bronze_hammer");
-	public static final ItemBaseHammer hammerTungsten = new ItemTungstenHammer(HammerMaterial.DEFAULT, "TungstenHammer", "tungsten_hammer");
-	public static final ItemBaseHammer hammerRuby = new ItemRubyHammer(HammerMaterial.DEFAULT, "RubyHammer", "ruby_hammer");
-	public static final ItemBaseHammer hammerTin = new ItemTinHammer(HammerMaterial.DEFAULT, "TinHammer", "tin_hammer");
-	public static final ItemBaseHammer hammerSilver = new ItemSilverHammer(HammerMaterial.DEFAULT, "SilverHammer", "silver_hammer");
-	public static final ItemBaseHammer hammerJade = new ItemJadeHammer(HammerMaterial.DEFAULT, "JadeHammer", "jade_hammer");
-	public static final ItemBaseHammer hammerAmethyst = new ItemAmethystHammer(HammerMaterial.DEFAULT, "AmethystHammer", "amethyst_hammer");
-	public static final ItemBaseHammer hammerGraphite = new ItemGraphiteHammer(HammerMaterial.DEFAULT, "GraphiteHammer", "graphite_hammer");
-	public static final ItemBaseHammer hammerCitrine = new ItemCitrineHammer(HammerMaterial.DEFAULT, "CitrineHammer", "citrine_hammer");
-	public static final ItemBaseHammer hammerPierre = new ItemPierreHammer(HammerMaterial.DEFAULT, "PierreHammer", "pierre_hammer");
-	public static final ItemBaseHammer hammerSapphire = new ItemSapphireHammer(HammerMaterial.DEFAULT, "SapphireHammer", "sapphire_hammer");
-	public static final ItemBaseHammer hammerOnyx = new ItemOnyxHammer(HammerMaterial.DEFAULT, "OnyxHammer", "onyx_hammer");
-	public static final ItemBaseHammer hammerNikolite = new ItemNikoliteHammer(HammerMaterial.DEFAULT, "NikoliteHammer", "nikolite_hammer");
-	public static final ItemBaseHammer hammerSilica = new ItemSilicaHammer(HammerMaterial.DEFAULT, "SilicaHammer", "silica_hammer");
-	public static final ItemBaseHammer hammerCinnabar = new ItemCinnabarHammer(HammerMaterial.DEFAULT, "CinnabarHammer", "cinnabar_hammer");
-	public static final ItemBaseHammer hammerAmber = new ItemAmberBearingStoneHammer(HammerMaterial.DEFAULT, "AmberHammer", "amber_hammer");
-	public static final ItemBaseHammer hammerFerrous = new ItemFerrousHammer(HammerMaterial.DEFAULT, "FerrousHammer", "ferrous_hammer");
-	public static final ItemBaseHammer hammerAdaminite = new ItemAdaminiteHammer(HammerMaterial.DEFAULT, "AdaminiteHammer", "adaminite_hammer");
-	public static final ItemBaseHammer hammerShiny = new ItemShinyHammer(HammerMaterial.DEFAULT, "ShinyHammer", "shiny_hammer");
-	public static final ItemBaseHammer hammerXychorium = new ItemXychoriumHammer(HammerMaterial.DEFAULT, "XychoriumHammer", "xychorium_hammer");
-	public static final ItemBaseHammer hammerUranium = new ItemUraniumHammer(HammerMaterial.DEFAULT, "UraniumHammer", "uranium_hammer");
-	public static final ItemBaseHammer hammerTitanium = new ItemTitaniumHammer(HammerMaterial.DEFAULT, "TitaniumHammer", "titanium_hammer");
-	public static final ItemBaseHammer hammerBloodStone = new ItemBloodStoneHammer(HammerMaterial.DEFAULT, "BloodStoneHammer", "bloodstone_hammer");
-	public static final ItemBaseHammer hammerRusted = new ItemRustedHammer(HammerMaterial.DEFAULT, "RustedHammer", "rusted_hammer");
-	public static final ItemBaseHammer hammerRosite = new ItemRositeHammer(HammerMaterial.DEFAULT, "RositeHammer", "rosite_hammer");
-	public static final ItemBaseHammer hammerLimonite = new ItemLimoniteHammer(HammerMaterial.DEFAULT, "LimoniteHammer", "limonite_hammer");
-	public static final ItemBaseHammer hammerMithril = new ItemMithrilHammer(HammerMaterial.DEFAULT, "MithrilHammer", "mithril_hammer");
-	public static final ItemBaseHammer hammerPrometheum = new ItemPrometheumHammer(HammerMaterial.DEFAULT, "PrometheumHammer", "prometheum_hammer");
-	public static final ItemBaseHammer hammerHepatizon = new ItemHepatizonHammer(HammerMaterial.DEFAULT, "HepatizonHammer", "hepatizon_hammer");
-	public static final ItemBaseHammer hammerPoop = new ItemPoopHammer(HammerMaterial.DEFAULT, "PoopHammer", "poop_hammer");
-	public static final ItemBaseHammer hammerAngmallen = new ItemAngmallenHammer(HammerMaterial.DEFAULT, "AngmallenHammer", "angmallen_hammer");
-	public static final ItemBaseHammer hammerManganese = new ItemManganeseHammer(HammerMaterial.DEFAULT, "ManganeseHammer", "manganese_hammer");
-	public static final ItemBaseHammer hammerSearedBrick = new ItemSearedBrickHammer(HammerMaterial.DEFAULT, "SearedBrickHammer", "seared_brick_hammer");
-	public static final ItemBaseHammer hammerElectrum = new ItemElectrumHammer(HammerMaterial.DEFAULT, "ElectrumHammer", "electrum_hammer");
-	public static final ItemBaseHammer hammerPigIron = new ItemPigIronHammer(HammerMaterial.DEFAULT, "PigIronHammer", "pig_iron_hammer");
-	public static final ItemBaseHammer hammerArdite = new ItemArditeHammer(HammerMaterial.DEFAULT, "ArditeHammer", "ardite_hammer");
-	public static final ItemBaseHammer hammerAlumite = new ItemAlumiteHammer(HammerMaterial.DEFAULT, "AlumiteHammer", "alumite_hammer");
-	public static final ItemBaseHammer hammerCobalt = new ItemCobaltHammer(HammerMaterial.DEFAULT, "CobaltHammer", "cobalt_hammer");
-	public static final ItemBaseHammer hammerManyullyn = new ItemManyullynHammer(HammerMaterial.DEFAULT, "ManyullynHammer", "manyullyn_hammer");
-	public static final ItemBaseHammer hammerOureclase = new ItemOureclaseHammer(HammerMaterial.DEFAULT, "OureclaseHammer", "oureclase_hammer");
-	public static final ItemBaseHammer hammerHaderoth = new ItemHaderothHammer(HammerMaterial.DEFAULT, "HaderothHammer", "haderoth_hammer");
-	public static final ItemBaseHammer hammerInfuscolium = new ItemInfuscoliumHammer(HammerMaterial.DEFAULT, "InfuscoliumHammer", "infuscolium_hammer");
-	public static final ItemBaseHammer hammerRubber = new ItemRubberHammer(HammerMaterial.DEFAULT, "RubberHammer", "rubber_hammer");
-	public static final ItemBaseHammer hammerDesichalkos = new ItemDesichalkosHammer(HammerMaterial.DEFAULT, "DesichalkosHammer", "desichalkos_hammer");
-	public static final ItemBaseHammer hammerMeutoite = new ItemMeutoiteHammer(HammerMaterial.DEFAULT, "MeutoiteHammer", "meutoite_hammer");
-	public static final ItemBaseHammer hammerEximite = new ItemEximiteHammer(HammerMaterial.DEFAULT, "EximiteHammer", "eximite_hammer");
-	public static final ItemBaseHammer hammerMidasium = new ItemMidasiumHammer(HammerMaterial.DEFAULT, "MidasiumHammer", "midasium_hammer");
-	public static final ItemBaseHammer hammerSanguinite = new ItemSanguiniteHammer(HammerMaterial.DEFAULT, "SanguiniteHammer", "sanguinite_hammer");
-	public static final ItemBaseHammer hammerInolashite = new ItemInolashiteHammer(HammerMaterial.DEFAULT, "InolashiteHammer", "inolashite_hammer");
-	public static final ItemBaseHammer hammerVulcanite = new ItemVulcaniteHammer(HammerMaterial.DEFAULT, "VulcaniteHammer", "vulcanite_hammer");
-	public static final ItemBaseHammer hammerLemurite = new ItemLemuriteHammer(HammerMaterial.DEFAULT, "LemuriteHammer", "lemurite_hammer");
-	public static final ItemBaseHammer hammerAmordrine = new ItemAmordrineHammer(HammerMaterial.DEFAULT, "AmordrineHammer", "amordrine_hammer");
-	public static final ItemBaseHammer hammerCeruclase = new ItemCeruclaseHammer(HammerMaterial.DEFAULT, "CeruclaseHammer", "ceruclase_hammer");
-	public static final ItemBaseHammer hammerKalendrite = new ItemKalendriteHammer(HammerMaterial.DEFAULT, "KalendriteHammer", "kalendrite_hammer");
-	public static final ItemBaseHammer hammerVyroxeres = new ItemVyroxeresHammer(HammerMaterial.DEFAULT, "VyroxeresHammer", "vyroxeres_hammer");
-	public static final ItemBaseHammer hammerCarmot = new ItemCarmotHammer(HammerMaterial.DEFAULT, "CarmotHammer", "carmot_hammer");
-	public static final ItemBaseHammer hammerTartarite = new ItemTartariteHammer(HammerMaterial.DEFAULT, "TartariteHammer", "tartarite_hammer");
-	public static final ItemBaseHammer hammerAtlarus = new ItemAtlarusHammer(HammerMaterial.DEFAULT, "AtlarusHammer", "atlarus_hammer");
-	public static final ItemBaseHammer hammerAstral = new ItemAstralHammer(HammerMaterial.DEFAULT, "AstralHammer", "astral_hammer");
-	public static final ItemBaseHammer hammerCelengil = new ItemCelenegilHammer(HammerMaterial.DEFAULT, "CelenegilHammer", "cenenegil_hammer");
-	public static final ItemBaseHammer hammerAredrite = new ItemAredriteHammer(HammerMaterial.DEFAULT, "AredriteHammer", "aredrite_hammer");
-	public static final ItemBaseHammer hammerOrichalcum = new ItemOrichalcumHammer(HammerMaterial.DEFAULT, "OrichalcumHammer", "orichalcum_hammer");
-	
-	/*
-	 * Hammers For YouTubers
-	 */
-	public static final ItemBaseHammer hammerPat = new ItemPatHammer(HammerMaterial.PAT, "PatHammer", "pat_hammer");
-	public static final ItemBaseHammer hammerJen = new ItemJenHammer(HammerMaterial.JEN, "JenHammer", "jen_hammer");
-	public static final ItemBaseHammer hammerDanTDM = new ItemDanTDMHammer(HammerMaterial.TDM, "TDMHammer", "tdm_hammer");
-	public static final ItemBaseHammer hammerJSQ = new ItemxJSQHammer(HammerMaterial.JSQ, "JSQHammer", "jsq_hammer");
-	public static final ItemBaseHammer hammerSkyTheKid = new ItemSkyTheKidRSHammer(HammerMaterial.SKY, "SkyTheKidHammer", "sky_the_kid_hammer");
-	public static final ItemBaseHammer hammerThack = new ItemThackAttack_MCHammer(HammerMaterial.TATTCKMC, "ThackHammer", "thack_attack_hammer");
-	public static final ItemBaseHammer hammerMrGregor = new Item_MrGregor_Hammer(HammerMaterial.MRGREG, "MrGregorHammer", "mr_gregor_hammer");
-	public static final ItemBaseHammer hammerMiningWorm = new ItemMiningWormHammer(HammerMaterial.MINEWORM, "MiningWormHammer", "mining_worm_hammer");
-	/*
-	 * Hammers For Twitch Streamers
-	 */
-	public static final ItemBaseHammer hammerDeeAxel = new ItemDeeAxelJayHammer(HammerMaterial.DAXEJ, "DeeAxelJayHammer", "deeaxeljay_hammer");
-	
-	/*
-	 * Community Hammers
-	 */
-	public static final ItemBaseHammer hammerCryingObi = new ItemCryingObsidainHammer(HammerMaterial.CRYOBBY, "CryingObsidainHammer", "crying_obsidain_hammer");
-	public static final ItemBaseHammer hammerToaster = new ItemToasterHammer(HammerMaterial.TOASTER, "ToasterHammer", "toaster_hammer");
-	public static final ItemBaseHammer hammerPureDevil = new ItemPureDevilHammer(HammerMaterial.PUREDEVIL, "PureDevilHammer", "pure_devil_hammer");
-	public static final ItemBaseHammer hammerLightning = new ItemLightningHammer(HammerMaterial.LIGHTNING, "LightningHammer", "lightning_hammer");
-	/*
-	 * Special Hammers
-	 */
-	public static final ItemBaseHammer hammerRainbow = new ItemRainbowHammer(HammerMaterial.RAINBOW, "RainbowHammer", "rainbow_hammer");
-	public static final ItemBaseHammer hammerMissingTexture = new ItemMissingTextureHammer(HammerMaterial.MISSINGTEX, "MissingTextureHammer", "missing_texture_hammer");
-	
-	/*
-	 * Mob Hammers
-	 */
-	public static final ItemBaseHammer hammerCreeper = new ItemCreeperHammer(HammerMaterial.CREEPER, "CreeperHammer", "creeper_hammer");
-	public static final ItemBaseHammer hammerPig = new ItemPigHammer(HammerMaterial.PIG, "PigHammer", "pig_hammer");
-	public static final ItemBaseHammer hammerCow = new ItemCowHammer(HammerMaterial.COW, "CowHammer", "cow_hammer");
-	
-	@SubscribeEvent
-	  public static void registerItems(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(new Item [] {
-			/*
-		    * Basic Minecraft Hammers (Ex. Vannila Ores)
-		    */
-	    		hammerWood, hammerStone, hammerIron, hammerGold, hammerDiamond, hammerDirt, hammerGlass, hammerSand,
-	    		hammerCactus, hammerGravel, hammerWoolBlack, hammerWoolRed, hammerWoolGreen, hammerWoolBrown, 
-	    		hammerWoolBlue, hammerWoolPurple, hammerWoolCyan, hammerWoolSilver, hammerWoolGrey, hammerWoolPink, hammerWoolLime, 
-	    		hammerWoolYellow, hammerWoolLightBlue, hammerWoolMagenta, hammerWoolOrange, hammerWoolWhite, hammerEmerald, 
-	    		hammerGrass, hammerObsidian, hammerGlowstone, hammerRedstone, hammerLapis, hammerNetherack, hammerSoulsand, 
-	    		hammerCoal, hammerCharcoal, hammerEndstone, hammerBone, hammerSponge, hammerBrick, hammerSugar, hammerSlime, 
-	    		hammerMelon, hammerPumpkin, hammerPotato, hammerCarrot, hammerApple, hammerIce, hammerPackedIce, hammerSnow, 
-	    		hammerCake, hammerDragonEgg, hammerTnt, hammerBedrock, hammerPurpur, hammerEndBricks, hammerChorus,
-	    		hammerGranite, hammerAndesite, hammerClayBlack, hammerClayBlue, hammerClayBrown, hammerClayCyan, hammerClayGreen,
-	    		hammerClayGrey, hammerClayLightBlue, hammerClayLime, hammerClayMagenta, hammerClayOrange, hammerClayPink,
-	    		hammerClayPurple, hammerClayRed, hammerClaySilver, hammerClayWhite, hammerHay, hammerShulkerBlack, hammerShulkerBlue,
-	    		hammerShulkerBrown, hammerShulkerCyan, hammerShulkerGreen, hammerShulkerGrey, hammerShulkerLightBlue, hammerShulkerLime,
-	    		hammerShulkerMagenta, hammerShulkerOrange, hammerShulkerPink, hammerShulkerPurple, hammerShulkerRed, hammerShulkerSilver,
-	    		hammerShulkerWhite,
-	    			
-	    		
-			/*
-			 * Hammers Using Ores from other mods
-			 * **NOTE: REQUIRES Other mods to craft these hammers**
-			 */
-	    		hammerCopper, hammerBronze, hammerTungsten, hammerRuby, hammerTin, hammerSilver, hammerJade, hammerAmethyst, 
-	    		hammerGraphite, hammerCitrine, hammerPierre, hammerSapphire, hammerOnyx, hammerNikolite, hammerSilica, 
-	    		hammerCinnabar, hammerAmber, hammerFerrous, hammerAdaminite, hammerShiny, hammerXychorium, hammerUranium, 
-	    		hammerTitanium, hammerBloodStone, hammerRusted, hammerRosite, hammerLimonite, hammerMithril, hammerPrometheum, 
-	    		hammerHepatizon, hammerPoop, hammerAngmallen, hammerManganese, hammerSearedBrick, hammerElectrum, hammerPigIron, 
-	    		hammerArdite, hammerAlumite, hammerCobalt, hammerManyullyn, hammerOureclase, hammerHaderoth, hammerInfuscolium, 
-	    		hammerRubber, hammerDesichalkos, hammerMeutoite, hammerEximite, hammerMidasium, hammerSanguinite, hammerInolashite, 
-	    		hammerVulcanite, hammerLemurite, hammerAmordrine, hammerCeruclase, hammerKalendrite, hammerVyroxeres, hammerCarmot, 
-	    		hammerTartarite, hammerAtlarus, hammerAstral, hammerCelengil, hammerAredrite, hammerOrichalcum,
-	    		
-			/*
-			 * Hammers For YouTubers
-			 */
-	    		hammerPat, hammerJen, hammerDanTDM, hammerJSQ, hammerSkyTheKid, hammerThack, hammerMrGregor, hammerMiningWorm,
-
-			/*
-			 * Hammers For Twitch Streamers
-			 */
-	    		hammerDeeAxel,
-	    		
-			/*
-			 * Community Hammers
-			 */
-	    		hammerCryingObi, hammerToaster, hammerPureDevil, hammerLightning,
-	    		
-			/*
-			 * Special Hammers
-			 */
-	    		hammerRainbow, hammerMissingTexture,
-	    		
-	    	/*
-	    	 * Mob Hammers
-	    	 */
-	    		hammerCreeper, hammerPig, hammerCow
-		});
-		//event.getRegistry().registerAll(CustomHammerRegistry.registerHammers());
-	  }
-	
-	@SubscribeEvent
-	  public static void registerItemRenders(ModelRegistryEvent event)
-	  {
-		/*
-		 * Basic Minecraft Hammers (Ex. Vannila Ores)
-		 */
-	    registerRender(hammerWood);
-	    registerRender(hammerStone);
-	    registerRender(hammerIron);
-	    registerRender(hammerGold);
-	    registerRender(hammerDiamond);
-	    registerRender(hammerDirt);
-	    registerRender(hammerGlass);
-	    registerRender(hammerSand);
-	    registerRender(hammerCactus);
-	    registerRender(hammerGravel);
-	    registerRender(hammerWoolWhite);
-		registerRender(hammerWoolBlack);
-		registerRender(hammerWoolRed);
-		registerRender(hammerWoolGreen);
-		registerRender(hammerWoolBrown);
-		registerRender(hammerWoolBlue);
-		registerRender(hammerWoolPurple);
-		registerRender(hammerWoolCyan);
-		registerRender(hammerWoolSilver);
-		registerRender(hammerWoolGrey);
-		registerRender(hammerWoolPink);
-		registerRender(hammerWoolLime);
-		registerRender(hammerWoolYellow);
-		registerRender(hammerWoolLightBlue);
-		registerRender(hammerWoolMagenta);
-		registerRender(hammerWoolOrange);
-	    registerRender(hammerEmerald);
-	    registerRender(hammerGrass);
-	    registerRender(hammerObsidian);
-	    registerRender(hammerGlowstone);
-	    registerRender(hammerRedstone);
-	    registerRender(hammerLapis);
-	    registerRender(hammerNetherack);
-	    registerRender(hammerSoulsand);
-	    registerRender(hammerCoal);
-	    registerRender(hammerCharcoal);
-	    registerRender(hammerEndstone);
-	    registerRender(hammerBone);
-	    registerRender(hammerSponge);
-	    registerRender(hammerBrick);
-	    registerRender(hammerSugar);
-	    registerRender(hammerSlime);
-	    registerRender(hammerMelon);
-	    registerRender(hammerPumpkin);
-	    registerRender(hammerPotato);
-	    registerRender(hammerCarrot);
-	    registerRender(hammerApple);
-	    registerRender(hammerIce);
-	    registerRender(hammerPackedIce);
-	    registerRender(hammerSnow);
-	    registerRender(hammerCake);
-	    registerRender(hammerDragonEgg);
-	    registerRender(hammerTnt);
-	    registerRender(hammerBedrock);
-	    registerRender(hammerPurpur);
-	    registerRender(hammerEndBricks);
-	    registerRender(hammerChorus);
-	    registerRender(hammerGranite);
-	    registerRender(hammerAndesite);
-	    registerRender(hammerClayBlack);
-	    registerRender(hammerClayBlue);
-	    registerRender(hammerClayBrown);
-	    registerRender(hammerClayCyan);
-	    registerRender(hammerClayGreen);
-	    registerRender(hammerClayGrey);
-	    registerRender(hammerClayLightBlue);
-	    registerRender(hammerClayLime);
-	    registerRender(hammerClayMagenta);
-	    registerRender(hammerClayOrange);
-	    registerRender(hammerClayPink);
-	    registerRender(hammerClayPurple);
-	    registerRender(hammerClayRed);
-	    registerRender(hammerClaySilver);
-	    registerRender(hammerClayWhite);
-	    registerRender(hammerHay);
-	    registerRender(hammerShulkerBlack);
-	    registerRender(hammerShulkerBlue);
-	    registerRender(hammerShulkerBrown);
-	    registerRender(hammerShulkerCyan);
-	    registerRender(hammerShulkerGreen);
-	    registerRender(hammerShulkerGrey);
-	    registerRender(hammerShulkerLightBlue);
-	    registerRender(hammerShulkerLime);
-	    registerRender(hammerShulkerMagenta);
-	    registerRender(hammerShulkerOrange);
-	    registerRender(hammerShulkerPink);
-	    registerRender(hammerShulkerPurple);
-	    registerRender(hammerShulkerRed);
-	    registerRender(hammerShulkerSilver);
-	    registerRender(hammerShulkerWhite);
-	    	
-	    /*
-		 * Hammers Using Ores from other mods
-		 * **NOTE: REQUIRES Other mods to craft these hammers**
-		 */
-	    registerRender(hammerCopper);
-	    registerRender(hammerBronze);
-	    registerRender(hammerTungsten);
-	    registerRender(hammerRuby);
-	    registerRender(hammerTin);
-	    registerRender(hammerSilver);
-	    registerRender(hammerJade);
-	    registerRender(hammerAmethyst);
-	    registerRender(hammerGraphite);
-	    registerRender(hammerCitrine);
-	    registerRender(hammerPierre);
-	    registerRender(hammerSapphire);
-	    registerRender(hammerOnyx);
-	    registerRender(hammerNikolite);
-	    registerRender(hammerSilica);
-	    registerRender(hammerCinnabar);
-	    registerRender(hammerAmber);
-	    registerRender(hammerFerrous);
-	    registerRender(hammerAdaminite);
-	    registerRender(hammerShiny);
-	    registerRender(hammerXychorium);
-	    registerRender(hammerUranium);
-	    registerRender(hammerTitanium);
-	    registerRender(hammerBloodStone);
-	    registerRender(hammerRusted);
-	    registerRender(hammerRosite);
-	    registerRender(hammerLimonite);
-	    registerRender(hammerMithril);
-	    registerRender(hammerPrometheum);
-	    registerRender(hammerHepatizon);
-	    registerRender(hammerPoop);
-	    registerRender(hammerAngmallen);
-	    registerRender(hammerManganese);
-	    registerRender(hammerSearedBrick);
-	    registerRender(hammerElectrum);
-	    registerRender(hammerPigIron);
-	    registerRender(hammerArdite);
-	    registerRender(hammerAlumite);
-	    registerRender(hammerCobalt);
-	    registerRender(hammerManyullyn);
-	    registerRender(hammerOureclase);
-	    registerRender(hammerHaderoth);
-	    registerRender(hammerInfuscolium);
-	    registerRender(hammerRubber);
-	    registerRender(hammerDesichalkos);
-	    registerRender(hammerMeutoite);
-	    registerRender(hammerEximite);
-	    registerRender(hammerMidasium);
-	    registerRender(hammerSanguinite);
-	    registerRender(hammerInolashite);
-	    registerRender(hammerVulcanite);
-	    registerRender(hammerLemurite);
-	    registerRender(hammerAmordrine);
-	    registerRender(hammerCeruclase);
-	    registerRender(hammerKalendrite);
-	    registerRender(hammerVyroxeres);
-	    registerRender(hammerCarmot);
-	    registerRender(hammerTartarite);
-	    registerRender(hammerAtlarus);
-	    registerRender(hammerAstral);
-	    registerRender(hammerCelengil);
-	    registerRender(hammerAredrite);
-	    registerRender(hammerOrichalcum);
-	    
-		/*
-		 * Hammers For YouTubers
-		 */
-		registerRender(hammerPat);
-		registerRender(hammerJen);
-		registerRender(hammerDanTDM);
-		registerRender(hammerJSQ);
-		registerRender(hammerSkyTheKid);
-		registerRender(hammerThack);
-		registerRender(hammerMrGregor);
-		registerRender(hammerMiningWorm);
-		
-		/*
-		 * Hammers For Twitch Streamers
-		 */
-		registerRender(hammerDeeAxel);
-		
-		/*
-		 * Community Hammers
-		 */
-		registerRender(hammerCryingObi);
-		registerRender(hammerToaster);
-		registerRender(hammerPureDevil);
-		registerRender(hammerLightning);
-		
-		/*
-		 * Special Hammers
-		 */
-		registerRender(hammerRainbow);
-		registerRender(hammerMissingTexture);
-    		
-    	/*
-    	 * Mob Hammers
-    	 */
-		registerRender(hammerCreeper);
-		registerRender(hammerPig);
-		registerRender(hammerCow);
-		
-	  }
-	
-	public static void registerRender(Item item) {
-	   ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(new ResourceLocation(item.getRegistryName().toString()), "inventory"));
-	   
-		   if(Config.debugMode == true) {
-	       	System.out.println("Registered Model for: " + item.getRegistryName());
-	       	//System.out.println("Registered Model for: " + ItemWoodHammer.registryName);
-   		}
-	}
-	
+@GameRegistry.ObjectHolder("hammermod")
+@Mod.EventBusSubscriber
+public class ModItems
+{
+    public static final ItemBaseHammer hammerWood;
+    public static final ItemBaseHammer hammerStone;
+    public static final ItemBaseHammer hammerIron;
+    public static final ItemBaseHammer hammerGold;
+    public static final ItemBaseHammer hammerDiamond;
+    public static final ItemBaseHammer hammerDirt;
+    public static final ItemBaseHammer hammerGlass;
+    public static final ItemBaseHammer hammerSand;
+    public static final ItemBaseHammer hammerCactus;
+    public static final ItemBaseHammer hammerGravel;
+    public static final ItemBaseHammer hammerWoolBlack;
+    public static final ItemBaseHammer hammerWoolRed;
+    public static final ItemBaseHammer hammerWoolGreen;
+    public static final ItemBaseHammer hammerWoolBrown;
+    public static final ItemBaseHammer hammerWoolBlue;
+    public static final ItemBaseHammer hammerWoolPurple;
+    public static final ItemBaseHammer hammerWoolCyan;
+    public static final ItemBaseHammer hammerWoolSilver;
+    public static final ItemBaseHammer hammerWoolGrey;
+    public static final ItemBaseHammer hammerWoolPink;
+    public static final ItemBaseHammer hammerWoolLime;
+    public static final ItemBaseHammer hammerWoolYellow;
+    public static final ItemBaseHammer hammerWoolLightBlue;
+    public static final ItemBaseHammer hammerWoolMagenta;
+    public static final ItemBaseHammer hammerWoolOrange;
+    public static final ItemBaseHammer hammerWoolWhite;
+    public static final ItemBaseHammer hammerEmerald;
+    public static final ItemBaseHammer hammerGrass;
+    public static final ItemBaseHammer hammerObsidian;
+    public static final ItemBaseHammer hammerGlowstone;
+    public static final ItemBaseHammer hammerRedstone;
+    public static final ItemBaseHammer hammerLapis;
+    public static final ItemBaseHammer hammerNetherack;
+    public static final ItemBaseHammer hammerSoulsand;
+    public static final ItemBaseHammer hammerCoal;
+    public static final ItemBaseHammer hammerCharcoal;
+    public static final ItemBaseHammer hammerEndstone;
+    public static final ItemBaseHammer hammerBone;
+    public static final ItemBaseHammer hammerSponge;
+    public static final ItemBaseHammer hammerBrick;
+    public static final ItemBaseHammer hammerSugar;
+    public static final ItemBaseHammer hammerSlime;
+    public static final ItemBaseHammer hammerMelon;
+    public static final ItemBaseHammer hammerPumpkin;
+    public static final ItemBaseHammer hammerPotato;
+    public static final ItemBaseHammer hammerCarrot;
+    public static final ItemBaseHammer hammerApple;
+    public static final ItemBaseHammer hammerIce;
+    public static final ItemBaseHammer hammerPackedIce;
+    public static final ItemBaseHammer hammerSnow;
+    public static final ItemBaseHammer hammerCake;
+    public static final ItemBaseHammer hammerDragonEgg;
+    public static final ItemBaseHammer hammerTnt;
+    public static final ItemBaseHammer hammerBedrock;
+    public static final ItemBaseHammer hammerPurpur;
+    public static final ItemBaseHammer hammerEndBricks;
+    public static final ItemBaseHammer hammerChorus;
+    public static final ItemBaseHammer hammerGranite;
+    public static final ItemBaseHammer hammerAndesite;
+    public static final ItemBaseHammer hammerCopper;
+    public static final ItemBaseHammer hammerBronze;
+    public static final ItemBaseHammer hammerTungsten;
+    public static final ItemBaseHammer hammerRuby;
+    public static final ItemBaseHammer hammerTin;
+    public static final ItemBaseHammer hammerSilver;
+    public static final ItemBaseHammer hammerJade;
+    public static final ItemBaseHammer hammerAmethyst;
+    public static final ItemBaseHammer hammerGraphite;
+    public static final ItemBaseHammer hammerCitrine;
+    public static final ItemBaseHammer hammerPierre;
+    public static final ItemBaseHammer hammerSapphire;
+    public static final ItemBaseHammer hammerOnyx;
+    public static final ItemBaseHammer hammerNikolite;
+    public static final ItemBaseHammer hammerSilica;
+    public static final ItemBaseHammer hammerCinnabar;
+    public static final ItemBaseHammer hammerAmber;
+    public static final ItemBaseHammer hammerFerrous;
+    public static final ItemBaseHammer hammerAdaminite;
+    public static final ItemBaseHammer hammerShiny;
+    public static final ItemBaseHammer hammerXychorium;
+    public static final ItemBaseHammer hammerUranium;
+    public static final ItemBaseHammer hammerTitanium;
+    public static final ItemBaseHammer hammerBloodStone;
+    public static final ItemBaseHammer hammerRusted;
+    public static final ItemBaseHammer hammerRosite;
+    public static final ItemBaseHammer hammerLimonite;
+    public static final ItemBaseHammer hammerMithril;
+    public static final ItemBaseHammer hammerPrometheum;
+    public static final ItemBaseHammer hammerHepatizon;
+    public static final ItemBaseHammer hammerPoop;
+    public static final ItemBaseHammer hammerAngmallen;
+    public static final ItemBaseHammer hammerManganese;
+    public static final ItemBaseHammer hammerSearedBrick;
+    public static final ItemBaseHammer hammerElectrum;
+    public static final ItemBaseHammer hammerPigIron;
+    public static final ItemBaseHammer hammerArdite;
+    public static final ItemBaseHammer hammerAlumite;
+    public static final ItemBaseHammer hammerCobalt;
+    public static final ItemBaseHammer hammerManyullyn;
+    public static final ItemBaseHammer hammerOureclase;
+    public static final ItemBaseHammer hammerHaderoth;
+    public static final ItemBaseHammer hammerInfuscolium;
+    public static final ItemBaseHammer hammerRubber;
+    public static final ItemBaseHammer hammerDesichalkos;
+    public static final ItemBaseHammer hammerMeutoite;
+    public static final ItemBaseHammer hammerEximite;
+    public static final ItemBaseHammer hammerMidasium;
+    public static final ItemBaseHammer hammerSanguinite;
+    public static final ItemBaseHammer hammerInolashite;
+    public static final ItemBaseHammer hammerVulcanite;
+    public static final ItemBaseHammer hammerLemurite;
+    public static final ItemBaseHammer hammerAmordrine;
+    public static final ItemBaseHammer hammerCeruclase;
+    public static final ItemBaseHammer hammerKalendrite;
+    public static final ItemBaseHammer hammerVyroxeres;
+    public static final ItemBaseHammer hammerCarmot;
+    public static final ItemBaseHammer hammerTartarite;
+    public static final ItemBaseHammer hammerAtlarus;
+    public static final ItemBaseHammer hammerAstral;
+    public static final ItemBaseHammer hammerCelengil;
+    public static final ItemBaseHammer hammerAredrite;
+    public static final ItemBaseHammer hammerOrichalcum;
+    public static final ItemBaseHammer hammerPat;
+    public static final ItemBaseHammer hammerJen;
+    public static final ItemBaseHammer hammerDanTDM;
+    public static final ItemBaseHammer hammerJSQ;
+    public static final ItemBaseHammer hammerSkyTheKid;
+    public static final ItemBaseHammer hammerThack;
+    public static final ItemBaseHammer hammerMrGregor;
+    public static final ItemBaseHammer hammerMiningWorm;
+    public static final ItemBaseHammer hammerDeeAxel;
+    public static final ItemBaseHammer hammerCryingObi;
+    public static final ItemBaseHammer hammerToaster;
+    public static final ItemBaseHammer hammerPureDevil;
+    public static final ItemBaseHammer hammerLightning;
+    public static final ItemBaseHammer hammerRainbow;
+    public static final ItemBaseHammer hammerMissingTexture;
+    public static final ItemBaseHammer hammerCreeper;
+    public static final ItemBaseHammer hammerPig;
+    public static final ItemBaseHammer hammerCow;
+    
+    @SubscribeEvent
+    public static void registerItems(final RegistryEvent.Register<Item> a1) {
+        /*SL:197*/a1.getRegistry().registerAll((IForgeRegistryEntry[])new Item[] { ModItems.hammerWood, ModItems.hammerStone, ModItems.hammerIron, ModItems.hammerGold, ModItems.hammerDiamond, ModItems.hammerDirt, ModItems.hammerGlass, ModItems.hammerSand, ModItems.hammerCactus, ModItems.hammerGravel, ModItems.hammerWoolBlack, ModItems.hammerWoolRed, ModItems.hammerWoolGreen, ModItems.hammerWoolBrown, ModItems.hammerWoolBlue, ModItems.hammerWoolPurple, ModItems.hammerWoolCyan, ModItems.hammerWoolSilver, ModItems.hammerWoolGrey, ModItems.hammerWoolPink, ModItems.hammerWoolLime, ModItems.hammerWoolYellow, ModItems.hammerWoolLightBlue, ModItems.hammerWoolMagenta, ModItems.hammerWoolOrange, ModItems.hammerWoolWhite, ModItems.hammerEmerald, ModItems.hammerGrass, ModItems.hammerObsidian, ModItems.hammerGlowstone, ModItems.hammerRedstone, ModItems.hammerLapis, ModItems.hammerNetherack, ModItems.hammerSoulsand, ModItems.hammerCoal, ModItems.hammerCharcoal, ModItems.hammerEndstone, ModItems.hammerBone, ModItems.hammerSponge, ModItems.hammerBrick, ModItems.hammerSugar, ModItems.hammerSlime, ModItems.hammerMelon, ModItems.hammerPumpkin, ModItems.hammerPotato, ModItems.hammerCarrot, ModItems.hammerApple, ModItems.hammerIce, ModItems.hammerPackedIce, ModItems.hammerSnow, ModItems.hammerCake, ModItems.hammerDragonEgg, ModItems.hammerTnt, ModItems.hammerBedrock, ModItems.hammerPurpur, ModItems.hammerEndBricks, ModItems.hammerChorus, ModItems.hammerGranite, ModItems.hammerAndesite, ModItems.hammerCopper, ModItems.hammerBronze, ModItems.hammerTungsten, ModItems.hammerRuby, ModItems.hammerTin, ModItems.hammerSilver, ModItems.hammerJade, ModItems.hammerAmethyst, ModItems.hammerGraphite, ModItems.hammerCitrine, ModItems.hammerPierre, ModItems.hammerSapphire, ModItems.hammerOnyx, ModItems.hammerNikolite, ModItems.hammerSilica, ModItems.hammerCinnabar, ModItems.hammerAmber, ModItems.hammerFerrous, ModItems.hammerAdaminite, ModItems.hammerShiny, ModItems.hammerXychorium, ModItems.hammerUranium, ModItems.hammerTitanium, ModItems.hammerBloodStone, ModItems.hammerRusted, ModItems.hammerRosite, ModItems.hammerLimonite, ModItems.hammerMithril, ModItems.hammerPrometheum, ModItems.hammerHepatizon, ModItems.hammerPoop, ModItems.hammerAngmallen, ModItems.hammerManganese, ModItems.hammerSearedBrick, ModItems.hammerElectrum, ModItems.hammerPigIron, ModItems.hammerArdite, ModItems.hammerAlumite, ModItems.hammerCobalt, ModItems.hammerManyullyn, ModItems.hammerOureclase, ModItems.hammerHaderoth, ModItems.hammerInfuscolium, ModItems.hammerRubber, ModItems.hammerDesichalkos, ModItems.hammerMeutoite, ModItems.hammerEximite, ModItems.hammerMidasium, ModItems.hammerSanguinite, ModItems.hammerInolashite, ModItems.hammerVulcanite, ModItems.hammerLemurite, ModItems.hammerAmordrine, ModItems.hammerCeruclase, ModItems.hammerKalendrite, ModItems.hammerVyroxeres, ModItems.hammerCarmot, ModItems.hammerTartarite, ModItems.hammerAtlarus, ModItems.hammerAstral, ModItems.hammerCelengil, ModItems.hammerAredrite, ModItems.hammerOrichalcum, ModItems.hammerPat, ModItems.hammerJen, ModItems.hammerDanTDM, ModItems.hammerJSQ, ModItems.hammerSkyTheKid, ModItems.hammerThack, ModItems.hammerMrGregor, ModItems.hammerMiningWorm, ModItems.hammerDeeAxel, ModItems.hammerCryingObi, ModItems.hammerToaster, ModItems.hammerPureDevil, ModItems.hammerLightning, ModItems.hammerRainbow, ModItems.hammerMissingTexture, ModItems.hammerCreeper, ModItems.hammerPig, ModItems.hammerCow });
+    }
+    
+    @SubscribeEvent
+    public static void registerItemRenders(final ModelRegistryEvent a1) {
+        registerRender((Item)ModItems.hammerWood);
+        registerRender((Item)ModItems.hammerStone);
+        registerRender((Item)ModItems.hammerIron);
+        registerRender((Item)ModItems.hammerGold);
+        registerRender((Item)ModItems.hammerDiamond);
+        registerRender((Item)ModItems.hammerDirt);
+        registerRender((Item)ModItems.hammerGlass);
+        registerRender((Item)ModItems.hammerSand);
+        registerRender((Item)ModItems.hammerCactus);
+        registerRender((Item)ModItems.hammerGravel);
+        registerRender((Item)ModItems.hammerWoolWhite);
+        registerRender((Item)ModItems.hammerWoolBlack);
+        registerRender((Item)ModItems.hammerWoolRed);
+        registerRender((Item)ModItems.hammerWoolGreen);
+        registerRender((Item)ModItems.hammerWoolBrown);
+        registerRender((Item)ModItems.hammerWoolBlue);
+        registerRender((Item)ModItems.hammerWoolPurple);
+        registerRender((Item)ModItems.hammerWoolCyan);
+        registerRender((Item)ModItems.hammerWoolSilver);
+        registerRender((Item)ModItems.hammerWoolGrey);
+        registerRender((Item)ModItems.hammerWoolPink);
+        registerRender((Item)ModItems.hammerWoolLime);
+        registerRender((Item)ModItems.hammerWoolYellow);
+        registerRender((Item)ModItems.hammerWoolLightBlue);
+        registerRender((Item)ModItems.hammerWoolMagenta);
+        registerRender((Item)ModItems.hammerWoolOrange);
+        registerRender((Item)ModItems.hammerEmerald);
+        registerRender((Item)ModItems.hammerGrass);
+        registerRender((Item)ModItems.hammerObsidian);
+        registerRender((Item)ModItems.hammerGlowstone);
+        registerRender((Item)ModItems.hammerRedstone);
+        registerRender((Item)ModItems.hammerLapis);
+        registerRender((Item)ModItems.hammerNetherack);
+        registerRender((Item)ModItems.hammerSoulsand);
+        registerRender((Item)ModItems.hammerCoal);
+        registerRender((Item)ModItems.hammerCharcoal);
+        registerRender((Item)ModItems.hammerEndstone);
+        registerRender((Item)ModItems.hammerBone);
+        registerRender((Item)ModItems.hammerSponge);
+        registerRender((Item)ModItems.hammerBrick);
+        registerRender((Item)ModItems.hammerSugar);
+        registerRender((Item)ModItems.hammerSlime);
+        registerRender((Item)ModItems.hammerMelon);
+        registerRender((Item)ModItems.hammerPumpkin);
+        registerRender((Item)ModItems.hammerPotato);
+        registerRender((Item)ModItems.hammerCarrot);
+        registerRender((Item)ModItems.hammerApple);
+        registerRender((Item)ModItems.hammerIce);
+        registerRender((Item)ModItems.hammerPackedIce);
+        registerRender((Item)ModItems.hammerSnow);
+        registerRender((Item)ModItems.hammerCake);
+        registerRender((Item)ModItems.hammerDragonEgg);
+        registerRender((Item)ModItems.hammerTnt);
+        registerRender((Item)ModItems.hammerBedrock);
+        registerRender((Item)ModItems.hammerPurpur);
+        registerRender((Item)ModItems.hammerEndBricks);
+        registerRender((Item)ModItems.hammerChorus);
+        registerRender((Item)ModItems.hammerGranite);
+        registerRender((Item)ModItems.hammerAndesite);
+        registerRender((Item)ModItems.hammerCopper);
+        registerRender((Item)ModItems.hammerBronze);
+        registerRender((Item)ModItems.hammerTungsten);
+        registerRender((Item)ModItems.hammerRuby);
+        registerRender((Item)ModItems.hammerTin);
+        registerRender((Item)ModItems.hammerSilver);
+        registerRender((Item)ModItems.hammerJade);
+        registerRender((Item)ModItems.hammerAmethyst);
+        registerRender((Item)ModItems.hammerGraphite);
+        registerRender((Item)ModItems.hammerCitrine);
+        registerRender((Item)ModItems.hammerPierre);
+        registerRender((Item)ModItems.hammerSapphire);
+        registerRender((Item)ModItems.hammerOnyx);
+        registerRender((Item)ModItems.hammerNikolite);
+        registerRender((Item)ModItems.hammerSilica);
+        registerRender((Item)ModItems.hammerCinnabar);
+        registerRender((Item)ModItems.hammerAmber);
+        registerRender((Item)ModItems.hammerFerrous);
+        registerRender((Item)ModItems.hammerAdaminite);
+        registerRender((Item)ModItems.hammerShiny);
+        registerRender((Item)ModItems.hammerXychorium);
+        registerRender((Item)ModItems.hammerUranium);
+        registerRender((Item)ModItems.hammerTitanium);
+        registerRender((Item)ModItems.hammerBloodStone);
+        registerRender((Item)ModItems.hammerRusted);
+        registerRender((Item)ModItems.hammerRosite);
+        registerRender((Item)ModItems.hammerLimonite);
+        registerRender((Item)ModItems.hammerMithril);
+        registerRender((Item)ModItems.hammerPrometheum);
+        registerRender((Item)ModItems.hammerHepatizon);
+        registerRender((Item)ModItems.hammerPoop);
+        registerRender((Item)ModItems.hammerAngmallen);
+        registerRender((Item)ModItems.hammerManganese);
+        registerRender((Item)ModItems.hammerSearedBrick);
+        registerRender((Item)ModItems.hammerElectrum);
+        registerRender((Item)ModItems.hammerPigIron);
+        registerRender((Item)ModItems.hammerArdite);
+        registerRender((Item)ModItems.hammerAlumite);
+        registerRender((Item)ModItems.hammerCobalt);
+        registerRender((Item)ModItems.hammerManyullyn);
+        registerRender((Item)ModItems.hammerOureclase);
+        registerRender((Item)ModItems.hammerHaderoth);
+        registerRender((Item)ModItems.hammerInfuscolium);
+        registerRender((Item)ModItems.hammerRubber);
+        registerRender((Item)ModItems.hammerDesichalkos);
+        registerRender((Item)ModItems.hammerMeutoite);
+        registerRender((Item)ModItems.hammerEximite);
+        registerRender((Item)ModItems.hammerMidasium);
+        registerRender((Item)ModItems.hammerSanguinite);
+        registerRender((Item)ModItems.hammerInolashite);
+        registerRender((Item)ModItems.hammerVulcanite);
+        registerRender((Item)ModItems.hammerLemurite);
+        registerRender((Item)ModItems.hammerAmordrine);
+        registerRender((Item)ModItems.hammerCeruclase);
+        registerRender((Item)ModItems.hammerKalendrite);
+        registerRender((Item)ModItems.hammerVyroxeres);
+        registerRender((Item)ModItems.hammerCarmot);
+        registerRender((Item)ModItems.hammerTartarite);
+        registerRender((Item)ModItems.hammerAtlarus);
+        registerRender((Item)ModItems.hammerAstral);
+        registerRender((Item)ModItems.hammerCelengil);
+        registerRender((Item)ModItems.hammerAredrite);
+        registerRender((Item)ModItems.hammerOrichalcum);
+        registerRender((Item)ModItems.hammerPat);
+        registerRender((Item)ModItems.hammerJen);
+        registerRender((Item)ModItems.hammerDanTDM);
+        registerRender((Item)ModItems.hammerJSQ);
+        registerRender((Item)ModItems.hammerSkyTheKid);
+        registerRender((Item)ModItems.hammerThack);
+        registerRender((Item)ModItems.hammerMrGregor);
+        registerRender((Item)ModItems.hammerMiningWorm);
+        registerRender((Item)ModItems.hammerDeeAxel);
+        registerRender((Item)ModItems.hammerCryingObi);
+        registerRender((Item)ModItems.hammerToaster);
+        registerRender((Item)ModItems.hammerPureDevil);
+        registerRender((Item)ModItems.hammerLightning);
+        registerRender((Item)ModItems.hammerRainbow);
+        registerRender((Item)ModItems.hammerMissingTexture);
+        registerRender((Item)ModItems.hammerCreeper);
+        registerRender((Item)ModItems.hammerPig);
+        registerRender((Item)ModItems.hammerCow);
+    }
+    
+    private static void registerRender(final Item a1) {
+        /*SL:426*/ModelLoader.setCustomModelResourceLocation(a1, 0, new ModelResourceLocation(new ResourceLocation(a1.getRegistryName().toString()), "inventory"));
+        /*SL:428*/if (Config.debugMode) {
+            System.out.println(/*EL:429*/"Registered Model for: " + a1.getRegistryName());
+        }
+    }
+    
+    static {
+        hammerWood = new ItemWoodHammer(HammerMaterial.WOOD, "WoodHammer", "wood_hammer");
+        hammerStone = new ItemStoneHammer(HammerMaterial.STONE, "StoneHammer", "stone_hammer");
+        hammerIron = new ItemIronHammer(HammerMaterial.IRON, "IronHammer", "iron_hammer");
+        hammerGold = new ItemGoldHammer(HammerMaterial.GOLD, "GoldHammer", "gold_hammer");
+        hammerDiamond = new ItemDiamondHammer(HammerMaterial.DIAMOND, "DiamondHammer", "diamond_hammer");
+        hammerDirt = new ItemDirtHammer(HammerMaterial.DIRT, "DirtHammer", "dirt_hammer");
+        hammerGlass = new ItemGlassHammer(HammerMaterial.GLASS, "GlassHammer", "glass_hammer");
+        hammerSand = new ItemSandHammer(HammerMaterial.SAND, "SandHammer", "sand_hammer");
+        hammerCactus = new ItemCactusHammer(HammerMaterial.CACTUS, "CactusHammer", "cactus_hammer");
+        hammerGravel = new ItemGravelHammer(HammerMaterial.GRAVEL, "GravelHammer", "gravel_hammer");
+        hammerWoolBlack = new ItemWoolHammerBlack(HammerMaterial.WOOL, "WoolHammerBlack", "wool_hammer_black");
+        hammerWoolRed = new ItemWoolHammerRed(HammerMaterial.WOOL, "WoolHammerRed", "wool_hammer_red");
+        hammerWoolGreen = new ItemWoolHammerGreen(HammerMaterial.WOOL, "WoolHammerGreen", "wool_hammer_green");
+        hammerWoolBrown = new ItemWoolHammerBrown(HammerMaterial.WOOL, "WoolHammerBrown", "wool_hammer_brown");
+        hammerWoolBlue = new ItemWoolHammerBlue(HammerMaterial.WOOL, "WoolHammerBlue", "wool_hammer_blue");
+        hammerWoolPurple = new ItemWoolHammerPurple(HammerMaterial.WOOL, "WoolHammerPurple", "wool_hammer_purple");
+        hammerWoolCyan = new ItemWoolHammerCyan(HammerMaterial.WOOL, "WoolHammerCyan", "wool_hammer_cyan");
+        hammerWoolSilver = new ItemWoolHammerSilver(HammerMaterial.WOOL, "WoolHammerSilver", "wool_hammer_silver");
+        hammerWoolGrey = new ItemWoolHammerGrey(HammerMaterial.WOOL, "WoolHammerGrey", "wool_hammer_grey");
+        hammerWoolPink = new ItemWoolHammerPink(HammerMaterial.WOOL, "WoolHammerPink", "wool_hammer_pink");
+        hammerWoolLime = new ItemWoolHammerLime(HammerMaterial.WOOL, "WoolHammerLime", "wool_hammer_lime");
+        hammerWoolYellow = new ItemWoolHammerYellow(HammerMaterial.WOOL, "WoolHammerYellow", "wool_hammer_yellow");
+        hammerWoolLightBlue = new ItemWoolHammerLightBlue(HammerMaterial.WOOL, "WoolHammerLightBlue", "wool_hammer_lightblue");
+        hammerWoolMagenta = new ItemWoolHammerMagenta(HammerMaterial.WOOL, "WoolHammerMagenta", "wool_hammer_magenta");
+        hammerWoolOrange = new ItemWoolHammerOrange(HammerMaterial.WOOL, "WoolHammerOrange", "wool_hammer_orange");
+        hammerWoolWhite = new ItemWoolHammerWhite(HammerMaterial.WOOL, "WoolHammerWhite", "wool_hammer_white");
+        hammerEmerald = new ItemEmeraldHammer(HammerMaterial.EMERALD, "EmeraldHammer", "emerald_hammer");
+        hammerGrass = new ItemGrassHammer(HammerMaterial.GRASS, "GrassHammer", "grass_hammer");
+        hammerObsidian = new ItemObsidianHammer(HammerMaterial.OBSIDIAN, "ObsidianHammer", "obsidian_hammer");
+        hammerGlowstone = new ItemGlowstoneHammer(HammerMaterial.GLOWSTONE, "GlowstoneHammer", "glowstone_hammer");
+        hammerRedstone = new ItemRedstoneHammer(HammerMaterial.REDSTONE, "RedstoneHammer", "redstone_hammer");
+        hammerLapis = new ItemLapisHammer(HammerMaterial.LAPIS, "LapisHammer", "lapis_hammer");
+        hammerNetherack = new ItemNetherackHammer(HammerMaterial.NETHERACK, "NetherackHammer", "netherack_hammer");
+        hammerSoulsand = new ItemSoulSandHammer(HammerMaterial.SOULSAND, "SoulSandHammer", "soulsand_hammer");
+        hammerCoal = new ItemCoalHammer(HammerMaterial.COAL, "CoalHammer", "coal_hammer");
+        hammerCharcoal = new ItemCharcoalHammer(HammerMaterial.CHARCOAL, "CharcoalHammer", "charcoal_hammer");
+        hammerEndstone = new ItemEndstoneHammer(HammerMaterial.ENDSTONE, "EndstoneHammer", "endstone_hammer");
+        hammerBone = new ItemBoneHammer(HammerMaterial.BONE, "BoneHammer", "bone_hammer");
+        hammerSponge = new ItemSpongeHammer(HammerMaterial.SPONGE, "SpongeHammer", "sponge_hammer");
+        hammerBrick = new ItemBrickHammer(HammerMaterial.BRICK, "BrickHammer", "brick_hammer");
+        hammerSugar = new ItemSugarHammer(HammerMaterial.SUGAR, "SugarHammer", "sugar_hammer");
+        hammerSlime = new ItemSlimeHammer(HammerMaterial.SLIME, "SlimeHammer", "slime_hammer");
+        hammerMelon = new ItemMelonHammer(HammerMaterial.MELON, "MelonHammer", "melon_hammer");
+        hammerPumpkin = new ItemPumpkinHammer(HammerMaterial.PUMPKIN, "PumpkinHammer", "pumpkin_hammer");
+        hammerPotato = new ItemPotatoHammer(HammerMaterial.POTATO, "PotatoHammer", "potato_hammer");
+        hammerCarrot = new ItemCarrotHammer(HammerMaterial.CARROT, "CarrotHammer", "carrot_hammer");
+        hammerApple = new ItemAppleHammer(HammerMaterial.APPLE, "AppleHammer", "apple_hammer");
+        hammerIce = new ItemIceHammer(HammerMaterial.ICE, "IceHammer", "ice_hammer");
+        hammerPackedIce = new ItemPackedIceHammer(HammerMaterial.PACKED_ICE, "PackedIceHammer", "packed_ice_hammer");
+        hammerSnow = new ItemSnowHammer(HammerMaterial.SNOW, "SnowHammer", "snow_hammer");
+        hammerCake = new ItemCakeHammer(HammerMaterial.CAKE, "CakeHammer", "cake_hammer");
+        hammerDragonEgg = new ItemDragonEggHammer(HammerMaterial.DRAGEGG, "DragonEggHammer", "dragon_egg_hammer");
+        hammerTnt = new ItemTntHammer(HammerMaterial.TNT, "TntHammer", "tnt_hammer");
+        hammerBedrock = new ItemBedrockHammer(HammerMaterial.BEDROCK, "BedrockHammer", "bedrock_hammer");
+        hammerPurpur = new ItemPurpurHammer(HammerMaterial.PURPUR, "PurpurHammer", "purpur_hammer");
+        hammerEndBricks = new ItemEndBricksHammer(HammerMaterial.ENDBRICKS, "EndBricksHammer", "end_bricks_hammer");
+        hammerChorus = new ItemChorusHammer(HammerMaterial.CHORUS, "ChorusHammer", "chorus_hammer");
+        hammerGranite = new ItemGraniteHammer(HammerMaterial.GRANITE, "GraniteHammer", "granite_hammer");
+        hammerAndesite = new ItemAndesiteHammer(HammerMaterial.ANDESITE, "AndesiteHammer", "andesite_hammer");
+        hammerCopper = new ItemCopperHammer(HammerMaterial.DEFAULT, "CopperHammer", "copper_hammer");
+        hammerBronze = new ItemBronzeHammer(HammerMaterial.DEFAULT, "BronzeHammer", "bronze_hammer");
+        hammerTungsten = new ItemTungstenHammer(HammerMaterial.DEFAULT, "TungstenHammer", "tungsten_hammer");
+        hammerRuby = new ItemRubyHammer(HammerMaterial.DEFAULT, "RubyHammer", "ruby_hammer");
+        hammerTin = new ItemTinHammer(HammerMaterial.DEFAULT, "TinHammer", "tin_hammer");
+        hammerSilver = new ItemSilverHammer(HammerMaterial.DEFAULT, "SilverHammer", "silver_hammer");
+        hammerJade = new ItemJadeHammer(HammerMaterial.DEFAULT, "JadeHammer", "jade_hammer");
+        hammerAmethyst = new ItemAmethystHammer(HammerMaterial.DEFAULT, "AmethystHammer", "amethyst_hammer");
+        hammerGraphite = new ItemGraphiteHammer(HammerMaterial.DEFAULT, "GraphiteHammer", "graphite_hammer");
+        hammerCitrine = new ItemCitrineHammer(HammerMaterial.DEFAULT, "CitrineHammer", "citrine_hammer");
+        hammerPierre = new ItemPierreHammer(HammerMaterial.DEFAULT, "PierreHammer", "pierre_hammer");
+        hammerSapphire = new ItemSapphireHammer(HammerMaterial.DEFAULT, "SapphireHammer", "sapphire_hammer");
+        hammerOnyx = new ItemOnyxHammer(HammerMaterial.DEFAULT, "OnyxHammer", "onyx_hammer");
+        hammerNikolite = new ItemNikoliteHammer(HammerMaterial.DEFAULT, "NikoliteHammer", "nikolite_hammer");
+        hammerSilica = new ItemSilicaHammer(HammerMaterial.DEFAULT, "SilicaHammer", "silica_hammer");
+        hammerCinnabar = new ItemCinnabarHammer(HammerMaterial.DEFAULT, "CinnabarHammer", "cinnabar_hammer");
+        hammerAmber = new ItemAmberBearingStoneHammer(HammerMaterial.DEFAULT, "AmberHammer", "amber_hammer");
+        hammerFerrous = new ItemFerrousHammer(HammerMaterial.DEFAULT, "FerrousHammer", "ferrous_hammer");
+        hammerAdaminite = new ItemAdaminiteHammer(HammerMaterial.DEFAULT, "AdaminiteHammer", "adaminite_hammer");
+        hammerShiny = new ItemShinyHammer(HammerMaterial.DEFAULT, "ShinyHammer", "shiny_hammer");
+        hammerXychorium = new ItemXychoriumHammer(HammerMaterial.DEFAULT, "XychoriumHammer", "xychorium_hammer");
+        hammerUranium = new ItemUraniumHammer(HammerMaterial.DEFAULT, "UraniumHammer", "uranium_hammer");
+        hammerTitanium = new ItemTitaniumHammer(HammerMaterial.DEFAULT, "TitaniumHammer", "titanium_hammer");
+        hammerBloodStone = new ItemBloodStoneHammer(HammerMaterial.DEFAULT, "BloodStoneHammer", "bloodstone_hammer");
+        hammerRusted = new ItemRustedHammer(HammerMaterial.DEFAULT, "RustedHammer", "rusted_hammer");
+        hammerRosite = new ItemRositeHammer(HammerMaterial.DEFAULT, "RositeHammer", "rosite_hammer");
+        hammerLimonite = new ItemLimoniteHammer(HammerMaterial.DEFAULT, "LimoniteHammer", "limonite_hammer");
+        hammerMithril = new ItemMithrilHammer(HammerMaterial.DEFAULT, "MithrilHammer", "mithril_hammer");
+        hammerPrometheum = new ItemPrometheumHammer(HammerMaterial.DEFAULT, "PrometheumHammer", "prometheum_hammer");
+        hammerHepatizon = new ItemHepatizonHammer(HammerMaterial.DEFAULT, "HepatizonHammer", "hepatizon_hammer");
+        hammerPoop = new ItemPoopHammer(HammerMaterial.DEFAULT, "PoopHammer", "poop_hammer");
+        hammerAngmallen = new ItemAngmallenHammer(HammerMaterial.DEFAULT, "AngmallenHammer", "angmallen_hammer");
+        hammerManganese = new ItemManganeseHammer(HammerMaterial.DEFAULT, "ManganeseHammer", "manganese_hammer");
+        hammerSearedBrick = new ItemSearedBrickHammer(HammerMaterial.DEFAULT, "SearedBrickHammer", "seared_brick_hammer");
+        hammerElectrum = new ItemElectrumHammer(HammerMaterial.DEFAULT, "ElectrumHammer", "electrum_hammer");
+        hammerPigIron = new ItemPigIronHammer(HammerMaterial.DEFAULT, "PigIronHammer", "pig_iron_hammer");
+        hammerArdite = new ItemArditeHammer(HammerMaterial.DEFAULT, "ArditeHammer", "ardite_hammer");
+        hammerAlumite = new ItemAlumiteHammer(HammerMaterial.DEFAULT, "AlumiteHammer", "alumite_hammer");
+        hammerCobalt = new ItemCobaltHammer(HammerMaterial.DEFAULT, "CobaltHammer", "cobalt_hammer");
+        hammerManyullyn = new ItemManyullynHammer(HammerMaterial.DEFAULT, "ManyullynHammer", "manyullyn_hammer");
+        hammerOureclase = new ItemOureclaseHammer(HammerMaterial.DEFAULT, "OureclaseHammer", "oureclase_hammer");
+        hammerHaderoth = new ItemHaderothHammer(HammerMaterial.DEFAULT, "HaderothHammer", "haderoth_hammer");
+        hammerInfuscolium = new ItemInfuscoliumHammer(HammerMaterial.DEFAULT, "InfuscoliumHammer", "infuscolium_hammer");
+        hammerRubber = new ItemRubberHammer(HammerMaterial.DEFAULT, "RubberHammer", "rubber_hammer");
+        hammerDesichalkos = new ItemDesichalkosHammer(HammerMaterial.DEFAULT, "DesichalkosHammer", "desichalkos_hammer");
+        hammerMeutoite = new ItemMeutoiteHammer(HammerMaterial.DEFAULT, "MeutoiteHammer", "meutoite_hammer");
+        hammerEximite = new ItemEximiteHammer(HammerMaterial.DEFAULT, "EximiteHammer", "eximite_hammer");
+        hammerMidasium = new ItemMidasiumHammer(HammerMaterial.DEFAULT, "MidasiumHammer", "midasium_hammer");
+        hammerSanguinite = new ItemSanguiniteHammer(HammerMaterial.DEFAULT, "SanguiniteHammer", "sanguinite_hammer");
+        hammerInolashite = new ItemInolashiteHammer(HammerMaterial.DEFAULT, "InolashiteHammer", "inolashite_hammer");
+        hammerVulcanite = new ItemVulcaniteHammer(HammerMaterial.DEFAULT, "VulcaniteHammer", "vulcanite_hammer");
+        hammerLemurite = new ItemLemuriteHammer(HammerMaterial.DEFAULT, "LemuriteHammer", "lemurite_hammer");
+        hammerAmordrine = new ItemAmordrineHammer(HammerMaterial.DEFAULT, "AmordrineHammer", "amordrine_hammer");
+        hammerCeruclase = new ItemCeruclaseHammer(HammerMaterial.DEFAULT, "CeruclaseHammer", "ceruclase_hammer");
+        hammerKalendrite = new ItemKalendriteHammer(HammerMaterial.DEFAULT, "KalendriteHammer", "kalendrite_hammer");
+        hammerVyroxeres = new ItemVyroxeresHammer(HammerMaterial.DEFAULT, "VyroxeresHammer", "vyroxeres_hammer");
+        hammerCarmot = new ItemCarmotHammer(HammerMaterial.DEFAULT, "CarmotHammer", "carmot_hammer");
+        hammerTartarite = new ItemTartariteHammer(HammerMaterial.DEFAULT, "TartariteHammer", "tartarite_hammer");
+        hammerAtlarus = new ItemAtlarusHammer(HammerMaterial.DEFAULT, "AtlarusHammer", "atlarus_hammer");
+        hammerAstral = new ItemAstralHammer(HammerMaterial.DEFAULT, "AstralHammer", "astral_hammer");
+        hammerCelengil = new ItemCelenegilHammer(HammerMaterial.DEFAULT, "CelenegilHammer", "cenenegil_hammer");
+        hammerAredrite = new ItemAredriteHammer(HammerMaterial.DEFAULT, "AredriteHammer", "aredrite_hammer");
+        hammerOrichalcum = new ItemOrichalcumHammer(HammerMaterial.DEFAULT, "OrichalcumHammer", "orichalcum_hammer");
+        hammerPat = new ItemPatHammer(HammerMaterial.PAT, "PatHammer", "pat_hammer");
+        hammerJen = new ItemJenHammer(HammerMaterial.JEN, "JenHammer", "jen_hammer");
+        hammerDanTDM = new ItemDanTDMHammer(HammerMaterial.TDM, "TDMHammer", "tdm_hammer");
+        hammerJSQ = new ItemxJSQHammer(HammerMaterial.JSQ, "JSQHammer", "jsq_hammer");
+        hammerSkyTheKid = new ItemSkyTheKidRSHammer(HammerMaterial.SKY, "SkyTheKidHammer", "sky_the_kid_hammer");
+        hammerThack = new ItemThackAttack_MCHammer(HammerMaterial.TATTCKMC, "ThackHammer", "thack_attack_hammer");
+        hammerMrGregor = new Item_MrGregor_Hammer(HammerMaterial.MRGREG, "MrGregorHammer", "mr_gregor_hammer");
+        hammerMiningWorm = new ItemMiningWormHammer(HammerMaterial.MINEWORM, "MiningWormHammer", "mining_worm_hammer");
+        hammerDeeAxel = new ItemDeeAxelJayHammer(HammerMaterial.DAXEJ, "DeeAxelJayHammer", "deeaxeljay_hammer");
+        hammerCryingObi = new ItemCryingObsidainHammer(HammerMaterial.CRYOBBY, "CryingObsidainHammer", "crying_obsidain_hammer");
+        hammerToaster = new ItemToasterHammer(HammerMaterial.TOASTER, "ToasterHammer", "toaster_hammer");
+        hammerPureDevil = new ItemPureDevilHammer(HammerMaterial.PUREDEVIL, "PureDevilHammer", "pure_devil_hammer");
+        hammerLightning = new ItemLightningHammer(HammerMaterial.LIGHTNING, "LightningHammer", "lightning_hammer");
+        hammerRainbow = new ItemRainbowHammer(HammerMaterial.RAINBOW, "RainbowHammer", "rainbow_hammer");
+        hammerMissingTexture = new ItemMissingTextureHammer(HammerMaterial.MISSINGTEX, "MissingTextureHammer", "missing_texture_hammer");
+        hammerCreeper = new ItemCreeperHammer(HammerMaterial.CREEPER, "CreeperHammer", "creeper_hammer");
+        hammerPig = new ItemPigHammer(HammerMaterial.PIG, "PigHammer", "pig_hammer");
+        hammerCow = new ItemCowHammer(HammerMaterial.COW, "CowHammer", "cow_hammer");
+    }
 }

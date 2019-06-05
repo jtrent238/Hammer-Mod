@@ -1,46 +1,30 @@
 package com.jtrent238.hammermod.proxy;
 
-import java.io.File;
-
-import com.jtrent238.hammermod.Config;
-import com.jtrent238.hammermod.Main;
-
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.item.Item;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.common.config.Configuration;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import com.jtrent238.hammermod.Config;
+import java.io.File;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.registries.IForgeRegistryEntry;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
-public class CommonProxy {
-	
-	// Config instance
+public class CommonProxy
+{
     public static Configuration config;
     
-    public void preInit(FMLPreInitializationEvent e) {
-    	File directory = e.getModConfigurationDirectory();
-        config = new Configuration(new File(directory.getPath(), Main.MODID + ".cfg"));
-        Config.readConfig();
-        
-     // Initialize our packet handler. Make sure the name is
-        // 20 characters or less!
-        //PacketHandler.registerMessages(Main.MODID);
+    public void preInit(final FMLPreInitializationEvent a1) {
+        final File v1 = /*EL:28*/a1.getModConfigurationDirectory();
+        CommonProxy.config = /*EL:29*/new Configuration(new File(v1.getPath(), "hammermod.cfg"));
+        /*SL:30*/Config.readConfig();
     }
-
-    public void init(FMLInitializationEvent e) {
+    
+    public void init(final FMLInitializationEvent a1) {
     }
-
-    public void postInit(FMLPostInitializationEvent e) {
-    	if (config.hasChanged()) {
-            config.save();
+    
+    public void postInit(final FMLPostInitializationEvent a1) {
+        /*SL:41*/if (CommonProxy.config.hasChanged()) {
+            CommonProxy.config.save();
         }
     }
-
 }

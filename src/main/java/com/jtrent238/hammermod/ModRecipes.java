@@ -1,51 +1,32 @@
 package com.jtrent238.hammermod;
 
 import com.jtrent238.hammermod.util.RecipeHandler;
-
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.IRecipe;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
-import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
-public class ModRecipes {
-
-
-	/**
-	 * Register Recipes with Game Registry.
-	 */
-	public static void registerRecpies(){
-		addShaplessRecpies();
-		addShapedRecpies();
-		addsmeltigrecipies();
-		addOreRecipes();
-	}
-
-	/**
-	 * Add Shaped Recipes.
-	 */
-	private static void addShapedRecpies(){
-
-	}
-
-	/**
-	 * Add Shapeless Recipes.
-	 */
-	private static void addShaplessRecpies(){
-		
-		}
-	/**
-	 * Add Smelting Recipes
-	 */
-	private static void addsmeltigrecipies(){
-		GameRegistry.addSmelting(ModItems.hammerSand, new ItemStack (ModItems.hammerGlass, 1), 2F );
-			   }
-	
-	public static void addOreRecipes()
-    {
-		RecipeHandler.addShapedOreRecipe(new ItemStack(ModItems.hammerCopper), "XXX", "XSX", "BSB", 'X', OreDictionary.getOres("ingotCopper") , 'S' , Items.STICK);
+public class ModRecipes
+{
+    public static void registerRecpies() {
+        addShaplessRecpies();
+        addShapedRecpies();
+        addsmeltigrecipies();
+        addOreRecipes();
     }
-	
+    
+    private static void addShapedRecpies() {
+    }
+    
+    private static void addShaplessRecpies() {
+    }
+    
+    private static void addsmeltigrecipies() {
+        /*SL:43*/GameRegistry.addSmelting((Item)ModItems.hammerSand, new ItemStack((Item)ModItems.hammerGlass, 1), 2.0f);
+    }
+    
+    public static void addOreRecipes() {
+        /*SL:48*/RecipeHandler.addShapedOreRecipe(new ItemStack((Item)ModItems.hammerCopper), "XXX", "XSX", "BSB", 'X', OreDictionary.getOres("ingotCopper"), 'S', Items.field_151055_y);
+    }
 }

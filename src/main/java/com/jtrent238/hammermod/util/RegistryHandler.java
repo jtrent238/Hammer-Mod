@@ -1,44 +1,38 @@
 package com.jtrent238.hammermod.util;
 
 import com.jtrent238.hammermod.Main;
-import com.jtrent238.hammermod.ModItems;
-import com.jtrent238.hammermod.items.hammers.ItemBaseHammer;
-import com.jtrent238.hammermod.items.hammers.ItemStoneHammer;
-import com.jtrent238.hammermod.items.hammers.ItemWoodHammer;
+import net.minecraftforge.fml.common.Mod;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraftforge.event.RegistryEvent.Register;
-import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-@EventBusSubscriber
-public class RegistryHandler {
-
-	private static int emeraldMultiplier = 2;			//Emerald Multiplier (Diamond * Multiplier)
-	private static int obsidianMultiplier = (int) 2.5;	//Obsidian Multiplier (Diamond * Multiplier)
-	private static int eM = emeraldMultiplier;			//Emerald Multiplier (Diamond * Multiplier)
-	private static int oM = obsidianMultiplier;			//Obsidian Multiplier (Diamond * Multiplier)
-	private static int nsM = eM + oM * 2;				//Nether Star Multiplier (Diamond * Multiplier)
-	private static int deM = nsM + eM + oM * 4;			//Dragon Egg Multiplier (Diamond * Multiplier)
-	private static int brM = nsM + eM + oM * deM;		//Bedrock Multiplier (Diamond * Multiplier)
-	private static int YT = 10;							//YouTuber Multiplier
-	private static int TWITCH = 10;						//Twitch Multiplier
-	private static int PATREON = YT * TWITCH;			//Patreon Multiplier
-	private static int mobM = 4;						//Mob Mulitiplier
-	private static int JSQ_Multiplier = 10;				//xJSQ Multiplier
-	private static int RAINBOW_MULTIPLIER = Main.numHammers;	//Rainbow Multiplier
-	//private static int  C1 = Main.CUSTOM_HAMMER_1_MATERIALMODIFIER.getInt();
-	
-//	 @SubscribeEvent
-//	    public static void registerItems(Register<Item> event) {
-//	    	
-//	    	final Item[] items = {
-//	    			new ItemWoodHammer(null),
-//	    			new ItemStoneHammer(null)
-//	    	};
-//	    	 
-//	        event.getRegistry().registerAll(items);
-//	    }
-	 
+@Mod.EventBusSubscriber
+public class RegistryHandler
+{
+    private static int emeraldMultiplier;
+    private static int obsidianMultiplier;
+    private static int eM;
+    private static int oM;
+    private static int nsM;
+    private static int deM;
+    private static int brM;
+    private static int YT;
+    private static int TWITCH;
+    private static int PATREON;
+    private static int mobM;
+    private static int JSQ_Multiplier;
+    private static int RAINBOW_MULTIPLIER;
+    
+    static {
+        RegistryHandler.emeraldMultiplier = 2;
+        RegistryHandler.obsidianMultiplier = 2;
+        RegistryHandler.eM = RegistryHandler.emeraldMultiplier;
+        RegistryHandler.oM = RegistryHandler.obsidianMultiplier;
+        RegistryHandler.nsM = RegistryHandler.eM + RegistryHandler.oM * 2;
+        RegistryHandler.deM = RegistryHandler.nsM + RegistryHandler.eM + RegistryHandler.oM * 4;
+        RegistryHandler.brM = RegistryHandler.nsM + RegistryHandler.eM + RegistryHandler.oM * RegistryHandler.deM;
+        RegistryHandler.YT = 10;
+        RegistryHandler.TWITCH = 10;
+        RegistryHandler.PATREON = RegistryHandler.YT * RegistryHandler.TWITCH;
+        RegistryHandler.mobM = 4;
+        RegistryHandler.JSQ_Multiplier = 10;
+        RegistryHandler.RAINBOW_MULTIPLIER = Main.numHammers;
+    }
 }

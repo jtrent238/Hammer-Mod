@@ -1,141 +1,102 @@
 package com.jtrent238.hammermod.util;
 
-import com.jtrent238.hammermod.ModItems;
-
-import net.minecraft.block.Block;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.CraftingManager;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.item.crafting.ShapedRecipes;
-import net.minecraft.item.crafting.ShapelessRecipes;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.crafting.CraftingHelper;
-import net.minecraftforge.common.crafting.IRecipeFactory;
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.ModContainer;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraft.block.Block;
+import net.minecraft.item.crafting.Ingredient;
+import net.minecraftforge.fml.common.ModContainer;
+import net.minecraft.item.crafting.CraftingManager;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraft.util.NonNullList;
+import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
+import net.minecraft.item.crafting.ShapedRecipes;
+import net.minecraftforge.common.crafting.CraftingHelper;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.registries.IForgeRegistryEntry;
 import net.minecraftforge.registries.GameData;
+import net.minecraftforge.oredict.ShapedOreRecipe;
+import net.minecraft.item.ItemStack;
 
-public class RecipeHandler {
-
-	/**
-	 * Adds a shaped recipe that supports string input paramers corresponding to an oredict entry, can also be used for recipes without ore dict ingredients
-	 *
-	 * @param output The stack that should be produced
-	 * @param params Input ingredients
-	 */
-	public static void addShapedOreRecipe(ItemStack output, Object... params) {
-		ResourceLocation location = getNameForRecipe(output);
-		ShapedOreRecipe recipe = new ShapedOreRecipe(location, output, params);
-		recipe.setRegistryName(location);
-		GameData.register_impl(recipe);
-	}
-
-	/**
-	 * Adds a basic shaped recipe
-	 *
-	 * @param output The stack that should be produced
-	 * @param params Input ingredients
-	 */
-	public static void addShapedRecipe(ItemStack output, Object... params) {
-		ResourceLocation location = getNameForRecipe(output);
-		CraftingHelper.ShapedPrimer primer = CraftingHelper.parseShaped(params);
-		ShapedRecipes recipe = new ShapedRecipes(output.getItem().getRegistryName().toString(), primer.width, primer.height, primer.input, output);
-		recipe.setRegistryName(location);
-		GameData.register_impl(recipe);
-	}
-
-	/**
-	 * Adds a shapeless ore recipe
-	 *
-	 * @param output The stack that should be produced
-	 * @param input Input ingredients
-	 */
-	public static void addShapelessOreRecipe(ItemStack output, Object... input) {
-		ResourceLocation location = getNameForRecipe(output);
-		ShapelessOreRecipe recipe = new ShapelessOreRecipe(location, output, input);
-		recipe.setRegistryName(location);
-		GameData.register_impl(recipe);
-	}
-
-	/**
-	 * Adds a basic shapeless recipe
-	 *
-	 * @param output The stack that should be produced
-	 * @param input Input ingredients
-	 */
-	public static void addShapelessRecipe(ItemStack output, Object... input) {
-		ResourceLocation location = getNameForRecipe(output);
-		ShapelessRecipes recipe = new ShapelessRecipes(location.getResourceDomain(), output, buildInput(input));
-		recipe.setRegistryName(location);
-		GameData.register_impl(recipe);
-	}
-
-	/**
-	 * Generates a unique name based of the active mod, and the ItemStack that the recipe outputs
-	 *
-	 * @param output an ItemStack, usually the one the the recipe produces
-	 * @return a unique ResourceLocation based off the item item
-	 */
-	public static ResourceLocation getNameForRecipe(ItemStack output) {
-		ModContainer activeContainer = Loader.instance().activeModContainer();
-		ResourceLocation baseLoc = new ResourceLocation(activeContainer.getModId(), output.getItem().getRegistryName().getResourcePath());
-		ResourceLocation recipeLoc = baseLoc;
-		int index = 0;
-		while (CraftingManager.REGISTRY.containsKey(recipeLoc)) {
-			index++;
-			recipeLoc = new ResourceLocation(activeContainer.getModId(), baseLoc.getResourcePath() + "_" + index);
-		}
-		return recipeLoc;
-	}
-
-	/**
-	 * Converts an object array into a NonNullList of Ingredients
-	 */
-	private static NonNullList<Ingredient> buildInput(Object[] input) {
-		NonNullList<Ingredient> list = NonNullList.create();
-		for (Object obj : input) {
-			if (obj instanceof Ingredient) {
-				list.add((Ingredient) obj);
-			} else {
-				Ingredient ingredient = CraftingHelper.getIngredient(obj);
-				if (ingredient == null) {
-					ingredient = Ingredient.EMPTY;
-				}
-				list.add(ingredient);
-			}
-		}
-		return list;
-	}
-
-	public static void addSmelting(Block input, ItemStack output, float xp) {
-		GameRegistry.addSmelting(input, output, xp);
-	}
-
-	public static void addSmelting(Item input, ItemStack output, float xp) {
-		GameRegistry.addSmelting(input, output, xp);
-	}
-
-	public static void addSmelting(ItemStack input, ItemStack output, float xp) {
-		GameRegistry.addSmelting(input, output, xp);
-	}
-
-	public static void addSmelting(ItemStack input, ItemStack output) {
-		addSmelting(input, output, 1F);
-	}
-
-	public static void addSmelting(Item input, ItemStack output) {
-		addSmelting(input, output, 1F);
-	}
-
-	public static void addSmelting(Block input, ItemStack output) {
-		addSmelting(input, output, 1F);
-	}
-	
+public class RecipeHandler
+{
+    public static void addShapedOreRecipe(final ItemStack a1, final Object... a2) {
+        final ResourceLocation v1 = getNameForRecipe(/*EL:34*/a1);
+        final ShapedOreRecipe v2 = /*EL:35*/new ShapedOreRecipe(v1, a1, a2);
+        /*SL:36*/v2.setRegistryName(v1);
+        /*SL:37*/GameData.register_impl((IForgeRegistryEntry)v2);
+    }
+    
+    public static void addShapedRecipe(final ItemStack a1, final Object... a2) {
+        final ResourceLocation v1 = getNameForRecipe(/*EL:47*/a1);
+        final CraftingHelper.ShapedPrimer v2 = /*EL:48*/CraftingHelper.parseShaped(a2);
+        final ShapedRecipes v3 = /*EL:49*/new ShapedRecipes(a1.func_77973_b().getRegistryName().toString(), v2.width, v2.height, v2.input, a1);
+        /*SL:50*/v3.setRegistryName(v1);
+        /*SL:51*/GameData.register_impl((IForgeRegistryEntry)v3);
+    }
+    
+    public static void addShapelessOreRecipe(final ItemStack a1, final Object... a2) {
+        final ResourceLocation v1 = getNameForRecipe(/*EL:61*/a1);
+        final ShapelessOreRecipe v2 = /*EL:62*/new ShapelessOreRecipe(v1, a1, a2);
+        /*SL:63*/v2.setRegistryName(v1);
+        /*SL:64*/GameData.register_impl((IForgeRegistryEntry)v2);
+    }
+    
+    public static void addShapelessRecipe(final ItemStack a1, final Object... a2) {
+        final ResourceLocation v1 = getNameForRecipe(/*EL:74*/a1);
+        final ShapelessRecipes v2 = /*EL:75*/new ShapelessRecipes(v1.func_110624_b(), a1, (NonNullList)buildInput(a2));
+        /*SL:76*/v2.setRegistryName(v1);
+        /*SL:77*/GameData.register_impl((IForgeRegistryEntry)v2);
+    }
+    
+    public static ResourceLocation getNameForRecipe(final ItemStack a1) {
+        final ModContainer v1 = /*EL:87*/Loader.instance().activeModContainer();
+        ResourceLocation v3;
+        final ResourceLocation v2 = /*EL:89*/v3 = new ResourceLocation(v1.getModId(), a1.func_77973_b().getRegistryName().func_110623_a());
+        /*SL:91*/for (int v4 = 0; CraftingManager.field_193380_a.func_148741_d((Object)v3); /*SL:93*/v3 = new ResourceLocation(v1.getModId(), v2.func_110623_a() + "_" + v4)) {
+            ++v4;
+        }
+        /*SL:95*/return v3;
+    }
+    
+    private static NonNullList<Ingredient> buildInput(final Object[] v-4) {
+        final NonNullList<Ingredient> func_191196_a = /*EL:102*/(NonNullList<Ingredient>)NonNullList.func_191196_a();
+        /*SL:103*/for (final Object v1 : v-4) {
+            /*SL:104*/if (v1 instanceof Ingredient) {
+                /*SL:105*/func_191196_a.add((Object)v1);
+            }
+            else {
+                Ingredient a1 = /*EL:107*/CraftingHelper.getIngredient(v1);
+                /*SL:108*/if (a1 == null) {
+                    /*SL:109*/a1 = Ingredient.field_193370_a;
+                }
+                /*SL:111*/func_191196_a.add((Object)a1);
+            }
+        }
+        /*SL:114*/return func_191196_a;
+    }
+    
+    public static void addSmelting(final Block a1, final ItemStack a2, final float a3) {
+        /*SL:118*/GameRegistry.addSmelting(a1, a2, a3);
+    }
+    
+    public static void addSmelting(final Item a1, final ItemStack a2, final float a3) {
+        /*SL:122*/GameRegistry.addSmelting(a1, a2, a3);
+    }
+    
+    public static void addSmelting(final ItemStack a1, final ItemStack a2, final float a3) {
+        /*SL:126*/GameRegistry.addSmelting(a1, a2, a3);
+    }
+    
+    public static void addSmelting(final ItemStack a1, final ItemStack a2) {
+        addSmelting(/*EL:130*/a1, a2, 1.0f);
+    }
+    
+    public static void addSmelting(final Item a1, final ItemStack a2) {
+        addSmelting(/*EL:134*/a1, a2, 1.0f);
+    }
+    
+    public static void addSmelting(final Block a1, final ItemStack a2) {
+        addSmelting(/*EL:138*/a1, a2, 1.0f);
+    }
 }
