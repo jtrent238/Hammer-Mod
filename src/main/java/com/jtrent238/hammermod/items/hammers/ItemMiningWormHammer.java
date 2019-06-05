@@ -6,9 +6,9 @@ import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 
-public class ItemJenHammer extends ItemBaseHammer
+public class ItemMiningWormHammer extends ItemBaseHammer
 {
-    public ItemJenHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+    public ItemMiningWormHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
         super(a1, a2, a3);
         this.func_77655_b(a2);
         this.setRegistryName(a3);

@@ -1,29 +1,12 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import java.util.List;
+import net.minecraft.item.Item;
 
-import com.jtrent238.hammermod.HammerMod;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumChatFormatting;
-import net.minecraft.util.StatCollector;
-
-public class ItemMythicalHammer extends ItemBaseHammer{
-
-	public ItemMythicalHammer(ToolMaterial material) {
-		super(material);
-	}
-
-	@Override
-	 @SideOnly(Side.CLIENT)
-	 public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean isHeld) {
-	 list.add(ItemBaseHammer.ToolTipColor_COMMUNITY_NAME + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "ItemMythicalHammer" + "." + "createdby"));
-	 list.add(ItemBaseHammer.ToolTipColor_COMMUNITY + StatCollector.translateToLocal("tooltip." + HammerMod.MODID + "." + "communityhammer"));
-		
-	  }
-
+public class ItemMythicalHammer extends ItemBaseHammer
+{
+    public ItemMythicalHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+        super(a1, a2, a3);
+        this.func_77655_b(a2);
+        this.setRegistryName(a3);
+    }
 }

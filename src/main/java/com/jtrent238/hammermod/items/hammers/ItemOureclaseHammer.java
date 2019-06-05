@@ -1,9 +1,12 @@
 package com.jtrent238.hammermod.items.hammers;
 
-public class ItemOureclaseHammer extends ItemBaseHammer{
+import net.minecraft.item.Item;
 
-	public ItemOureclaseHammer(ToolMaterial material) {
-		super(material);
-	}
-
+public class ItemOureclaseHammer extends ItemBaseHammer
+{
+    public ItemOureclaseHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+        super(a1, a2, a3);
+        this.func_77655_b(a2);
+        this.setRegistryName(a3);
+    }
 }
