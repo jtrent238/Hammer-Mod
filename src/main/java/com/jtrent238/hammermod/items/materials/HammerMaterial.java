@@ -1,120 +1,174 @@
 package com.jtrent238.hammermod.items.materials;
 
-import com.jtrent238.hammermod.Main;
-import com.jtrent238.jtcoremod.JTAPI;
-
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
+import com.jtrent238.hammermod.Main;
+import net.minecraft.item.Item;
 
-public class HammerMaterial {
-
-	private static int emeraldMultiplier = 2;			//Emerald Multiplier (Diamond * Multiplier)
-	private static int obsidianMultiplier = (int) 2.5;	//Obsidian Multiplier (Diamond * Multiplier)
-	private static int eM = emeraldMultiplier;			//Emerald Multiplier (Diamond * Multiplier)
-	private static int oM = obsidianMultiplier;			//Obsidian Multiplier (Diamond * Multiplier)
-	private static int nsM = eM + oM * 2;				//Nether Star Multiplier (Diamond * Multiplier)
-	private static int deM = nsM + eM + oM * 4;			//Dragon Egg Multiplier (Diamond * Multiplier)
-	private static int brM = nsM + eM + oM * deM;		//Bedrock Multiplier (Diamond * Multiplier)
-	private static int YT = 10;							//YouTuber Multiplier
-	private static int TWITCH = 10;						//Twitch Multiplier
-	private static int PATREON = YT * TWITCH;			//Patreon Multiplier
-	private static int mobM = 4;						//Mob Mulitiplier
-	private static int JSQ_Multiplier = 10;				//xJSQ Multiplier
-	private static int RAINBOW_MULTIPLIER = Main.numHammers;	//Rainbow Multiplier
-	//private static int  C1 = HammerMod.CUSTOM_HAMMER_1_MATERIALMODIFIER.getInt();
-	
-	//public static ToolMaterial MATERIAL_NAME = EnumHelper.addToolMaterial("MATERIAL_NAME", harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
-	
-	public static ToolMaterial DEFAULT = EnumHelper.addToolMaterial("DEFAULT", 3, 1561, 8.0F, 3.0F, 10); // Default material Based on Diamond Level
-	
-	public static ToolMaterial WOOD = ToolMaterial.WOOD;
-	public static ToolMaterial STONE = ToolMaterial.STONE;
-	public static ToolMaterial IRON = ToolMaterial.IRON;
-	public static ToolMaterial DIAMOND = ToolMaterial.DIAMOND;
-	public static ToolMaterial GOLD = ToolMaterial.GOLD;
-	
-	public static ToolMaterial DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2, 0, 4);
-	public static ToolMaterial GLASS = EnumHelper.addToolMaterial("GLASS", 0, 6, 50, 0, 1);
-	public static ToolMaterial SAND = EnumHelper.addToolMaterial("SAND", 0, 6, 50, 0, 1);
-	public static ToolMaterial CACTUS = EnumHelper.addToolMaterial("CACTUS", 1, 32, 50, 1, 2);
-	public static ToolMaterial GRAVEL = EnumHelper.addToolMaterial("GRAVEL", 0, 6, 50, 0, 1);
-	public static ToolMaterial EMERALD = EnumHelper.addToolMaterial("EMERALD", 3 * eM, 1561 * eM, 8.0F * eM, 3.0F * eM, 10 * eM);
-	public static ToolMaterial GRASS = EnumHelper.addToolMaterial("GRASS", 0, 100, 60, 0, 2);
-	public static ToolMaterial WOOL = EnumHelper.addToolMaterial("WOOL", 0, 8, 50, 0, 1);
-	public static ToolMaterial OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3 * oM , 1561 * oM, 8.0F * oM, 3.0F * oM, 10 * oM);
-	public static ToolMaterial GLOWSTONE = EnumHelper.addToolMaterial("GLOWSTONE", 2, 84, 4.0F, 1.5F, 5);
-	public static ToolMaterial REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 1, 150, 3.0F, 4.0F, 16);
-	public static ToolMaterial LAPIS = EnumHelper.addToolMaterial("LAPIS", 1, 125, 2.5F, 2.0F, 8);
-	public static ToolMaterial NETHERACK = EnumHelper.addToolMaterial("NETHERACK", 1, 400, 5.0F, 2.0F, 8);
-	public static ToolMaterial SOULSAND = EnumHelper.addToolMaterial("SOULSAND", 1, 60, 2.0F, 1.0F, 5);
-	public static ToolMaterial COAL = EnumHelper.addToolMaterial("COAL", 1, 450, 2.0F, 1.0F, 4);
-	public static ToolMaterial DRAGEGG = EnumHelper.addToolMaterial("DRAGEGG", 3 * deM, 1561 * deM, 8.0F * deM, 3.0F * deM, 10 * deM);
-	public static ToolMaterial TNT = EnumHelper.addToolMaterial("TNT", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * brM, 1561 * brM, 8.0F * brM, 3.0F * brM, 10 * brM);
-	public static ToolMaterial CHARCOAL = EnumHelper.addToolMaterial("CHARCOAL", 1, 450, 2.0F, 1.0F, 4);
-	public static ToolMaterial ENDSTONE = STONE;
-	public static ToolMaterial GRANITE = STONE;
-	public static ToolMaterial ANDESITE = STONE;
-	public static ToolMaterial HARDCLAY = STONE;
-	public static ToolMaterial HAY = CACTUS;
-	public static ToolMaterial SHULKER = EnumHelper.addToolMaterial("SHULKER", 4, 2672, 10.0F, 6.0F, 12);
-	
-	// TO BE FILLED IN LATER
-	
-	public static ToolMaterial BONE = EnumHelper.addToolMaterial("BONE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial SPONGE = EnumHelper.addToolMaterial("SPONGE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial BRICK = STONE;
-	public static ToolMaterial SUGAR = EnumHelper.addToolMaterial("SUGAR", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial SLIME = EnumHelper.addToolMaterial("SLIME", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial MELON = EnumHelper.addToolMaterial("MELON", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial PUMPKIN = EnumHelper.addToolMaterial("PUMPKIN", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial POTATO = EnumHelper.addToolMaterial("POTATO", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial CARROT = EnumHelper.addToolMaterial("CARROT", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial APPLE = EnumHelper.addToolMaterial("APPLE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial ICE = EnumHelper.addToolMaterial("ICE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial PACKED_ICE = EnumHelper.addToolMaterial("PACKED_ICE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial SNOW = EnumHelper.addToolMaterial("SNOW", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial CAKE = EnumHelper.addToolMaterial("CAKE", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial PURPUR = STONE;
-	public static ToolMaterial ENDBRICKS = STONE;
-	public static ToolMaterial CHORUS = EnumHelper.addToolMaterial("CHORUS", 3, 1561, 8.0F, 3.0F, 10);
-	
-	
-	//Ores from other mods
-	public static ToolMaterial URANIUM = EnumHelper.addToolMaterial("URANIUM", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 3, 1561, 8.0F, 3.0F, 10);
-	public static ToolMaterial ADAM = EnumHelper.addToolMaterial("ADAM", 3, 1561, 8.0F, 3.0F, 10);
-	
-	public static ToolMaterial CREEPER = EnumHelper.addToolMaterial("CREEPER", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
-	public static ToolMaterial PIG = EnumHelper.addToolMaterial("PIG", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
-	public static ToolMaterial COW = EnumHelper.addToolMaterial("COW", 3 * mobM, 1561 * mobM, 8.0F * mobM, 3.0F * mobM, 10 * mobM);
-	
-	
-	public static ToolMaterial PAT = EnumHelper.addToolMaterial("PAT", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial JEN = EnumHelper.addToolMaterial("JEN", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial TDM = EnumHelper.addToolMaterial("TDM", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial JSQ = EnumHelper.addToolMaterial("JSQ", 3 * YT + JSQ_Multiplier, 1561 * YT + JSQ_Multiplier, 8.0F * YT + JSQ_Multiplier, 3.0F * YT + JSQ_Multiplier, 10 * YT + JSQ_Multiplier);
-	public static ToolMaterial SKY = EnumHelper.addToolMaterial("SKY", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial TATTCKMC = EnumHelper.addToolMaterial("TATTCKMC", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial MRGREG = EnumHelper.addToolMaterial("MRGREG", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	public static ToolMaterial MINEWORM = EnumHelper.addToolMaterial("MINEWORM", 3 * YT, 1561 * YT, 8.0F * YT, 3.0F * YT, 10 * YT);
-	
-	public static ToolMaterial DAXEJ = EnumHelper.addToolMaterial("DAXEJ", 3 * TWITCH, 1561 * TWITCH, 8.0F * TWITCH, 3.0F * TWITCH, 10 * TWITCH);
-	public static ToolMaterial INCAPGAMER = EnumHelper.addToolMaterial("INCAPGAMER", 3 * TWITCH, 1561 * TWITCH, 8.0F * TWITCH, 3.0F * TWITCH, 10 * TWITCH);
-	
-	public static ToolMaterial CRYOBBY = EnumHelper.addToolMaterial("CRYOBBY", 3, 8000, 6, 6, 10);
-	public static ToolMaterial MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10, 15, 5);
-	public static ToolMaterial TOASTER = EnumHelper.addToolMaterial("TOASTER", 1, 30000, 1000, (float) 0.5, 10);
-	public static ToolMaterial PUREDEVIL = EnumHelper.addToolMaterial("PUREDEVIL", 3, 5000, 12, 15, 20);
-	public static ToolMaterial LIGHTNING = EnumHelper.addToolMaterial("LIGHTNING", 3, 2048, 6, 5, 10);
-	
-	public static ToolMaterial RAINBOW = EnumHelper.addToolMaterial("RAINBOW", 3 * RAINBOW_MULTIPLIER, 1561 * RAINBOW_MULTIPLIER, 8.0F * RAINBOW_MULTIPLIER, 3.0F * RAINBOW_MULTIPLIER, 10 * RAINBOW_MULTIPLIER);
-	public static ToolMaterial MISSINGTEX = EnumHelper.addToolMaterial("MISSINGTEX", 3 * RAINBOW_MULTIPLIER / 2, 1561 * RAINBOW_MULTIPLIER / 2, 8.0F * RAINBOW_MULTIPLIER / 2, 3.0F * RAINBOW_MULTIPLIER / 2, 10 * RAINBOW_MULTIPLIER / 2);
-	
-	//public static ToolMaterial CUSTOM_1 = EnumHelper.addToolMaterial("CUSTOM_1", 3 * C1, 1561 * C1, 8.0F * C1, 3.0F * C1, 10 * C1);
-	
-	public static void addHammerMaterial(String material, int harvestLevel,  int durability,  int miningSpeed,  int damageVsEntities,  int enchantability) {
-		JTAPI.addNewToolMaterial(material, harvestLevel, durability, miningSpeed, damageVsEntities, enchantability);
-	}
-	
+public class HammerMaterial
+{
+    private static int emeraldMultiplier;
+    private static int obsidianMultiplier;
+    private static int eM;
+    private static int oM;
+    private static int nsM;
+    private static int deM;
+    private static int brM;
+    private static int YT;
+    private static int TWITCH;
+    private static int PATREON;
+    private static int mobM;
+    private static int JSQ_Multiplier;
+    private static int RAINBOW_MULTIPLIER;
+    public static Item.ToolMaterial DEFAULT;
+    public static Item.ToolMaterial WOOD;
+    public static Item.ToolMaterial STONE;
+    public static Item.ToolMaterial IRON;
+    public static Item.ToolMaterial DIAMOND;
+    public static Item.ToolMaterial GOLD;
+    public static Item.ToolMaterial DIRT;
+    public static Item.ToolMaterial GLASS;
+    public static Item.ToolMaterial SAND;
+    public static Item.ToolMaterial CACTUS;
+    public static Item.ToolMaterial GRAVEL;
+    public static Item.ToolMaterial EMERALD;
+    public static Item.ToolMaterial GRASS;
+    public static Item.ToolMaterial WOOL;
+    public static Item.ToolMaterial OBSIDIAN;
+    public static Item.ToolMaterial GLOWSTONE;
+    public static Item.ToolMaterial REDSTONE;
+    public static Item.ToolMaterial LAPIS;
+    public static Item.ToolMaterial NETHERACK;
+    public static Item.ToolMaterial SOULSAND;
+    public static Item.ToolMaterial COAL;
+    public static Item.ToolMaterial DRAGEGG;
+    public static Item.ToolMaterial TNT;
+    public static Item.ToolMaterial BEDROCK;
+    public static Item.ToolMaterial CHARCOAL;
+    public static Item.ToolMaterial ENDSTONE;
+    public static Item.ToolMaterial GRANITE;
+    public static Item.ToolMaterial ANDESITE;
+    public static Item.ToolMaterial BONE;
+    public static Item.ToolMaterial SPONGE;
+    public static Item.ToolMaterial BRICK;
+    public static Item.ToolMaterial SUGAR;
+    public static Item.ToolMaterial SLIME;
+    public static Item.ToolMaterial MELON;
+    public static Item.ToolMaterial PUMPKIN;
+    public static Item.ToolMaterial POTATO;
+    public static Item.ToolMaterial CARROT;
+    public static Item.ToolMaterial APPLE;
+    public static Item.ToolMaterial ICE;
+    public static Item.ToolMaterial PACKED_ICE;
+    public static Item.ToolMaterial SNOW;
+    public static Item.ToolMaterial CAKE;
+    public static Item.ToolMaterial PURPUR;
+    public static Item.ToolMaterial ENDBRICKS;
+    public static Item.ToolMaterial CHORUS;
+    public static Item.ToolMaterial URANIUM;
+    public static Item.ToolMaterial TITANIUM;
+    public static Item.ToolMaterial ADAM;
+    public static Item.ToolMaterial CREEPER;
+    public static Item.ToolMaterial PIG;
+    public static Item.ToolMaterial COW;
+    public static Item.ToolMaterial PAT;
+    public static Item.ToolMaterial JEN;
+    public static Item.ToolMaterial TDM;
+    public static Item.ToolMaterial JSQ;
+    public static Item.ToolMaterial SKY;
+    public static Item.ToolMaterial TATTCKMC;
+    public static Item.ToolMaterial MRGREG;
+    public static Item.ToolMaterial MINEWORM;
+    public static Item.ToolMaterial DAXEJ;
+    public static Item.ToolMaterial INCAPGAMER;
+    public static Item.ToolMaterial CRYOBBY;
+    public static Item.ToolMaterial MYTHICAL;
+    public static Item.ToolMaterial TOASTER;
+    public static Item.ToolMaterial PUREDEVIL;
+    public static Item.ToolMaterial LIGHTNING;
+    public static Item.ToolMaterial RAINBOW;
+    public static Item.ToolMaterial MISSINGTEX;
+    
+    static {
+        HammerMaterial.emeraldMultiplier = 2;
+        HammerMaterial.obsidianMultiplier = 2;
+        HammerMaterial.eM = HammerMaterial.emeraldMultiplier;
+        HammerMaterial.oM = HammerMaterial.obsidianMultiplier;
+        HammerMaterial.nsM = HammerMaterial.eM + HammerMaterial.oM * 2;
+        HammerMaterial.deM = HammerMaterial.nsM + HammerMaterial.eM + HammerMaterial.oM * 4;
+        HammerMaterial.brM = HammerMaterial.nsM + HammerMaterial.eM + HammerMaterial.oM * HammerMaterial.deM;
+        HammerMaterial.YT = 10;
+        HammerMaterial.TWITCH = 10;
+        HammerMaterial.PATREON = HammerMaterial.YT * HammerMaterial.TWITCH;
+        HammerMaterial.mobM = 4;
+        HammerMaterial.JSQ_Multiplier = 10;
+        HammerMaterial.RAINBOW_MULTIPLIER = Main.numHammers;
+        HammerMaterial.DEFAULT = EnumHelper.addToolMaterial("DEFAULT", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.WOOD = Item.ToolMaterial.WOOD;
+        HammerMaterial.STONE = Item.ToolMaterial.STONE;
+        HammerMaterial.IRON = Item.ToolMaterial.IRON;
+        HammerMaterial.DIAMOND = Item.ToolMaterial.DIAMOND;
+        HammerMaterial.GOLD = Item.ToolMaterial.GOLD;
+        HammerMaterial.DIRT = EnumHelper.addToolMaterial("DIRT", 0, 10, 2.0f, 0.0f, 4);
+        HammerMaterial.GLASS = EnumHelper.addToolMaterial("GLASS", 0, 6, 50.0f, 0.0f, 1);
+        HammerMaterial.SAND = EnumHelper.addToolMaterial("SAND", 0, 6, 50.0f, 0.0f, 1);
+        HammerMaterial.CACTUS = EnumHelper.addToolMaterial("CACTUS", 1, 32, 50.0f, 1.0f, 2);
+        HammerMaterial.GRAVEL = EnumHelper.addToolMaterial("GRAVEL", 0, 6, 50.0f, 0.0f, 1);
+        HammerMaterial.EMERALD = EnumHelper.addToolMaterial("EMERALD", 3 * HammerMaterial.eM, 1561 * HammerMaterial.eM, 8.0f * HammerMaterial.eM, 3.0f * HammerMaterial.eM, 10 * HammerMaterial.eM);
+        HammerMaterial.GRASS = EnumHelper.addToolMaterial("GRASS", 0, 100, 60.0f, 0.0f, 2);
+        HammerMaterial.WOOL = EnumHelper.addToolMaterial("WOOL", 0, 8, 50.0f, 0.0f, 1);
+        HammerMaterial.OBSIDIAN = EnumHelper.addToolMaterial("OBSIDIAN", 3 * HammerMaterial.oM, 1561 * HammerMaterial.oM, 8.0f * HammerMaterial.oM, 3.0f * HammerMaterial.oM, 10 * HammerMaterial.oM);
+        HammerMaterial.GLOWSTONE = EnumHelper.addToolMaterial("GLOWSTONE", 2, 84, 4.0f, 1.5f, 5);
+        HammerMaterial.REDSTONE = EnumHelper.addToolMaterial("REDSTONE", 1, 150, 3.0f, 4.0f, 16);
+        HammerMaterial.LAPIS = EnumHelper.addToolMaterial("LAPIS", 1, 125, 2.5f, 2.0f, 8);
+        HammerMaterial.NETHERACK = EnumHelper.addToolMaterial("NETHERACK", 1, 400, 5.0f, 2.0f, 8);
+        HammerMaterial.SOULSAND = EnumHelper.addToolMaterial("SOULSAND", 1, 60, 2.0f, 1.0f, 5);
+        HammerMaterial.COAL = EnumHelper.addToolMaterial("COAL", 1, 450, 2.0f, 1.0f, 4);
+        HammerMaterial.DRAGEGG = EnumHelper.addToolMaterial("DRAGEGG", 3 * HammerMaterial.deM, 1561 * HammerMaterial.deM, 8.0f * HammerMaterial.deM, 3.0f * HammerMaterial.deM, 10 * HammerMaterial.deM);
+        HammerMaterial.TNT = EnumHelper.addToolMaterial("TNT", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.BEDROCK = EnumHelper.addToolMaterial("BEDROCK", 3 * HammerMaterial.brM, 1561 * HammerMaterial.brM, 8.0f * HammerMaterial.brM, 3.0f * HammerMaterial.brM, 10 * HammerMaterial.brM);
+        HammerMaterial.CHARCOAL = EnumHelper.addToolMaterial("CHARCOAL", 1, 450, 2.0f, 1.0f, 4);
+        HammerMaterial.ENDSTONE = Item.ToolMaterial.STONE;
+        HammerMaterial.GRANITE = Item.ToolMaterial.STONE;
+        HammerMaterial.ANDESITE = Item.ToolMaterial.STONE;
+        HammerMaterial.BONE = EnumHelper.addToolMaterial("BONE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.SPONGE = EnumHelper.addToolMaterial("SPONGE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.BRICK = EnumHelper.addToolMaterial("BRICK", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.SUGAR = EnumHelper.addToolMaterial("SUGAR", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.SLIME = EnumHelper.addToolMaterial("SLIME", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.MELON = EnumHelper.addToolMaterial("MELON", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.PUMPKIN = EnumHelper.addToolMaterial("PUMPKIN", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.POTATO = EnumHelper.addToolMaterial("POTATO", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.CARROT = EnumHelper.addToolMaterial("CARROT", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.APPLE = EnumHelper.addToolMaterial("APPLE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.ICE = EnumHelper.addToolMaterial("ICE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.PACKED_ICE = EnumHelper.addToolMaterial("PACKED_ICE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.SNOW = EnumHelper.addToolMaterial("SNOW", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.CAKE = EnumHelper.addToolMaterial("CAKE", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.PURPUR = EnumHelper.addToolMaterial("PURPUR", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.ENDBRICKS = EnumHelper.addToolMaterial("ENDBRICKS", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.CHORUS = EnumHelper.addToolMaterial("CHORUS", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.URANIUM = EnumHelper.addToolMaterial("URANIUM", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.TITANIUM = EnumHelper.addToolMaterial("TITANIUM", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.ADAM = EnumHelper.addToolMaterial("ADAM", 3, 1561, 8.0f, 3.0f, 10);
+        HammerMaterial.CREEPER = EnumHelper.addToolMaterial("CREEPER", 3 * HammerMaterial.mobM, 1561 * HammerMaterial.mobM, 8.0f * HammerMaterial.mobM, 3.0f * HammerMaterial.mobM, 10 * HammerMaterial.mobM);
+        HammerMaterial.PIG = EnumHelper.addToolMaterial("PIG", 3 * HammerMaterial.mobM, 1561 * HammerMaterial.mobM, 8.0f * HammerMaterial.mobM, 3.0f * HammerMaterial.mobM, 10 * HammerMaterial.mobM);
+        HammerMaterial.COW = EnumHelper.addToolMaterial("COW", 3 * HammerMaterial.mobM, 1561 * HammerMaterial.mobM, 8.0f * HammerMaterial.mobM, 3.0f * HammerMaterial.mobM, 10 * HammerMaterial.mobM);
+        HammerMaterial.PAT = EnumHelper.addToolMaterial("PAT", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.JEN = EnumHelper.addToolMaterial("JEN", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.TDM = EnumHelper.addToolMaterial("TDM", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.JSQ = EnumHelper.addToolMaterial("JSQ", 3 * HammerMaterial.YT + HammerMaterial.JSQ_Multiplier, 1561 * HammerMaterial.YT + HammerMaterial.JSQ_Multiplier, 8.0f * HammerMaterial.YT + HammerMaterial.JSQ_Multiplier, 3.0f * HammerMaterial.YT + HammerMaterial.JSQ_Multiplier, 10 * HammerMaterial.YT + HammerMaterial.JSQ_Multiplier);
+        HammerMaterial.SKY = EnumHelper.addToolMaterial("SKY", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.TATTCKMC = EnumHelper.addToolMaterial("TATTCKMC", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.MRGREG = EnumHelper.addToolMaterial("MRGREG", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.MINEWORM = EnumHelper.addToolMaterial("MINEWORM", 3 * HammerMaterial.YT, 1561 * HammerMaterial.YT, 8.0f * HammerMaterial.YT, 3.0f * HammerMaterial.YT, 10 * HammerMaterial.YT);
+        HammerMaterial.DAXEJ = EnumHelper.addToolMaterial("DAXEJ", 3 * HammerMaterial.TWITCH, 1561 * HammerMaterial.TWITCH, 8.0f * HammerMaterial.TWITCH, 3.0f * HammerMaterial.TWITCH, 10 * HammerMaterial.TWITCH);
+        HammerMaterial.INCAPGAMER = EnumHelper.addToolMaterial("INCAPGAMER", 3 * HammerMaterial.TWITCH, 1561 * HammerMaterial.TWITCH, 8.0f * HammerMaterial.TWITCH, 3.0f * HammerMaterial.TWITCH, 10 * HammerMaterial.TWITCH);
+        HammerMaterial.CRYOBBY = EnumHelper.addToolMaterial("CRYOBBY", 3, 8000, 6.0f, 6.0f, 10);
+        HammerMaterial.MYTHICAL = EnumHelper.addToolMaterial("MYTHICAL", 3, 500, 10.0f, 15.0f, 5);
+        HammerMaterial.TOASTER = EnumHelper.addToolMaterial("TOASTER", 1, 30000, 1000.0f, 0.5f, 10);
+        HammerMaterial.PUREDEVIL = EnumHelper.addToolMaterial("PUREDEVIL", 3, 5000, 12.0f, 15.0f, 20);
+        HammerMaterial.LIGHTNING = EnumHelper.addToolMaterial("LIGHTNING", 3, 2048, 6.0f, 5.0f, 10);
+        HammerMaterial.RAINBOW = EnumHelper.addToolMaterial("RAINBOW", 3 * HammerMaterial.RAINBOW_MULTIPLIER, 1561 * HammerMaterial.RAINBOW_MULTIPLIER, 8.0f * HammerMaterial.RAINBOW_MULTIPLIER, 3.0f * HammerMaterial.RAINBOW_MULTIPLIER, 10 * HammerMaterial.RAINBOW_MULTIPLIER);
+        HammerMaterial.MISSINGTEX = EnumHelper.addToolMaterial("MISSINGTEX", 3 * HammerMaterial.RAINBOW_MULTIPLIER / 2, 1561 * HammerMaterial.RAINBOW_MULTIPLIER / 2, 8.0f * HammerMaterial.RAINBOW_MULTIPLIER / 2.0f, 3.0f * HammerMaterial.RAINBOW_MULTIPLIER / 2.0f, 10 * HammerMaterial.RAINBOW_MULTIPLIER / 2);
+    }
 }
