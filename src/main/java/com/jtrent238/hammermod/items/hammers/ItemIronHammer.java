@@ -1,20 +1,12 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import com.jtrent238.hammermod.Config;
-import com.jtrent238.hammermod.Main;
-import com.jtrent238.hammermod.util.ModelRegistryHandler;
-
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
-import net.minecraftforge.client.model.ModelLoader;
 
-public class ItemIronHammer extends ItemBaseHammer{
-	
-	public ItemIronHammer(ToolMaterial material, String unlocalizedName, String registryName) {
-		super(material, registryName, unlocalizedName);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setRegistryName(registryName);
-	}
-
-	
+public class ItemIronHammer extends ItemBaseHammer
+{
+    public ItemIronHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+        super(a1, a3, a2);
+        this.func_77655_b(a2);
+        this.setRegistryName(a3);
+    }
 }

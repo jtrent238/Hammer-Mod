@@ -1,11 +1,12 @@
 package com.jtrent238.hammermod.items.hammers;
 
-public class ItemAredriteHammer extends ItemBaseHammer {
+import net.minecraft.item.Item;
 
-	public ItemAredriteHammer(ToolMaterial material, String unlocalizedName, String registryName) {
-		super(material, unlocalizedName, registryName);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setRegistryName(registryName);
-	}
-
+public class ItemAredriteHammer extends ItemBaseHammer
+{
+    public ItemAredriteHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+        super(a1, a2, a3);
+        this.func_77655_b(a2);
+        this.setRegistryName(a3);
+    }
 }

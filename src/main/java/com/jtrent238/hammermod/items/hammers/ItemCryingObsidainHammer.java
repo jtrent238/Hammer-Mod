@@ -1,25 +1,21 @@
 package com.jtrent238.hammermod.items.hammers;
 
-import java.util.List;
-
-import com.jtrent238.hammermod.Main;
-
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.TextFormatting;
+import java.util.List;
 import net.minecraft.world.World;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
 
-public class ItemCryingObsidainHammer extends ItemBaseHammer {
-
-	public ItemCryingObsidainHammer(ToolMaterial material, String unlocalizedName, String registryName) {
-		super(material, unlocalizedName, registryName);
-		this.setUnlocalizedName(unlocalizedName);
-		this.setRegistryName(registryName);
-	}
-
-	@Override
-	public void addInformation(ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(ItemBaseHammer.ToolTipColor_COMMUNITY_NAME + "tooltip." + Main.MODID + "." + "CryingObsidainHammer" + "." + "createdby");
-		tooltip.add(ItemBaseHammer.ToolTipColor_COMMUNITY + "tooltip." + Main.MODID + "." + "communityhammer");
-	}
+public class ItemCryingObsidainHammer extends ItemBaseHammer
+{
+    public ItemCryingObsidainHammer(final Item.ToolMaterial a1, final String a2, final String a3) {
+        super(a1, a2, a3);
+        this.func_77655_b(a2);
+        this.setRegistryName(a3);
+    }
+    
+    public void func_77624_a(final ItemStack a1, final World a2, final List<String> a3, final ITooltipFlag a4) {
+        /*SL:22*/a3.add(ItemBaseHammer.ToolTipColor_COMMUNITY_NAME + "tooltip." + "hammermod" + ".CryingObsidainHammer.createdby");
+        /*SL:23*/a3.add(ItemBaseHammer.ToolTipColor_COMMUNITY + "tooltip." + "hammermod" + ".communityhammer");
+    }
 }
